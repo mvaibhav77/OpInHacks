@@ -28,7 +28,7 @@ export const Hero = () => {
       </div>
       <div className="down-arrow">
 
-      <BsArrowDown fontSize="2rem" />
+      <BsArrowDown fontSize="2.5rem" />
       </div>
       <div className="hero-container">
         <div className="hero-title">
