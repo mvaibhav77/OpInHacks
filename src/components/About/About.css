@@ -1,0 +1,119 @@
+.about-section{
+    position: absolute;
+    width: 1420px;
+    height: 675px;
+    left: 0px;
+    background: #F8F6F6;
+    overflow: hidden;
+    }
+    .txt{
+    position: absolute;
+    left: 3.25%;
+    right: 76.06%;
+    top: 1.5%;
+    bottom: 89.2%;
+    font-family: 'Hanson';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 166px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    
+    color: #000000;
+    
+    mix-blend-mode: normal;
+    }
+    .para{
+    position: absolute;
+    width: 1205px;
+    height: 195px;
+    left: 42px;
+    top: 70px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 31px;
+    /* or 182% */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    
+    color: #000000;
+    }
+    .img{
+        position: relative;
+        top:-80px ;
+    }
+    
+    .col{
+    position: absolute;
+    width: 810px;
+    height: 497.54px;
+    left: -599px;
+    top: 464px;
+    
+    }
+    .col1{
+    position: absolute;
+    width: 172px;
+    height: 253.73px;
+    left: 150px;
+    top: 471px;
+    }
+    .col2{
+    position: absolute;
+    width: 135px;
+    height: 131.32px;
+    left: 312px;
+    top: 572px;
+    }
+    .col3{
+    position: absolute;
+    width: 172px;
+    height: 253.73px;
+    left: 486px;
+    top: 475px;
+    }
+    .col4{
+        position: absolute;
+        width: 172px;
+        height: 253.73px;
+        left: 611px;
+        top: 581px;
+    }
+    .col5{
+    position: absolute;
+    width: 210px;
+    height: 333.31px;
+    left: 697px;
+    top: 471px;
+    
+    }
+    .col6{
+    position: absolute;
+    width: 810px;
+    height: 497.54px;
+    left: 322px;
+    top: 349px;
+    }
+    .col7{
+    position: absolute;
+    width: 172px;
+    height: 253.73px;
+    left: 1046px;
+    top: 384px;
+    }
+    .col8{
+    position: absolute;
+    width: 810px;
+    height: 497.54px;
+    left: 685px;
+    top: 293px;
+    }
