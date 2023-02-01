@@ -3,7 +3,7 @@
     width: 1420px;
     height: 675px;
     left: 0px;
-    background: #F8F6F6;
+    
     overflow: hidden;
 }
  .txt{
@@ -12,7 +12,7 @@
     right: 76.06%;
     top: 1.5%;
     bottom: 89.2%;
-    font-family: 'Hanson';
+    font-family: var(--primary-font);
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -31,7 +31,7 @@
     height: 195px;
     left: 42px;
     top: 70px;
-    font-family: 'Montserrat';
+    font-family: var(--secondary-font);
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
