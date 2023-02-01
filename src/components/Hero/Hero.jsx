@@ -3,10 +3,11 @@ import "../Hero/Hero.css";
 import spaceLines from "../../assets/space-lines.png";
 import eye from "../../assets/eye.png";
 import stairs from "../../assets/stairs.png";
-
+import Navbar from "../Navbar/Navbar.jsx";
 export const Hero = () => {
   return (
     <section className="hero-section">
+      <Navbar/>
       <img className="space-lines" src={spaceLines} alt="" />
       <div className="hero-container">
         <div className="hero-title">
