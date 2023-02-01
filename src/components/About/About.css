@@ -1,0 +1,115 @@
+.about-section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0rem;
+    overflow: hidden;
+}
+.about{
+    position: relative;
+    left: 16.25%;
+    right: 76.06%;
+    top: 1.5%;
+    bottom: 89.2%;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.25rem;
+    display: inline;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.031rem;
+    text-transform: uppercase;
+    color: #000000;
+    mix-blend-mode: normal;
+ }
+
+ .text{
+    padding-top: 1rem;
+ }
+.para{
+    position: absolute;
+    width: 75.313rem;
+    height: 12.188rem;
+    left: 2.625rem;
+    top: 4.375rem;
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.063rem;
+    line-height: 1.938rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.031rem;
+    text-transform: capitalize;
+    color: #000000;
+}
+.pillars{
+    position: relative;
+    top:-5rem ;
+    left: -16rem;
+ }
+    
+.col{
+    position: absolute;
+    width: 50.625rem;
+    height: 31.096rem;
+    left: -37.438rem;
+    top: 29rem;
+ }
+.col1{
+    position: absolute;
+    width: 10.75rem;
+    height: 15.858rem;
+    left: 9.375rem;
+    top: 29.438rem;
+}
+.col2{
+    position: absolute;
+    width: 8.438rem;
+    height: 8.208rem;
+    left: 8.25rem;
+    top: 35.75rem;
+}
+.col3{
+    position: absolute;
+    width: 10.75rem;
+    height: 15.858rem;
+    left: 30.375rem;
+    top: 29.688rem;
+}
+.col4{
+    position: absolute;
+    width: 10.75rem;
+    height: 15.813rem;
+    left: 38.188rem;
+    top: 36.313rem;
+}
+.col5{
+    position: absolute;
+    width: 13.125rem;
+    height: 20.832rem;
+    left: 43.563rem;
+    top: 29.438rem;
+}
+.col6{
+    position: absolute;
+    width: 50.625rem;
+    height: 31.096rem;
+    left: 20.125rem;
+    top: 21.813rem;
+}
+.col7{
+    position: absolute;
+    width: 10.75rem;
+    height: 15.858rem;
+    left: 65.375rem;
+    top: 24rem;
+}
+.col8{
+    position: absolute;
+    width: 50.625rem;
+    height: 31.096rem;
+    left: 42.813rem;
+    top: 18.313rem;
+}

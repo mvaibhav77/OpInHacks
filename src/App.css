@@ -76,7 +76,7 @@ section{
 button{
   
   width: 10rem;
-  height: 2rem;
+  height: 2.5rem;
   border: none;
   border-radius: .5em;
   background-color: var(--light-color);
