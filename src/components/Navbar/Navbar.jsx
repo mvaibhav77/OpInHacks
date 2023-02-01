@@ -5,10 +5,9 @@ import { GrMenu } from "react-icons/gr";
 
 const Navbar = () => {
   
-
   return (
     <header>
-      <a href="{}" class="logo"> 
+      <a href="{}" className="logo"> 
         <img src={logo} alt="Logo" />
        </a>
 
@@ -23,7 +22,8 @@ const Navbar = () => {
 
        <div className="dropdown">
           <div className="bx bx-menu" id="menu-icon">
-              <GrMenu color="white" onClick={() => {
+            
+              <GrMenu color='green' onClick={() => {
                 let navbar = document.querySelector('.navbar');
                 navbar.classList.toggle('open');}}/>
           </div>
