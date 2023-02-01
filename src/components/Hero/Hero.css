@@ -1,7 +1,5 @@
 .hero-section{
     position: relative;
-    display: flex;
-    
     background-color: var(--dark-color);
     color: var(--light-color);
     overflow: hidden;
