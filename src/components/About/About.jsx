@@ -15,15 +15,15 @@ export const About = () => {
         </div>   
             <div className="pillars">
               
-              <img className="col1" src={Pillarmed}/>
-              <img className="col2" src={Pillarsmall}/>
-              <img className="col7" src={Pillarmed}/>
-              <img className="col8" src={Pillar}/>
-              <img className="col5" src={Pillarlarge}/>
-              <img className="col6" src={Pillar}/>
-              <img className="col3" src={Pillarmed}/>
-              <img className="col4" src={Pillarmed}/>
-              <img className="col" src={Pillar}/>
+              <img className="col1" src={Pillarmed} alt=""/>
+              <img className="col2" src={Pillarsmall}alt=""/>
+              <img className="col7" src={Pillarmed} alt=""/>
+              <img className="col8" src={Pillar} alt=""/>
+              <img className="col5" src={Pillarlarge} alt=""/>
+              <img className="col6" src={Pillar} alt=""/>
+              <img className="col3" src={Pillarmed} alt=""/>
+              <img className="col4" src={Pillarmed} alt=""/>
+              <img className="col" src={Pillar} alt=""/>
             </div>
     </section>
   )
