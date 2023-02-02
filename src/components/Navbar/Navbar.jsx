@@ -1,7 +1,8 @@
 import React from 'react'
 import "./Navbar.css"
 import logo from "../../assets/logo.png"
-import { GrMenu } from "react-icons/gr";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 
 const Navbar = () => {
   
@@ -23,7 +24,7 @@ const Navbar = () => {
        <div className="dropdown">
           <div className="bx bx-menu" id="menu-icon">
             
-              <GrMenu color='green' onClick={() => {
+              <GiHamburgerMenu color='#00d54b' onClick={() => {
                 let navbar = document.querySelector('.navbar');
                 navbar.classList.toggle('open');}}/>
           </div>
