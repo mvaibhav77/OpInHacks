@@ -21,8 +21,12 @@ export const Hero = () => {
       <img src={cubes} className="cubes-el elements" alt="" />
       <img className="space-lines" src={spaceLines} alt="" />
       <div className="social-links-bottom">
+        <div className="twitter-icon">
         <FaTwitter fontSize="1.5rem" />
+        </div>
+        <div className="instagram-icon">
         <FaInstagram fontSize="1.5rem" />
+        </div>
       </div>
       <div className="down-arrow">
         <BsArrowDown fontSize="2.5rem" />
