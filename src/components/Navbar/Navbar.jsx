@@ -8,8 +8,8 @@ const Navbar = () => {
   
   return (
     <header>
-      <a href="{}" className="logo"> 
-        <img src={logo} alt="Logo" />
+      <a href="{}" className="head-logo"> 
+        <img src={logo} alt="Logo" className='nav-logo'/>
        </a>
 
        <ul className='navbar'>
