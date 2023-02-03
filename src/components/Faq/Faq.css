@@ -63,7 +63,7 @@
     font-size: 1.8rem;
     border-radius: 1px;
     opacity: 30%;
-    transition: 0.3s ease-in-out;
+    transition: transform .1s;
     
 }
 .faq-tab:hover label::after{
@@ -83,7 +83,7 @@
 .faq-content{
     max-height: 0;
     overflow: hidden; 
-    transition: 0.2s ease-in-out;  
+    transition: 0.1s ease-in;  
 }
 
 .faq-section .faq-tab input:checked ~ .faq-content{

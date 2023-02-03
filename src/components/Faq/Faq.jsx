@@ -11,7 +11,7 @@ export const Faq = () => {
         <h1>FAQ's</h1>
         
         <div className="faq-tab">
-          <input type="checkbox" name="faq" id="id1" />
+          <input type="radio" name="faq" id="id1" />
           <label for="id1">
             <h2>Is pizza legal ?</h2>
           </label>
@@ -24,7 +24,7 @@ export const Faq = () => {
           </div>
         </div>
         <div className="faq-tab">
-          <input type="checkbox" name="faq" id="id2" />
+          <input type="radio" name="faq" id="id2" />
           <label for="id2">
             <h2>Is pizza legal ?</h2>
           </label>
