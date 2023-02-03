@@ -5,7 +5,9 @@ import logo from "../../assets/logo.png"
 import { FaDiscord } from 'react-icons/fa';
 
 const Footernew = () => {
-
+  function discordlink() {
+    window.open("https://discord.gg/fmRR96uz");
+}
   return (
     <footer class="padding_4x">
     <div class="flex">
@@ -14,7 +16,7 @@ const Footernew = () => {
         <p className='content-p'>A battle through time.</p>
         <div className='buttons'>
         <button className='btn register'>REGISTER</button>
-        <button className='btn discord'><FaDiscord color='black' size="1rem"/></button>
+        <button className='btn discord' onClick={discordlink}><FaDiscord color='black' size="1rem"/></button>
         <button className='btn sponsor'>SPONSORS</button>
         </div>
       </section>
