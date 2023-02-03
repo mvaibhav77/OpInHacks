@@ -8,6 +8,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 5%;
+    font-family: var(--primary-font);
 }
 
 .navbar{
@@ -21,7 +22,7 @@ ul {
 }
  
 .navbar a{
-    color:white;
+    color: var(--light-color);
     font-size: 1rem;
     font-weight: 500;
     padding: 1rem 0;
@@ -31,7 +32,6 @@ ul {
 
 #menu-icon{
     font-size: 2rem;
-    /* color: green; */
     cursor: pointer;
     z-index: 10001;
     display: none;
@@ -59,8 +59,8 @@ ul {
         right: 5%;
         width: 27rem;
         height: 40vh;
-        background-color: black;
-        color: white;
+        background-color: var(--dark-color);
+        color: var(--light-color);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -84,12 +84,47 @@ ul {
         top: -1000%;
         right: 5%;
         width: 22rem;
-        height: 30vh;
-        background-color: black;
-        color: white;
+        height: 40vh;
+        background-color: var(--dark-color);
+        color: var(--light-color);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        padding: 2rem 2rem; 
+    }
+    .nav-logo{
+        width: 70%;
+        height: 70%;
+
+    }
+    .navbar a{
+        display: block;
+        margin: 0.5rem 0;
+        padding: 0 2rem ;
+    }
+ }
+
+
+ @media (max-width: 320px) { 
+    .navbar{
+        position: absolute;
+        margin-right: 1rem;
+        top: -1000%;
+        right: 5%;
+        width: 15rem;
+        height: 40vh;
+        background-color: var(--dark-color);
+        color: var(--light-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 2rem 2rem; 
+    }
+
+    .nav-logo{
+        width: 50%;
+        height: 50%;
+
     }
 
     .navbar a{
