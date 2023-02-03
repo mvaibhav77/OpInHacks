@@ -121,11 +121,16 @@ footer .flex:last-child .flex-content:last-child{
     font-family: var(--primary-font);
     border:none;
     border-radius: 0.4rem;
+    cursor: pointer;
+  }
 
+  .content-p{
+    opacity: 50%;
   }
 
 p{
     font-family: var(--teritary-font);
+
 }
 
 .hr-tag{
