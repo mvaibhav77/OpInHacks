@@ -82,3 +82,9 @@ button{
   background-color: var(--light-color);
   
 }
+@media (max-width:1090px) {
+
+  section{
+    height: 80%;
+  }
+}
