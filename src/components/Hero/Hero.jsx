@@ -7,7 +7,7 @@ import pillar from "../../assets/intro-pillar.png";
 import cube from "../../assets/intro-cube.png";
 import cubes from "../../assets/intro-cubes.png";
 import laptop from "../../assets/laptop.png";
-import { FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { BsArrowDown } from "react-icons/bs";
 
 export const Hero = () => {
@@ -20,13 +20,29 @@ export const Hero = () => {
       <img src={cube} className="cube-el elements" alt="" />
       <img src={cubes} className="cubes-el elements" alt="" />
       <img className="space-lines" src={spaceLines} alt="" />
+
       <div className="social-links-bottom">
-        <div className="twitter-icon">
-        <FaTwitter fontSize="1.5rem" />
-        </div>
-        <div className="instagram-icon">
-        <FaInstagram fontSize="1.5rem" />
-        </div>
+        <a
+          href="https://www.linkedin.com/company/opinhacks/"
+          target="_blank"
+          className="in-icon"
+        >
+          <FaLinkedinIn fontSize="1.6rem" />
+        </a>
+        <a
+          href="https://twitter.com/opinhacks"
+          target="_blank"
+          className="twitter-icon"
+        >
+          <FaTwitter fontSize="1.5rem" />
+        </a>
+        <a
+          href="https://www.instagram.com/opinhacks/"
+          target="_blank"
+          className="instagram-icon"
+        >
+          <FaInstagram fontSize="1.5rem" />
+        </a>
       </div>
       <div className="down-arrow">
         <BsArrowDown fontSize="2.5rem" />
