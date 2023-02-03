@@ -5,12 +5,13 @@ import logo from "../../assets/logo.png"
 import { FaDiscord } from 'react-icons/fa';
 
 const Footernew = () => {
+
   return (
     <footer class="padding_4x">
     <div class="flex">
       <section class="flex-content padding_1x">
         <img src={logo} alt="Logo" className='logo'/>
-        <p >A battle through time.</p>
+        <p className='content-p'>A battle through time.</p>
         <div className='buttons'>
         <button className='btn register'>REGISTER</button>
         <button className='btn discord'><FaDiscord color='black' size="1rem"/></button>
@@ -27,9 +28,9 @@ const Footernew = () => {
       </section>
       <section class="flex-content padding_1x">
         <h3>Socials</h3>
-        <a href="{}">Instagram</a>
-        <a href="{}">Linkedin</a>
-        <a href="{}">Twitter</a>
+        <a href="https://www.instagram.com/opinhacks/" target='_blank' rel="noreferrer">Instagram</a>
+        <a href="https://www.linkedin.com/company/opinhacks/" target='_blank' rel="noreferrer">Linkedin</a>
+        <a href="https://twitter.com/opinhacks" target='_blank' rel="noreferrer">Twitter</a>
       </section>
       
     </div>
@@ -38,7 +39,7 @@ const Footernew = () => {
       <section class="flex-content padding_1x">
         <p>Made with &#10084;</p>
       </section>
-      
+
     </div>
   </footer>
   )

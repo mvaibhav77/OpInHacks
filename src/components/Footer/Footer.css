@@ -124,8 +124,13 @@ footer .flex:last-child .flex-content:last-child{
 
   }
 
+  .content-p{
+    opacity: 50%;
+  }
+
 p{
     font-family: var(--teritary-font);
+
 }
 
 .hr-tag{
