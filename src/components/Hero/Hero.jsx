@@ -11,14 +11,28 @@ import { FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { BsArrowDown } from "react-icons/bs";
 
 export const Hero = () => {
+  
+  // const parallax = (e) => {
+  //   document.querySelectorALl(".elements").forEach(element => {
+  //     const speed = element.getAttributte("data-speed");
+  //     const x = (window.innerWidth - e.pageX*speed)/100
+  //     const y = (window.innerHeight - e.pageY*speed)/100
+      
+  //     element.style.transform = `translateX(${x}px) translateY${y}px`
+      
+      
+  //   })
+  // }
+  
+  // document.addEventListener("mousemove", parallax);
   return (
     <section className="hero-section">
-      <img src={stairs} className="stair-el elements" alt="" />
-      <img src={pillar} className="pillar-el elements" alt="" />
-      <img src={eye} className="eye-el elements" alt="" />
-      <img src={laptop} className="laptop-el elements" alt="" />
-      <img src={cube} className="cube-el elements" alt="" />
-      <img src={cubes} className="cubes-el elements" alt="" />
+      <img src={stairs} data-speed="2" className="stair-el elements" alt="" />
+      <img src={pillar} data-speed="-6"className="pillar-el elements" alt="" />
+      <img src={eye} data-speed="7" className="eye-el elements" alt="" />
+      <img src={laptop} data-speed="3" className="laptop-el elements" alt="" />
+      <img src={cube} data-speed="-3" className="cube-el elements" alt="" />
+      <img src={cubes} data-speed="-9" className="cubes-el elements" alt="" />
       <img className="space-lines" src={spaceLines} alt="" />
 
       <div className="social-links-bottom">
@@ -54,8 +68,8 @@ export const Hero = () => {
         </div>
         <div className="hero-subtitle">16 April 2023 &nbsp; CHHATTISGARH</div>
         <div className="social-links">
-          <button className="discord-btn">DISCORD</button>
-          <button className="register-btn">REGISTER</button>
+        <a href="https://discord.gg/fmRR96uz" target="_blank"><button className="discord-btn">DISCORD</button></a>
+          <a href="https://forms.gle/n5oUueJvNwwGip6E9" target="_blank"><button className="register-btn"> REGISTER</button></a>
         </div>
       </div>
     </section>
