@@ -159,9 +159,11 @@
   }
   .hero-subtitle {
     font-size: 1rem;
-    margin-top: 0.2rem;
+    margin-top: 0.6rem;
   }
   .social-links-bottom {
-    right: 1.5rem;
+    scale: 80%;
+    gap: .5rem;
+    right: 1rem;
   }
 }
