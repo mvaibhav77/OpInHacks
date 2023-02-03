@@ -9,7 +9,11 @@
   src: local("Montserrat"), url("../public//fonts/Montserrat-VariableFont_wght.ttf");
   font-weight: normal;
 }
-
+@font-face {
+  font-family: "Urbanist";
+  src: local("Urbanist"), url("../public//fonts/Urbanist-VariableFont_wght.ttf");
+  font-weight: normal;
+}
 
 
 
@@ -20,6 +24,7 @@
   /* FONT */
   --primary-font: Hanson;
   --secondary-font: Montserrat;
+  --teritary-font:Urbanist;
 
   /* FONT WEIGHT */
   --font-normal: 400;
@@ -81,4 +86,10 @@ button{
   border-radius: .5em;
   background-color: var(--light-color);
   
+}
+@media (max-width:1090px) {
+
+  section{
+    height: 80%;
+  }
 }

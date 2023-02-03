@@ -9,7 +9,7 @@ import Pillarlarge from '../../assets/pillar-large.png'
 export const About = () => {
   return (
     <section className='about-section'>
-     
+
         <h1 className="about">About Us</h1>
         <p className="para">Welcome to Opinhacks, the ultimate student hackathon where imagination and technology collide! We're a community of tech-savvy students who come together to push the limits of what's possible. Our mission is to provide a platform for students to bring their boldest and most innovative ideas to life.
         <br></br>
@@ -32,8 +32,7 @@ Get ready for a weekend of intense collaboration, coding, and creativity. Whethe
   <img className="col3" src={Pillarmed} />
        <img className="col4" src={Pillarmed} />
         <img className="col" src={Pillar} /> 
-        
-     
+
     </section>
   )
 }
