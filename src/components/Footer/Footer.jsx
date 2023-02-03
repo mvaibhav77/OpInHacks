@@ -20,7 +20,7 @@ const Footernew = () => {
       <section class="flex-content padding_1x">
         <h3>Site</h3>
         <a href="{}">Home</a>
-        <a href="{}">Abour</a>
+        <a href="{}">About</a>
         <a href="{}">Organisers</a>
         <a href="{}">Sponsors</a>
         <a href="{}">FAQ</a>
