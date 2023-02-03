@@ -8,18 +8,26 @@
 }
 .about{
     position: relative;
-    left: 16.25%;
-    top: 1.5%;
-    font-family: var(--primary-font);
+    left: 39.09%;
+    right: 39.09%;
+    top:-18.5rem ;
+   
+    
+    font-family: 'Hanson';
     font-style: normal;
     font-weight: 700;
-    font-size: 2.25rem;
+    font-size: 36px;
+    line-height: 166px;
+    /* or 461% */
+    
     display: flex;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.031rem;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
+    
     color: #000000;
+    
     mix-blend-mode: normal;
  }
 
@@ -30,74 +38,98 @@
     position: absolute;   
     height: 12.188rem;
     left: 2.625rem;
-    top: 4.375rem;
+    top: 5rem;
     font-family: var(--secondary-font);
     font-style: normal;
     font-weight: 500;
     font-size: 1.063rem;
     line-height: 1.938rem;
+    padding-right:2.4rem ;
+    
     display: flex;
     letter-spacing: 0.031rem;
     text-transform: capitalize;
     color: #000000;
+    text-align: center;
+    padding-top: 0;
 }
 .pillars{
-    position: relative;
-    top:-5rem ;
-    left: -16rem;
-    width: auto;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* top:-5rem ;
+    left: -16rem; */
+  
 }
     
 .col{
     position: absolute;
     /*width: 75.313rem;*/
     height: 31.096rem;
-   left: -37.438rem;
-    top: 29rem;
+    /* left: -38rem; */
+    /* top: 29rem;  */
+    /* right: 74rem;  */
+    top: 21rem;
+    left: -37rem;
  }
 .col1{
     position: absolute;
-   /* width: 10.75rem;*/
+   
+
     height: 15.858rem;
-    left: 9.375rem;
-    top: 29.438rem;
+    /* right:67rem ; */
+    left: 10.89rem;
+    top: 24.438rem; 
 }
 .col2{
     position: absolute;
    /* width: 8.438rem;*/
-    height: 8.208rem;
-    left: 20rem;
-    top: 35.75rem;
+   height: 8.208rem;
+    /*left: 20rem;
+    top: 35.75rem; */
+    top:30rem;
+    left: 21rem;
+    /* right: 59rem; */
+    
+
 }
 .col3{
     position: absolute;
    /* width: 10.75rem;*/
     height: 15.858rem;
-    left: 30.375rem;
-    top: 29.688rem;
+    /* left: 30.375rem;
+    top: 29.688rem; */
+    top: 24rem;
+    left: 32rem;
 }
 .col4{
     position: absolute;
    /* width: 10.75rem;*/
     height: 15.813rem;
-    left: 38.188rem;
-    top: 36.313rem;
+    /* left: 38.188rem;
+    top: 36.313rem; */
+    top: 29rem;
+    /* left: 40rem; */
+    right: 32rem;
 }
 .col5{
     position: absolute;
     /*  width: 13.125rem;*/
     height: 20.832rem;
     /*left: 43.563rem;*/
-    right: -56.5rem ;
-    top: 29.438rem;
+   
+    top: 28.438rem;
 }
 .col6{
     position: absolute;
    /*  width: 50.625rem;*/
     height: 31.096rem;
    /* left: 20.125rem;*/
-   right: -70.5rem;
-    top: 21.813rem;
+   /* right: -70.5rem;
+    top: 21.813rem; */
+    top: 22rem;
+    /* left: 22rem; */
+    right: 9rem;
 }
 .col7{
     position: absolute;
@@ -111,8 +143,11 @@
     position: absolute;
     /*width: 50.625rem;*/
     height: 31.096rem;
-   /* left: 42.813rem;*/
+   /* left: 42.813rem;
     right: -93.5rem;
-    top: 18.313rem;
-}
+    top: 18.313rem;*/
+    top: 16.8rem;
+    /* left: 40rem; */
+    right: -6rem;
+} 
 
