@@ -1,32 +1,36 @@
 import React, { useRef, useState } from "react";
 import "../Faq/Faq.css";
 import spaceLines from "../../assets/space-lines.png";
-// import { Faq } from "../../components/Faq/Faq.json";
 
 export const Faq = () => {
 
-
+  
 
   const faqTab = (index) => {
-    return (
+    return(
       <>
-        <div className="faq-tab">
+
+      
+
+       <div className="faq-tab">
           <input
             className="faq-input"
             type="checkbox"
             name="faq"
-            id={`id${1}`}
-          // onChange={(e) => {
-          //   setInputCheck(e.target);
-          // }}
-          // onClick={handleCross}
+            id={`id${index}`}
+            // onChange={(e) => {
+            //   setInputCheck(e.target);
+            // }}
+            // onClick={handleCross}
           />
-          <label htmlFor={`id${1}`}>
-            <h2>Who can participate ??</h2>
+          <label htmlFor={`id${index}`}>
+            <h2>Is pizza legal ?</h2>
           </label>
           <div className="faq-content">
             <h5>
-              OpinHacks welcomes all and presents you with a chance to be an enthusiastic coder who is passionate about learning, developing and growing together.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
+              minima est exercitationem recusandae odit reiciendis pariatur
+              ducimus ipsum, veritatis deleniti.
             </h5>
           </div>
         </div>
@@ -45,34 +49,11 @@ export const Faq = () => {
   //     }
   // };
 
-  <div className="faq-tab">
-    <input
-      className="faq-input"
-      type="checkbox"
-      name="faq"
-      id={`id${2}`}
-    // onChange={(e) => {
-    //   setInputCheck(e.target);
-    // }}
-    // onClick={handleCross}
-    />
-    <label htmlFor={`id${2}`}>
-      <h2>Can we bring our own team or do we have to form a team at the event?
-      </h2>
-    </label>
-    <div className="faq-content">
-      <h5>
-        Participants can either bring their own team or form a team at the event. The team size should consist of 2 to 4 individuals.
-
-      </h5>
-    </div>
-  </div>
-
   return (
     <section className="faq-section">
-
+      
       <img className="space-lines" src={spaceLines} alt="" />
-      <h1>FAQ's</h1>
+        <h1>FAQ's</h1>
       <div className="faqs-container">
 
         {/* <div className="faq-tab">
@@ -107,6 +88,8 @@ export const Faq = () => {
         {faqTab(8)}
         {faqTab(9)}
         {faqTab(10)}
+        
+
       </div>
     </section>
   );
