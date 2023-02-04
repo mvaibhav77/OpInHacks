@@ -3,16 +3,18 @@ import "../Faq/Faq.css";
 import spaceLines from "../../assets/space-lines.png";
 
 export const Faq = () => {
-  const [inputCheck, setInputCheck] = useState();
-  const handleCross = () => {
-    const checkedInput = document.querySelector('input[name="faq"]:checked');
+  // const [inputCheck, setInputCheck] = useState();
+  // const handleCross = () => {
+  //   const checkedInput = document.querySelector('input[name="faq"]:checked');
    
-      if (inputCheck.id === checkedInput.id) {
-        document.querySelector('input[name="faq"]:checked').checked = false;
-        console.log("running");
+  //     if (inputCheck && inputCheck.checked === checkedInput.checked) {
+        
+  //       document.querySelector('input[name="faq"]:checked').checked = false;
+  //       console.log("running");
+       
 
-    }
-  };
+  //     }
+  // };
 
   return (
     <section className="faq-section">
@@ -24,13 +26,13 @@ export const Faq = () => {
         <div className="faq-tab">
           <input
             className="faq-input"
-            type="radio"
+            type="checkbox"
             name="faq"
             id="id1"
-            onChange={(e) => {
-              setInputCheck(e.target);
-            }}
-            onClick={handleCross}
+            // onChange={(e) => {
+            //   setInputCheck(e.target);
+            // }}
+            // onClick={handleCross}
           />
           <label for="id1">
             <h2>Is pizza legal ?</h2>
@@ -45,13 +47,13 @@ export const Faq = () => {
         </div>
         <div className="faq-tab">
           <input
-            type="radio"
+            type="checkbox"
             name="faq"
             id="id2"
-            onChange={(e) => {
-              setInputCheck(e.target);
-            }}
-            onClick={handleCross}
+            // onChange={(e) => {
+            //   setInputCheck(e.target);
+            // }}
+            // onClick={handleCross}
           />
           <label for="id2">
             <h2>Is pizza legal ?</h2>
