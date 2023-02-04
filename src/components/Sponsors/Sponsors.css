@@ -1,0 +1,290 @@
+.prize {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000;
+  overflow: hidden;
+  display: flex;
+}
+.boost-stairs-2 {
+  position: absolute;
+  height: 50rem;
+  left: -1rem;
+  top: 5rem;
+  width: 30rem;
+  object-fit: cover;
+}
+.boost-stairs-1 {
+  position: absolute;
+  height: 40rem;
+  right: -32rem;
+  top: 4.75rem;
+  width: 65.625rem;
+  object-fit: cover;
+}
+.sponsors {
+  position: absolute;
+  left: 31.04%;
+  right: 30.97%;
+  top: 10.13%;
+  bottom: 84.27%;
+  left:30rem;
+  font-family: "Hanson";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 10.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.031rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+.promotion {
+  position: absolute;
+  align-items: center;
+  left: 7.4%;
+  top: 7.91%;
+  width: 7rem;
+}
+.promotion-image {
+  position: absolute;
+  width: 5.714rem;
+  height: 6.292rem;
+  left: 16.563rem;
+  top: 9rem;
+}
+.promotion-line {
+  position: absolute;
+  width: 165px;
+  height: 166px;
+  left: 247px;
+  top:13rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 166px;
+  /* identical to box height, or 692% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.promotion-text {
+  position: absolute;
+  width: 298px;
+  height: 47px;
+  left: 188px;
+  top:22rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 27px;
+  /* or 225% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.talent-pool {
+  position: absolute;
+  width: 91.43px;
+  height: 100.67px;
+  left: 265px;
+  top: 199px;
+}
+.employment-image {
+  position: absolute;
+  width: 91.43px;
+  height: 100.67px;
+  left: 27rem;
+  top: 0.1rem;
+}
+
+.employment-line {
+  position: absolute;
+  width: 40rem;
+  height: 166px;
+  left: 25rem;
+  top: 3.8rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.031rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.employment-text {
+  position: absolute;
+  width: 13rem;
+  height: 9rem;
+  left: 25rem;
+  top: 11.4rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+.talk{
+  position: absolute;
+  width: 5.714rem;
+  height: 6.292rem;
+  left: 16.53rem;
+  top: 12.438rem;
+}
+.talk-image{
+  position: absolute;
+  width: 5.714rem;
+  height: 6.292rem;
+  right: -49rem;
+  top: 0.9rem;
+}
+.talk-line{
+  position: absolute;
+  width: 40rem;
+  height: 10.375rem;
+  right: -77rem;
+  top: 3.9rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.031rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.talk-text{
+  position: absolute;
+  width: 13rem;
+  height: 9rem;
+  right: -51rem;
+  top: 10.4rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+.line-1{
+position: absolute;
+width: 10rem;
+justify-content: center;
+left: 15.5rem;
+top: 20rem;
+border: 0.063rem solid #868686;
+}
+.line-2{
+  position: absolute;
+width: 14rem;
+left: 23.8rem;
+justify-content: center;
+top: 10.9rem;
+border: 0.063rem solid #868686;
+}
+.line-3{
+  position: absolute;
+width: 17rem;
+height: 0px;
+justify-content: center;
+right: -54rem;
+top: 10.9rem;
+
+border: 2px solid #868686;
+}
+.buttons{
+
+}
+.brochure{
+  position: absolute;
+width: 179px;
+height: 44px;
+left: 35rem;
+top: 592px;
+font-family: var(--primary-font);
+font-size:1rem;
+font-weight: 700;
+background: #FFFFFF;
+border-radius: 7px;
+}
+.sponsor-us{
+position: absolute;
+width: 179px;
+height: 44px;
+left: 50rem;
+top: 592px;
+font-family: var(--primary-font);
+font-size:1rem;
+font-weight: 700;
+background: #00D54B;
+border-radius: 7px;
+}
+
+@media (max-width: 1090px) {
+  .boost-stairs-1,.boost-stairs-2{
+    display: none;
+  }
+  .sponsors{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    justify-content: center;
+    align-items: center;
+    left: 12rem;
+
+  }
+  
+  .sponsor-section{
+    flex-direction: column;
+    justify-content:center;
+    display: block;
+  }
+  .promotion{
+    display: block;
+    left: -20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+ 
+  
+}
