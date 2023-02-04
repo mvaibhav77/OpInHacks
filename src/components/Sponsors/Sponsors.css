@@ -103,8 +103,8 @@
   position: absolute;
   width: 91.43px;
   height: 100.67px;
-  left: 265px;
-  top: 199px;
+  left: 16rem;
+  top: 12.438rem;
 }
 .employment-image {
   position: absolute;
@@ -263,6 +263,7 @@ border-radius: 7px;
     display: none;
   }
   .sponsors{
+    
     font-size: 1.5rem;
     line-height: 2rem;
     justify-content: center;
@@ -272,12 +273,23 @@ border-radius: 7px;
   }
   
   .sponsor-section{
+    overflow: visible;
     flex-direction: column;
     justify-content:center;
     display: block;
+    margin-bottom: 1rem;
   }
   .promotion{
     display: block;
+    left: -24px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-grow: 1;
+  }
+  .talent-pool{
+    display: block;
+    top: 53rem;
     left: -20px;
     flex-direction: column;
     flex-wrap: wrap;
