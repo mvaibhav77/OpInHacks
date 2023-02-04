@@ -1,17 +1,39 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "../Faq/Faq.css";
 import spaceLines from "../../assets/space-lines.png";
 
 export const Faq = () => {
+  // const [inputCheck, setInputCheck] = useState();
+  // const handleCross = () => {
+  //   const checkedInput = document.querySelector('input[name="faq"]:checked');
+   
+  //     if (inputCheck && inputCheck.checked === checkedInput.checked) {
+        
+  //       document.querySelector('input[name="faq"]:checked').checked = false;
+  //       console.log("running");
+       
+
+  //     }
+  // };
+
   return (
     <section className="faq-section">
       <img className="space-lines" src={spaceLines} alt="" />
-       
+
       <div className="faqs-container">
         <h1>FAQ's</h1>
-        
+
         <div className="faq-tab">
-          <input type="radio" name="faq" id="id1" />
+          <input
+            className="faq-input"
+            type="checkbox"
+            name="faq"
+            id="id1"
+            // onChange={(e) => {
+            //   setInputCheck(e.target);
+            // }}
+            // onClick={handleCross}
+          />
           <label for="id1">
             <h2>Is pizza legal ?</h2>
           </label>
@@ -24,7 +46,15 @@ export const Faq = () => {
           </div>
         </div>
         <div className="faq-tab">
-          <input type="radio" name="faq" id="id2" />
+          <input
+            type="checkbox"
+            name="faq"
+            id="id2"
+            // onChange={(e) => {
+            //   setInputCheck(e.target);
+            // }}
+            // onClick={handleCross}
+          />
           <label for="id2">
             <h2>Is pizza legal ?</h2>
           </label>
@@ -36,7 +66,6 @@ export const Faq = () => {
             </h5>
           </div>
         </div>
-        
       </div>
     </section>
   );

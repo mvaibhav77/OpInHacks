@@ -41,6 +41,9 @@
 }
 .faq-tab label{
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
 }
 
@@ -50,7 +53,6 @@
 
 .faq-tab label::after {
     content: "+";
-    position: absolute;
     right: .8rem;
     top: .8rem;
     height: 1.5rem;
@@ -82,7 +84,7 @@
 .faq-content{
     max-height: 0;
     overflow: hidden; 
-    transition: 1s;  
+    transition: .7s;  
 }
 
 .faq-section .faq-tab input:checked ~ .faq-content{
