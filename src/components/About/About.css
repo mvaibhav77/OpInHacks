@@ -39,7 +39,7 @@
     font-family: var(--secondary-font);
     font-style: normal;
     font-weight: 500;
-    font-size: 1.25rem;
+   
     line-height: 2rem;
     /* padding-right:3.4rem ;
     padding-left: 3.4rem; */
@@ -51,7 +51,7 @@
     text-align: center;
     padding-left: 4rem;
     padding-right:4rem ;
-    padding-top: 1.3rem;
+    padding-top: 1.5rem;
 }
 .pillars{
     position: absolute;
@@ -158,4 +158,34 @@
     right: -4rem;
     bottom: -4rem ;
 } 
+@media (max-width:1090px){
+    .col{
+        display: none;
+       
+    }
+    .col1{
+        display: none;
+    }
+    .col2{
+        display: none;
+    }
+    .col3{
+        display: none;
+    }
+    .col4{
+        display: none;
+    }
+    .col5{
+        display: none;
+    }
+    .col6{
+        display: none;
+    }
+    .col7{
+        display: none;
+    }
+    .col8{
+        display: none;
+    }
+}
 
