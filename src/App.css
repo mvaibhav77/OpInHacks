@@ -97,6 +97,9 @@ button:hover {
 a{
   color: var(--dark-color);
 }
+p{
+  font-size: 1rem ;
+}
 @media (max-width:1090px) {
 
   section{

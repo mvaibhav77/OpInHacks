@@ -56,7 +56,7 @@
 .social-links-bottom {
   position: absolute;
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   bottom: 2rem;
   right: 3rem;
 }
