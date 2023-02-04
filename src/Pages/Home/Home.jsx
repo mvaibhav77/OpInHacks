@@ -5,6 +5,7 @@ import Navbar from "../../components/Navbar/Navbar"
 import "../Home/Home.css"
 import { Organizers } from '../../components/Organizers/Organizers'
 import Footernew from '../../components/Footer/Footer'
+import {Sponsors} from '../../components/Sponsors/Sponsors'
 import { Faq } from '../../components/Faq/Faq'
 export const Home = () => {
   return (
@@ -13,6 +14,7 @@ export const Home = () => {
         <Hero/>
         <About/>
         <Organizers/>
+        <Sponsors/>
         <Faq/>
         <Footernew/>
     </div>
