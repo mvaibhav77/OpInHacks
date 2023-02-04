@@ -4,10 +4,30 @@ import spaceLines from "../../assets/space-lines.png";
 // import { Faq } from "../../components/Faq/Faq.json";
 
 export const Faq = () => {
+  const faqData = [
+    {
+      question: "Who can participate?? ",
+      reply:
+        "OpinHacks welcomes all and presents you with a chance to be an enthusiastic coder who is passionate about learning, developing and growing together.",
+    },
+    {
+      question:
+        "Can we bring our own team or do we have to form a team at the event?",
+      reply:
+        "Participants can either bring their own team or form a team at the event. The team size should consist of 2 to 4 individuals.",
+    },
+    {
+      question: "Is there any registration fee?",
+      reply: "FREE. This hackathon is free for all participants.",
+    },
+    {
+      question: "What should you bring with you for the hackathon?",
+      reply:
+        "A laptop and necessary charging equipment Any software or hardware tools needed for your project A valid government-issued ID for verification purposes A positive attitude towards collaboration",
+    },
+  ];
 
-
-
-  const faqTab = (index) => {
+  const faqTab = (question, reply, index) => {
     return (
       <>
         <div className="faq-tab">
@@ -15,24 +35,22 @@ export const Faq = () => {
             className="faq-input"
             type="checkbox"
             name="faq"
-            id={`id${1}`}
-          // onChange={(e) => {
-          //   setInputCheck(e.target);
-          // }}
-          // onClick={handleCross}
+            id={`id${index}`}
+            // onChange={(e) => {
+            //   setInputCheck(e.target);
+            // }}
+            // onClick={handleCross}
           />
-          <label htmlFor={`id${1}`}>
-            <h2>Who can participate ??</h2>
+          <label htmlFor={`id${index}`}>
+            <h2>{question}</h2>
           </label>
           <div className="faq-content">
-            <h5>
-              OpinHacks welcomes all and presents you with a chance to be an enthusiastic coder who is passionate about learning, developing and growing together.
-            </h5>
+            <h5>{reply}</h5>
           </div>
         </div>
       </>
-    )
-  }
+    );
+  };
   // const [inputCheck, setInputCheck] = useState();
   // const handleCross = () => {
   //   const checkedInput = document.querySelector('input[name="faq"]:checked');
@@ -45,36 +63,13 @@ export const Faq = () => {
   //     }
   // };
 
-  <div className="faq-tab">
-    <input
-      className="faq-input"
-      type="checkbox"
-      name="faq"
-      id={`id${2}`}
-    // onChange={(e) => {
-    //   setInputCheck(e.target);
-    // }}
-    // onClick={handleCross}
-    />
-    <label htmlFor={`id${2}`}>
-      <h2>Can we bring our own team or do we have to form a team at the event?
-      </h2>
-    </label>
-    <div className="faq-content">
-      <h5>
-        Participants can either bring their own team or form a team at the event. The team size should consist of 2 to 4 individuals.
-
-      </h5>
-    </div>
-  </div>
+ 
 
   return (
     <section className="faq-section">
-
       <img className="space-lines" src={spaceLines} alt="" />
       <h1>FAQ's</h1>
       <div className="faqs-container">
-
         {/* <div className="faq-tab">
           <input
             className="faq-input"
@@ -97,7 +92,7 @@ export const Faq = () => {
             </h5>
           </div>
         </div> */}
-        {faqTab(1)}
+        {/* {faqTab(1)}
         {faqTab(2)}
         {faqTab(3)}
         {faqTab(4)}
@@ -106,7 +101,11 @@ export const Faq = () => {
         {faqTab(7)}
         {faqTab(8)}
         {faqTab(9)}
-        {faqTab(10)}
+        {faqTab(10)} */}
+
+        {faqData.map((data, index) => {
+          return faqTab(data.question, data.reply, index);
+        })}
       </div>
     </section>
   );
