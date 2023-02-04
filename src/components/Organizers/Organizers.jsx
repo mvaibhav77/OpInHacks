@@ -10,7 +10,7 @@ import staircubes from '../../assets/staircubes.png'
 import track2 from '../../assets/track2.png'
 import tube from '../../assets/tube.png'
 import gdsc from '../../assets/GDSC.png'
-import bitd from '../../assets/bitd.png'
+import opinco from '../../assets/opinco.png'
 import hackclub from '../../assets/hackclub.png'
 import socials1 from '../../assets/socials1.png'
 import socials2 from '../../assets/socials2.png'
@@ -35,7 +35,7 @@ export const Organizers = () => {
 
       <div className='cards'>
         <div className="card">
-          <img src={gdsc} />
+          <img src={hackclub} />
           <div className="card-body">
             <p>Organisers</p>
             <h2>HACKCLUB</h2>
@@ -47,7 +47,7 @@ export const Organizers = () => {
         </div>
 
         <div className="card">
-          <img src={hackclub} />
+          <img src={gdsc} />
           <div className="card-body">
             <p>Organisers</p>
             <h2>GDSC</h2>
@@ -60,10 +60,10 @@ export const Organizers = () => {
           </div>
         </div>
         <div className="card">
-          <img src={bitd} />
+          <img src={opinco} />
           <div className="card-body">
             <p>Organisers</p>
-            <h2>BITD</h2>
+            <h2>Opinco</h2>
             
             <div className="media-icons">
             <img className='socials-1c' src={socials1} alt="" href="instagram.com" />
