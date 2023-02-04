@@ -5,6 +5,7 @@ import Navbar from "../../components/Navbar/Navbar"
 import "../Home/Home.css"
 import { Organizers } from '../../components/Organizers/Organizers'
 import Footernew from '../../components/Footer/Footer'
+import { Faq } from '../../components/Faq/Faq'
 export const Home = () => {
   return (
     <div className='homepage-container'>
@@ -12,7 +13,7 @@ export const Home = () => {
         <Hero/>
         <About/>
         <Organizers/>
-  
+        <Faq/>
         <Footernew/>
     </div>
   )
