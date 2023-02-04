@@ -4,13 +4,18 @@ import spaceLines from "../../assets/space-lines.png";
 
 export const Faq = () => {
 
+  
+
   const faqTab = (index) => {
     return(
       <>
+
+      
+
        <div className="faq-tab">
           <input
             className="faq-input"
-            type="radio"
+            type="checkbox"
             name="faq"
             id={`id${index}`}
             // onChange={(e) => {
