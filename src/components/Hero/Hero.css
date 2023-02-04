@@ -163,7 +163,7 @@
   }
   .social-links-bottom {
     scale: 80%;
-    gap: .5rem;
+    gap: 1rem;
     right: 1rem;
   }
 }
