@@ -4,7 +4,9 @@ import "./Organizers.css"
 import Rectangle from "../../assets/Rectangle.png"
 import { FaInstagram } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
-
+import GDSC from "../../assets/GDSC.png"
+import hackclub from "../../assets/hackclub.png"
+import opinco from "../../assets/opinco.png"
 export const Organizers = () => {
 
   function gdsc_insta() {
@@ -20,6 +22,12 @@ function hack_insta() {
 function hack_twitter() {
   window.open("https://twitter.com/hackclubbitdurg?lang=en");
 }
+function opinco_insta() {
+  window.open("https://www.instagram.com/opincocommunity/");
+}
+function opinco_twitter() {
+  window.open("https://twitter.com/opincocommunity");
+}
   return (
     <div className='entire'>
       <div className='organize-text'>ORGANISERS</div>
@@ -28,7 +36,7 @@ function hack_twitter() {
         <div className='content-section'>
           <div className='card'>
             <div className=''>
-              <img src={Rectangle} alt="" className='img'/>
+              <img src={GDSC} alt="" className='img'/>
             </div>
             <div className='card-text'>
                 <div className='text'>
@@ -43,7 +51,7 @@ function hack_twitter() {
           </div>
           <div className='card'>  
           <div className=''>
-              <img src={Rectangle} alt="" className='img'/>
+              <img src={hackclub} alt="" className='img'/>
             </div>
             <div className='card-text'>
                 <div className='text'>
@@ -51,23 +59,23 @@ function hack_twitter() {
                   <p className='org'>HackClub</p>
                 </div>
                 <div className='socials-buttons'>
-                      <button className='insta'><FaInstagram size="1rem" onClick={hack_insta}/></button>
-                      <button className='twitter'><FaTwitter size="1rem" onClick={hack_twitter}/></button>
+                      <button className='insta'  onClick={hack_insta}><FaInstagram size="1rem"/></button>
+                      <button className='twitter'  onClick={hack_twitter}><FaTwitter size="1rem"/></button>
                 </div>
               </div> 
           </div>
           <div className='card'>
           <div className='img-div'>
-              <img src={Rectangle} alt="" className='img'/>
+              <img src={opinco} alt="" className='img'/>
             </div>
             <div className='card-text'>
                 <div className='text'>
                   <p className='organize-text-p'>Organiser</p>
-                  <p className='org'>BITD</p>
+                  <p className='org'>OpInCo</p>
                 </div>
                 <div className='socials-buttons'>
-                      <button className='insta'><FaInstagram size="1rem"/></button>
-                      <button className='twitter'><FaTwitter size="1rem"/></button>
+                      <button className='insta' onClick={opinco_insta}><FaInstagram size="1rem" /></button>
+                      <button className='twitter' onClick={opinco_twitter}><FaTwitter size="1rem" /></button>
                 </div>
               </div> 
           </div>
