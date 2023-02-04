@@ -7,7 +7,7 @@
     padding: 2rem;
     background-color: var(--primary-color);
    flex-direction: column;
-    
+    overflow: hidden;
     
 }
 .faqs-container{
@@ -89,4 +89,14 @@
 
 .faq-section .faq-tab input:checked ~ .faq-content{
     max-height: 100vh;
+}
+@media (max-width: 1090px) {
+
+    .faq-section{
+        padding: 0;
+    }
+
+    .faq-tab label h2{
+        font-size: 1rem;
+    }
 }
