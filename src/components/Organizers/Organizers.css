@@ -49,6 +49,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    text-align: center;
 }
 .img{
     background-color: white;
@@ -86,6 +87,28 @@
         width: 40%;
     } */
     
+}
+
+
+@media screen and (max-width:680px) {
+    .card-section{
+        flex-direction: column;
+
+    }
+    .card-section .card{
+        max-width: 50%;
+    }
+
+    .card-text{
+        align-items: center;
+        flex-direction: column;
+    }
+    .socials-buttons{
+        margin-top: 1rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* @media screen and (max-width:920px){
