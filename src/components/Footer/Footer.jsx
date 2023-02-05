@@ -17,7 +17,7 @@ function registration() {
       <section class="flex-content padding_1x">
         <img src={logo} alt="Logo" className='logo'/>
         <p className='content-p'>A battle through time.</p>
-        <div className='buttons'>
+        <div className=''>
         <button className='btn register' onClick={registration}>REGISTER</button>
         <button className='btn discord' onClick={discordlink}><FaDiscord color='black' size="1rem"/></button>
         <button className='btn sponsor'>SPONSORS</button>

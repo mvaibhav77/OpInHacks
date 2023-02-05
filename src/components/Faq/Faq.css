@@ -10,6 +10,9 @@
     
     
 }
+.space-line-footer{
+    scale: 130%;
+}
 .faqs-container{
     
     display: grid;
@@ -25,7 +28,7 @@
 }
 .faq-section h1{
     text-align: center;
-padding-top: 1rem;
+padding-top: 2rem;
    
 }
 .faq-tab{

@@ -1,7 +1,5 @@
  .prize {
   position: relative;
-  height: 100vh;
-  width: 100vw;
   background-color: #000000;
   overflow: hidden;
   display: flex;
@@ -23,17 +21,11 @@
   object-fit: cover;
 }
 .sponsors {
-  position: absolute;
-  left: 31.04%;
-  right: 30.97%;
-  top: 10.13%;
-  bottom: 84.27%;
-  left:30rem;
+ 
   font-family: "Hanson";
   font-style: normal;
   font-weight: 700;
-  font-size: 2.25rem;
-  line-height: 10.375rem;
+  padding-bottom: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +33,7 @@
   letter-spacing: 0.031rem;
   text-transform: uppercase;
   color: #ffffff;
-  mix-blend-mode: normal;
+  
 }
 .promotion {
   position: absolute;
@@ -233,9 +225,7 @@ top: 10.9rem;
 
 border: 2px solid #868686;
 }
-.buttons{
 
-}
 .brochure{
   position: absolute;
 width: 179px;
@@ -503,29 +493,11 @@ p {
 .container {
   width: 100%;
   height: 100%;
-  padding: 0px 8%;
+  padding: 2rem 2rem 3rem 2rem;
 }
 
-.container h1 
-{
-  text-align: center;
-  padding-top: 5%;
-  scale: 130%;
-  margin-bottom: 60px;
-  font-weight: 600;
-  position: relative;
-}
 
-.container h1::after {
-  content: '';
-  background: #000000;
-  width: 100px;
-  height: 5px;
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-}
+
 
 .row {
   display: grid;
@@ -548,16 +520,7 @@ p {
   margin-bottom: 10px;
   color: #000000;
 }
-.sponsors{
-  color: rgb(255, 255, 255);
-   font-weight: 600;
-   top: 0.1rem;
-   left: 0.4rem;
-   font-size: 45;
-   justify-content: center;
-   align-items: center;
-  font: var(--primary-font);
-}
+
 
 .service h2 {
   color: white;
@@ -596,14 +559,33 @@ p {
   background-color: white;
 }
 
-@media(max-width:780px){
+@media(max-width:1080px){
+
+  .sponsors{
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
+
   .boost-stairs-1,.boost-stairs-2{
     
     display: none;
   }
-  .prize{
-     height: 170vh;
+  
+  .row{
+   
+    gap: 3rem;
+    
   }
+  .service{
+    padding: 0 .8rem;
+  }
+  .service h2{
+    font-size: 1rem;
+  }
+  .service p{
+    line-height: 1.5rem;
+  }
+
   .buttons{
     flex-direction: column;
     gap: 0;

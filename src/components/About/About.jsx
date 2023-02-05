@@ -16,7 +16,7 @@ export const About = () => {
        <img className="col6" src={Pillar} />
        <img className="col4" src={Pillarmed} />
        <img className="col" src={Pillar} /> 
-       <div style={{width:"100%"}}>
+       <div style={{width:"100%"}} className="about-content">
        <h1 className="about">About Us</h1>
        <p className="para">Whether you're a seasoned developer or just starting out, OpInHacks is the perfect platform to challenge yourself, develop new skills, and network with like-minded individuals. 
 OpInHacks will be a thrilling and dynamic OFFLINE hackathon event designed to bring together coders from all backgrounds and levels of expertise. With a focus on fostering a competitive and inclusive environment, this 36-hour hackathon will feature multiple tracks, including both tech and non-tech, to cater to a diverse range of interests.

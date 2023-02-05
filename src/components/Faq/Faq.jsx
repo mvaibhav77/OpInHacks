@@ -71,7 +71,7 @@ export const Faq = () => {
 
   return (
     <section className="faq-section">
-      <img className="space-lines" src={spaceLines} alt="" />
+      <img className="space-lines space-line-footer"  src={spaceLines} alt="" />
       <h1>FAQ's</h1>
       <div className="faqs-container">
         {/* <div className="faq-tab">

@@ -6,12 +6,14 @@ import "../Home/Home.css"
 import Footernew from '../../components/Footer/Footer'
 import {Sponsors} from '../../components/Sponsors/Sponsors'
 import { Faq } from '../../components/Faq/Faq'
+import { Organizers } from '../../components/Organizers/Organizers'
 export const Home = () => {
   return (
     <div className='homepage-container'>
       <Navbar/>
         <Hero/>
         <About/>
+        <Organizers/>
         <Sponsors/>
         <Faq/>
         <Footernew/>
