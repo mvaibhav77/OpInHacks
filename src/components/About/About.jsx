@@ -9,30 +9,18 @@ import Pillarlarge from '../../assets/pillar-large.png'
 export const About = () => {
   return (
     <section className='about-section'>
-       
-      
-       
        <img className="col3" src={Pillarmed} />
-      <img className="col2" src={Pillarsmall} />
-
-        <img className="col1" src={Pillarmed} />
-        
-         {/*<img className="col7" src={Pillarmed} />
-       
-        <img className="col5" src={Pillarlarge} />*/}
-         <img className="col8" src={Pillar} />
-  <img className="col6" src={Pillar} />
- 
+       <img className="col2" src={Pillarsmall} />
+       <img className="col1" src={Pillarmed} />
+       <img className="col8" src={Pillar} />
+       <img className="col6" src={Pillar} />
        <img className="col4" src={Pillarmed} />
-        <img className="col" src={Pillar} /> 
-        
-        <div style={{width:"100%"}}>
-        <h1 className="about">About Us</h1>
-        <p className="para">Welcome to Opinhacks, the ultimate student hackathon where imagination and technology collide! We're a community of tech-savvy students who come together to push the limits of what's possible. Our mission is to provide a platform for students to bring their boldest and most innovative ideas to life.
-        <br></br>
-        <br></br>
-
-Get ready for a weekend of intense collaboration, coding, and creativity. Whether you're a seasoned programmer, a design wizard, or just someone with a passion for technology, Opinhacks is the perfect place to showcase your skills. Meet new friends, build a network of like-minded individuals, and be part of a community that's shaping the future of technology.
+       <img className="col" src={Pillar} /> 
+       <div style={{width:"100%"}}>
+       <h1 className="about">About Us</h1>
+       <p className="para">Whether you're a seasoned developer or just starting out, OpInHacks is the perfect platform to challenge yourself, develop new skills, and network with like-minded individuals. 
+OpInHacks will be a thrilling and dynamic OFFLINE hackathon event designed to bring together coders from all backgrounds and levels of expertise. With a focus on fostering a competitive and inclusive environment, this 36-hour hackathon will feature multiple tracks, including both tech and non-tech, to cater to a diverse range of interests.
+With an emphasis on learning and growth, OpInHacks is not just about winning, but about the journey of becoming a better developer. 
 </p>
 </div>
     </section>
