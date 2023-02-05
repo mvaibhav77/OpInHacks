@@ -21,6 +21,10 @@ export const Faq = () => {
       reply: "FREE. This hackathon is free for all participants.",
     },
     {
+      question: "Accommodation /food??",
+      reply: " Don't worry about where to stay and what to eat! We've got you covered. All participants will be cozy and comfortable in the college hostels with all the necessary amenities and meals.Plus, there will be unlimited coffee available to keep you fueled and focused. It's time to hack and relax! "
+    },
+    {
       question: "What should you bring with you for the hackathon?",
       reply:
         "A laptop and necessary charging equipment Any software or hardware tools needed for your project A valid government-issued ID for verification purposes A positive attitude towards collaboration",
