@@ -75,7 +75,7 @@ section{
   display: flex;
   
   min-height: 100%;
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   
 }
 button{

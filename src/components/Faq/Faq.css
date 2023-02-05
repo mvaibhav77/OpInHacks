@@ -113,4 +113,11 @@ padding-top: 1rem;
     .faq-content h5{
         font-size: .5rem;
     }
+    .card{
+       margin: .5rem;
+    }
+    .card-text{
+      flex-direction: row;
+      padding: .5rem;
+    }
 }
