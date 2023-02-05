@@ -81,13 +81,14 @@ section{
 button{
   
   width: 10rem;
-  height: 2.5rem;
+  padding: .5rem 1rem;
   border: none;
   font-size: 1rem;
   border-radius: .5em;
   background-color: var(--light-color);
   transition: transform .5s;
   cursor: pointer;
+  
   
 }
 button:hover {
@@ -103,6 +104,7 @@ p{
 @media (max-width:1090px) {
 
   section{
-    min-height: 80%;
+    min-height: 70%;
   }
+  
 }

@@ -106,8 +106,9 @@ padding-top: 1rem;
     }
 
     .faq-tab label h2{
-        font-size: .8rem;
+        font-size: .6rem;
         padding: 0;
+        line-height: .8rem;
     }
     .faq-content h5{
         font-size: .5rem;
