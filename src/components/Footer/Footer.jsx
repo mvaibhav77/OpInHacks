@@ -8,6 +8,9 @@ const Footernew = () => {
   function discordlink() {
     window.open("https://discord.gg/fmRR96uz");
 }
+function registration() {
+  window.open("https://forms.gle/n5oUueJvNwwGip6E9");
+}
   return (
     <footer class="padding_4x">
     <div class="flex">
@@ -15,7 +18,7 @@ const Footernew = () => {
         <img src={logo} alt="Logo" className='logo'/>
         <p className='content-p'>A battle through time.</p>
         <div className='buttons'>
-        <button className='btn register'>REGISTER</button>
+        <button className='btn register' onClick={registration}>REGISTER</button>
         <button className='btn discord' onClick={discordlink}><FaDiscord color='black' size="1rem"/></button>
         <button className='btn sponsor'>SPONSORS</button>
         </div>

@@ -1,7 +1,6 @@
 .faq-section{
     position: relative;
-    height: 100%;
-    width: 100%;
+    /* min-height: 100%; */
     display: flex;
     align-items: center;
     padding: 2rem;
@@ -9,27 +8,31 @@
    flex-direction: column;
     overflow: hidden;
     
+    
 }
 .faqs-container{
     
     display: grid;
+    grid-template-columns: 1fr 1fr;
     z-index: var(--z-tooltip);
     
-    margin: 0 2rem;
-    max-width:  40rem;
+    margin: 0 rem;
+    max-width:  80rem;
 
     padding: 2rem;
     gap: 1em;
+    
 }
-.faqs-container h1{
+.faq-section h1{
     text-align: center;
+padding-top: 1rem;
    
 }
 .faq-tab{
     position: relative;
     background-color: var(--light-color);
     font-family: var(--secondary-font);
-    padding: 1rem;
+    padding: .8rem ;
     border-radius: .5em;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.059);
     overflow: hidden;
@@ -50,9 +53,13 @@
 .faq-tab input {
     appearance: none;
 }
-
+.faq-tab label h2 {
+    font-size: 1rem;
+    padding-right: .5rem;
+}
 .faq-tab label::after {
     content: "+";
+
     right: .8rem;
     top: .8rem;
     height: 1.5rem;
@@ -65,7 +72,7 @@
     font-size: 1.8rem;
     border-radius: 1px;
     opacity: 30%;
-    transition: transform 1s;
+    transition: transform .6s;
     
 }
 .faq-tab:hover label::after{
@@ -79,12 +86,14 @@
 
 .faq-tab input:checked ~ label::after{
     transform: rotate(135deg);
+   
+    
 }
 
 .faq-content{
     max-height: 0;
     overflow: hidden; 
-    transition: .7s;  
+    transition: .6s;  
 }
 
 .faq-section .faq-tab input:checked ~ .faq-content{
@@ -97,6 +106,10 @@
     }
 
     .faq-tab label h2{
-        font-size: 1rem;
+        font-size: .8rem;
+        padding: 0;
+    }
+    .faq-content h5{
+        font-size: .5rem;
     }
 }
