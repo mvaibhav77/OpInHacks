@@ -13,7 +13,7 @@
     font-family: 'Hanson';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+   
     /* line-height: 166px; */
     /* or 461% */
     display: flex;
@@ -122,7 +122,7 @@
 .col6{
     position: absolute;
     width: 50.625rem;
-    height: 37.096rem;
+    height: 36.096rem;
    /* left: 20.125rem;*/
    /* right: -70.5rem;
     top: 21.813rem; */
@@ -135,7 +135,7 @@
 .col8{
     position: absolute;
     width: 50.625rem;
-    height: 33.096rem;
+    height: 32.096rem;
    /* left: 42.813rem;
     right: -93.5rem;
     top: 18.313rem;*/
@@ -204,13 +204,13 @@
     }
    
     .col6{
-        height: 29rem;
+        height: 28rem;
         width: 48rem;
         right: 10rem;
     }
     
     .col8{
-        height: 24rem;
+        height: 23rem;
         width: 48rem;
     }
 
