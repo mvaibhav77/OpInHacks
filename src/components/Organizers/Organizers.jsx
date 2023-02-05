@@ -5,7 +5,7 @@ import Rectangle from "../../assets/Rectangle.png"
 import { FaInstagram } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import GDSC from "../../assets/gdsc.png"
-import hackclub from "../../assets/hackclub.png"
+import hackclub2 from "../../assets/hackclub2.png"
 import opinco from "../../assets/opinco.png"
 export const Organizers = () => {
 
@@ -51,7 +51,7 @@ function opinco_twitter() {
           </div>
           <div className='card'>  
           <div className=''>
-              <img src={hackclub} alt="" className='img'/>
+              <img src={hackclub2} alt="" className='img'/>
             </div>
             <div className='card-text'>
                 <div className='text'>
