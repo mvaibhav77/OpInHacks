@@ -32,7 +32,7 @@ padding-top: 1rem;
     position: relative;
     background-color: var(--light-color);
     font-family: var(--secondary-font);
-    padding: 1rem;
+    padding: .8rem ;
     border-radius: .5em;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.059);
     overflow: hidden;
@@ -53,7 +53,10 @@ padding-top: 1rem;
 .faq-tab input {
     appearance: none;
 }
-
+.faq-tab label h2 {
+    font-size: 1rem;
+    padding-right: .5rem;
+}
 .faq-tab label::after {
     content: "+";
 
@@ -69,7 +72,7 @@ padding-top: 1rem;
     font-size: 1.8rem;
     border-radius: 1px;
     opacity: 30%;
-    transition: transform .3s;
+    transition: transform .6s;
     
 }
 .faq-tab:hover label::after{
@@ -90,7 +93,7 @@ padding-top: 1rem;
 .faq-content{
     max-height: 0;
     overflow: hidden; 
-    transition: .5s;  
+    transition: .6s;  
 }
 
 .faq-section .faq-tab input:checked ~ .faq-content{
@@ -103,10 +106,18 @@ padding-top: 1rem;
     }
 
     .faq-tab label h2{
-        font-size: .8rem;
+        font-size: .6rem;
         padding: 0;
+        line-height: .8rem;
     }
     .faq-content h5{
         font-size: .5rem;
+    }
+    .card{
+       margin: .5rem;
+    }
+    .card-text{
+      flex-direction: row;
+      padding: .5rem;
     }
 }
