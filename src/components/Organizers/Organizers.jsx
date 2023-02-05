@@ -1,7 +1,6 @@
 import React from "react";
 import "./Organizers.css";
 
-import Rectangle from "../../assets/Rectangle.png";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import GDSC from "../../assets/gdsc.png";
@@ -36,7 +35,7 @@ export const Organizers = () => {
       <div className="card-section">
         <div className="card">
           
-            <img src={GDSC} alt=""  className="img" />
+            <img src={GDSC} alt="GDSC"  className="img" />
         
           <div className="card-text">
             <div className="text">
@@ -55,18 +54,18 @@ export const Organizers = () => {
         </div>
         <div className="card">
           
-            <img src={GDSC} alt=""  className="img" />
+            <img src={hackclub2} alt="HackClub"  className="img" />
         
           <div className="card-text">
             <div className="text">
               <p className="organize-text-p">Organiser</p>
-              <p className="org">GDSC</p>
+              <p className="org">HackClub</p>
             </div>
             <div className="socials-buttons">
-              <button className="insta" onClick={gdsc_insta}>
+              <button className="insta" onClick={hack_insta}>
                 <FaInstagram size="1rem" />
               </button>
-              <button className="twitter" onClick={gdsc_twitter}>
+              <button className="twitter" onClick={hack_twitter}>
                 <FaTwitter size="1rem" />
               </button>
             </div>
@@ -74,18 +73,18 @@ export const Organizers = () => {
         </div>
         <div className="card">
           
-            <img src={GDSC} alt=""  className="img" />
+            <img src={opinco} alt=""  className="img" />
         
           <div className="card-text">
             <div className="text">
               <p className="organize-text-p">Organiser</p>
-              <p className="org">GDSC</p>
+              <p className="org">OpInCo</p>
             </div>
             <div className="socials-buttons">
-              <button className="insta" onClick={gdsc_insta}>
+              <button className="insta" onClick={opinco_insta}>
                 <FaInstagram size="1rem" />
               </button>
-              <button className="twitter" onClick={gdsc_twitter}>
+              <button className="twitter" onClick={opinco_twitter}>
                 <FaTwitter size="1rem" />
               </button>
             </div>
