@@ -44,10 +44,10 @@ export const Organizers = () => {
             </div>
             <div className="socials-buttons">
               <button className="insta" onClick={gdsc_insta}>
-                <FaInstagram size="1rem" />
+                <FaInstagram size="1.5rem" />
               </button>
               <button className="twitter" onClick={gdsc_twitter}>
-                <FaTwitter size="1rem" />
+                <FaTwitter size="1.5rem" />
               </button>
             </div>
           </div>
@@ -63,10 +63,10 @@ export const Organizers = () => {
             </div>
             <div className="socials-buttons">
               <button className="insta" onClick={hack_insta}>
-                <FaInstagram size="1rem" />
+                <FaInstagram size="1.5rem" />
               </button>
               <button className="twitter" onClick={hack_twitter}>
-                <FaTwitter size="1rem" />
+                <FaTwitter size="1.5rem" />
               </button>
             </div>
           </div>
@@ -82,10 +82,10 @@ export const Organizers = () => {
             </div>
             <div className="socials-buttons">
               <button className="insta" onClick={opinco_insta}>
-                <FaInstagram size="1rem" />
+                <FaInstagram size="1.5rem" />
               </button>
               <button className="twitter" onClick={opinco_twitter}>
-                <FaTwitter size="1rem" />
+                <FaTwitter size="1.5rem" />
               </button>
             </div>
           </div>
