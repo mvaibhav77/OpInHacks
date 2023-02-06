@@ -76,9 +76,9 @@ export const Hero = () => {
             </a>
           </button>
         </div>
-        <div className="down-arrow">
-          <BsArrowDown fontSize="2.5rem" />
-        </div>
+      </div>
+      <div className="down-arrow">
+        <BsArrowDown fontSize="2.5rem" />
       </div>
     </section>
   );

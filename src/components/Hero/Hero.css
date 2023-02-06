@@ -22,6 +22,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: var(--z-tooltip);
 }
 
 .hero-title {
@@ -114,6 +115,7 @@
   align-items: flex-end;
   justify-content: center;
   animation: float 800ms infinite alternate-reverse ease-in-out;
+  z-index: 1;
 }
 
 .twitter-icon,
