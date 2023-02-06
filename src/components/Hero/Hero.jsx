@@ -62,7 +62,9 @@ export const Hero = () => {
           <div className="opin-text">OPIN</div>
           <div className="hacks-text">HACKS</div>
         </div>
-        <div className="hero-subtitle">22 - 23 April 2023   &nbsp; CHHATTISGARH</div>
+        <div className="hero-subtitle">
+          22 - 23 April 2023 &nbsp; CHHATTISGARH
+        </div>
         <div className="social-links">
           <button className="discord-btn">
             <a href="https://discord.gg/fmRR96uz" target="_blank">
@@ -76,9 +78,9 @@ export const Hero = () => {
             </a>
           </button>
         </div>
-      </div>
-      <div className="down-arrow">
-        <BsArrowDown fontSize="2.5rem" />
+        <div className="down-arrow">
+          <BsArrowDown fontSize="2.5rem" />
+        </div>
       </div>
     </section>
   );
