@@ -44,6 +44,7 @@
     color: white;
     background-color: black;
     display: flex;
+    align-items: center;
     padding: 1rem 1rem;
 }
 .socials-buttons{
@@ -69,12 +70,23 @@
     font-size: 1.3rem;
     font-weight: 800;
 }
+.socials-buttons{
+    height: 2rem;
+   
+}
 .socials-buttons button{
     display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
+    height: 100%;
+    
 }
 
-
+.socials-buttons button svg{
+    position: absolute;
+    color: var(--dark-color);
+}
 
 @media screen and (max-width:1090px){
 
@@ -108,6 +120,7 @@
 
     .card-text{
         align-items: center;
+        padding: .5rem;
         
     }   
     .socials-buttons{

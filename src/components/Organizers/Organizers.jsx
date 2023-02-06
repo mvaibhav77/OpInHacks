@@ -44,7 +44,7 @@ export const Organizers = () => {
             </div>
             <div className="socials-buttons">
               <button className="insta" onClick={gdsc_insta}>
-                <FaInstagram size="1.5rem" />
+                <FaInstagram size="1.5rem"  />
               </button>
               <button className="twitter" onClick={gdsc_twitter}>
                 <FaTwitter size="1.5rem" />
