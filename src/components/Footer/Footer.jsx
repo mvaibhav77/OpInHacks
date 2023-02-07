@@ -12,7 +12,7 @@ function registration() {
   window.open("https://forms.gle/n5oUueJvNwwGip6E9");
 }
   return (
-    <footer class="padding_4x">
+    <footer id='Footer' class="padding_4x">
     <div class="flex">
       <section class="flex-content padding_1x">
         <img src={logo} alt="Logo" className='logo'/>

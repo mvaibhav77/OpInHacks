@@ -8,7 +8,7 @@ import talk1 from "../../assets/talk1.png";
 import Line from "../../assets/Line.png";
 export const Sponsors = () => {
   return (
-    <section className="prize">
+    <section id="Sponsors" className="prize">
       {/* <p className="sponsors"> WHY SPONSOR US?</p>
             <div className="sponsor-section">
             <div className="promotion">

@@ -1,36 +1,53 @@
-import React from 'react'
-import "./Navbar.css"
-import logo from "../../assets/logo.png"
+import React, { useState } from "react";
+import "./Navbar.css";
+import logo from "../../assets/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
-
 
 const Navbar = () => {
   
+
+ 
+  
   return (
-    <header>
-      <a href="{}" className="head-logo"> 
-        <img src={logo} alt="Logo" className='nav-logo'/>
-       </a>
+    <header className= "active">
+      <a href="#Hero" className="head-logo">
+        <img src={logo} alt="Logo" className="nav-logo" />
+      </a>
 
-       <ul className='navbar'>
-        <li><a href="{}" >About</a></li>
-        <li><a href="{}" >Timeline</a></li>
-        <li><a href="{}" >Prizes</a></li>
-        <li><a href="{}" >Sponsors</a></li>
-        <li><a href="{}" >FAQ</a></li>
-        <li><a href="{}" >Contact</a></li>
-       </ul>
+      <ul className="navbar">
+        <li>
+          <a href="#About">About</a>
+        </li>
+        <li>
+          <a href="">Timeline</a>
+        </li>
+        <li>
+          <a href="">Prizes</a>
+        </li>
+        <li>
+          <a href="#Sponsors">Sponsors</a>
+        </li>
+        <li>
+          <a href="#Faq">FAQ</a>
+        </li>
+        <li>
+          <a href="#Footer">Contact</a>
+        </li>
+      </ul>
 
-       <div className="dropdown">
-          <div className="bx bx-menu" id="menu-icon">
-            
-              <GiHamburgerMenu color='#00d54b' onClick={() => {
-                let navbar = document.querySelector('.navbar');
-                navbar.classList.toggle('open');}}/>
-          </div>
-       </div>
+      <div className="dropdown">
+        <div className="bx bx-menu" id="menu-icon">
+          <GiHamburgerMenu
+            color="#00d54b"
+            onClick={() => {
+              let navbar = document.querySelector(".navbar");
+              navbar.classList.toggle("open");
+            }}
+          />
+        </div>
+      </div>
     </header>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

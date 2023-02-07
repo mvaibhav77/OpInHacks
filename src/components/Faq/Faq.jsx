@@ -70,7 +70,7 @@ export const Faq = () => {
  
 
   return (
-    <section className="faq-section">
+    <section id="Faq" className="faq-section">
       <img className="space-lines space-line-footer"  src={spaceLines} alt="" />
       <h1>FAQ's</h1>
       <div className="faqs-container">
