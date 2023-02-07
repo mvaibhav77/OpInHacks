@@ -12,7 +12,7 @@ export const Home = () => {
   const handleScroll = () => {
     const homepage = document.getElementById("Homepage")
     
-    console.log(homepage.scroll.length);
+    console.log(homepage.scroll);
   }
   return (
     <div id="Homepage" className="homepage-container" onScroll={handleScroll}>
