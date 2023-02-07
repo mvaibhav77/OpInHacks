@@ -65,12 +65,10 @@ ul {
         width: 27rem;
         height: 40vh;
         background-color: var(--dark-color);
-        background: rgba(0, 0, 0, 0.8); 
         color: var(--light-color);
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
     }
 
     .navbar a{
@@ -90,15 +88,13 @@ ul {
         margin-right: 1rem;
         top: -1000%;
         right: 5%;
-        width: 100%;
+        width: 22rem;
         height: 40vh;
         background-color: var(--dark-color);
-        background: rgba(0, 0, 0, 0.8); 
         color: var(--light-color);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
         padding: 2rem 2rem; 
     }
     .nav-logo{
@@ -123,7 +119,6 @@ ul {
         width: 15rem;
         height: 40vh;
         background-color: var(--dark-color);
-        background: rgba(0, 0, 0, 0.8); 
         color: var(--light-color);
         display: flex;
         flex-direction: column;
