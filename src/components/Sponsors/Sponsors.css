@@ -6,40 +6,41 @@
 }
 .boost-stairs-2 {
   position: absolute;
-  height: 50rem;
+  height: 30rem;
   left: -1rem;
-  top: 5rem;
+  bottom: 0rem;
   width: 30rem;
   object-fit: cover;
 }
 .boost-stairs-1 {
   position: absolute;
   height: 40rem;
-  right: -32rem;
-  top: 4.75rem;
+  right: -35rem;
+  bottom: 0rem;
   width: 65.625rem;
   object-fit: cover;
 }
 .sponsors {
+  position: relative;
   font-family: "Hanson";
   font-style: normal;
   font-weight: 700;
   padding-bottom: 3rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
+  justify-content: center;
+ 
   letter-spacing: 0.031rem;
   text-transform: uppercase;
   color: #ffffff;
   
 }
 
-.brochure{
-  position: absolute;
+/* .brochure{
+position: absolute;
 width: 179px;
 height: 44px;
-left: 35rem;
+left: 33rem;
 top: 592px;
 font-family: var(--primary-font);
 font-size:1rem;
@@ -58,16 +59,14 @@ font-size:1rem;
 font-weight: 700;
 background: #00D54B;
 border-radius: 7px;
-}
+} */
 
 .container {
+  position: relative;
   width: 100%;
   height: 100%;
   padding: 2rem 2rem 3rem 2rem;
 }
-
-
-
 
 .row {
   display: grid;
@@ -78,6 +77,7 @@ border-radius: 7px;
 .service {
   text-align: center;
   padding: 6rem 2rem;
+  padding-top: 2rem;
   border-radius: 5px;
   font-size: 14px;
   cursor: pointer;
@@ -90,7 +90,6 @@ border-radius: 7px;
   margin-bottom: 10px;
   color: #000000;
 }
-
 
 .service h2 {
   color: white;
@@ -106,14 +105,15 @@ border-radius: 7px;
   margin-bottom: 5px;
 }
 
-
-.buttons{
+/* .buttons{
+  position: absolute;
   display: flex;
   justify-content: space-between;
   gap: 1rem;
   color: var(--dark-color);
 }
 .buttons button {
+  position: absolute;
   margin-top: 0.09rem;
   font-family: var(--primary-font);
   color: var(--dark-color);
@@ -127,9 +127,74 @@ border-radius: 7px;
 }
 .brochure {
   background-color: white;
+} */
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+ 
+  padding-top: 1rem;
+ 
+
+  
+  
+}
+.buttons button{
+  width: 13rem;
+  color: var(--dark-color);
+  font-family: var(--primary-font);
+
+}
+.sponsor-us{
+  
+  background-color: var(--primary-color);
 }
 
+
 @media(max-width:1090px){
+  
+  .sponsors{
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
+
+  .boost-stairs-1,.boost-stairs-2{
+    
+    display:none;
+  }
+  
+  .row{
+   
+    gap: 3rem;
+    
+  }
+ 
+  .service{
+    padding: 0 .8rem;
+  }
+  .service h2{
+    font-size: 1rem;
+  }
+  .service p{
+    line-height: 1.5rem;
+  }
+   
+  /* .brochure{
+   left: 9.3rem;
+    top: 55rem;
+  }
+  .sponsor-us{
+    left: 9.3rem;
+    top:58.9rem;
+  } */
+ .buttons{
+  padding-top: 2rem;
+
+ }
+}
+
+/* @media(max-width:600px){
   
   .sponsors{
     font-size: 1rem;
@@ -169,3 +234,5 @@ border-radius: 7px;
   }
  
 }
+
+ */

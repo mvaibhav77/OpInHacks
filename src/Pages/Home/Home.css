@@ -1,9 +1,12 @@
 .homepage-container{
     
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
     overflow-y: scroll;
-    position: relative;
+    display: block;
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
     
 }
+

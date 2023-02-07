@@ -23,8 +23,10 @@ export const Hero = () => {
   // }
 
   // document.addEventListener("mousemove", parallax);
+
+ 
   return (
-    <section className="hero-section">
+    <section id="Hero" className="hero-section">
       <img src={stairs} data-speed="2" className="stair-el elements" alt="" />
       <img src={pillar} data-speed="-6" className="pillar-el elements" alt="" />
       <img src={eye} data-speed="7" className="eye-el elements" alt="" />

@@ -12,7 +12,7 @@ function registration() {
   window.open("https://forms.gle/n5oUueJvNwwGip6E9");
 }
   return (
-    <footer class="padding_4x">
+    <footer id='Footer' class="padding_4x">
     <div class="flex">
       <section class="flex-content padding_1x">
         <img src={logo} alt="Logo" className='logo'/>
@@ -20,16 +20,16 @@ function registration() {
         <div className=''>
         <button className='btn register' onClick={registration}>REGISTER</button>
         <button className='btn discord' onClick={discordlink}><FaDiscord color='black' size="1rem"/></button>
-        <button className='btn sponsor'>SPONSORS</button>
+          <button className='btn sponsor' >SPONSORS</button>
         </div>
       </section>
       <section class="flex-content padding_1x">
         <h3>Site</h3>
-        <a href="{}">Home</a>
-        <a href="{}">About</a>
-        <a href="{}">Organisers</a>
-        <a href="{}">Sponsors</a>
-        <a href="{}">FAQ</a>
+        <a href="#Hero">Home</a>
+        <a href="#About">About</a>
+        <a href="#Organizers">Organisers</a>
+        <a href="#Sponsors">Sponsors</a>
+        <a href="#Faq">FAQ</a>
       </section>
       <section class="flex-content padding_1x">
         <h3>Socials</h3>

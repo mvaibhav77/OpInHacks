@@ -5,10 +5,13 @@ import booststairs2 from "../../assets/booststairs2.png";
 import Vector4 from "../../assets/Vector4.png";
 import employment1 from "../../assets/employment1.png";
 import talk1 from "../../assets/talk1.png";
-import Line from "../../assets/Line.png";
+
 export const Sponsors = () => {
   return (
-    <section className="prize">
+
+
+
+    <section id="Sponsors" className="prize">
       <div className="container">
         <h1 className="sponsors"> WHY SPONSORS US ??</h1>
         <div className="row">
@@ -40,9 +43,7 @@ export const Sponsors = () => {
             </p>
           </div>
         </div>
-      </div>
-
-      <div className="buttons">
+        <div className="buttons">
         <button className="brochure">
           {" "}
           <a href="#"></a> BROCHURE
@@ -52,6 +53,9 @@ export const Sponsors = () => {
           <a href="#"></a> SPONSOR US
         </button>
       </div>
+      </div>
+
+
 
       <img className="boost-stairs-2" src={booststairs2} alt="boost-stairs-2" />
       <img className="boost-stairs-1" src={booststairs1} alt="boost-stairs-1" />

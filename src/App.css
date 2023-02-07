@@ -54,6 +54,7 @@
 
 html{
   scroll-behavior: smooth;
+ 
   
 }
 
@@ -66,6 +67,7 @@ body{
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background-color: var(--dark-color);
   
 }
 body::-webkit-scrollbar {
@@ -74,7 +76,7 @@ body::-webkit-scrollbar {
 section{
   display: flex;
   
-  min-height: 100%;
+  min-height: 80%;
   /* scroll-snap-align: start; */
   
 }
@@ -101,10 +103,11 @@ a{
 p{
   font-size: 1rem ;
 }
-@media (max-width:1090px) {
+
+@media screen and (max-width:1090px){
 
   section{
-    min-height: 60%;
+    min-height: 70%;
   }
-  
+   
 }
