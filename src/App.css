@@ -76,7 +76,7 @@ body::-webkit-scrollbar {
 section{
   display: flex;
   
-  min-height: 70%;
+  min-height: 80%;
   /* scroll-snap-align: start; */
   
 }
@@ -104,3 +104,10 @@ p{
   font-size: 1rem ;
 }
 
+@media screen and (max-width:1090px){
+
+  section{
+    min-height: 70%;
+  }
+   
+}
