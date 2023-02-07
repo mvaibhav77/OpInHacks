@@ -56,6 +56,7 @@
   color: var(--dark-color);
 }
 .social-links-bottom {
+  
   position: absolute;
   display: flex;
   gap: 0.5rem;
@@ -90,7 +91,7 @@
   top: 4%;
 }
 .laptop-el {
-  height: 50%;
+  max-height: 50%;
   left: 10%;
   bottom: -10%;
 }
@@ -101,7 +102,7 @@
 }
 
 .cubes-el {
-  height: 30%;
+  max-height: 30%;
   left: -4%;
   top: 40%;
 }

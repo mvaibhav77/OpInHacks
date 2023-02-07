@@ -13,7 +13,7 @@ export const Home = () => {
     const homepage = document.getElementById("Homepage")
     const navbar = document.getElementById("Navbar")
     
-    if(homepage.scrollTop >= 450){
+    if(homepage.scrollTop >= 80){
       navbar.classList.add("active")
     }else{
       navbar.classList.remove("active")

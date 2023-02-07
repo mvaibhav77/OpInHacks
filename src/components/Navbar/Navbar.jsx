@@ -4,34 +4,38 @@ import logo from "../../assets/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
-   
+  const closeNavbar = () => {
+    let navbar = document.querySelector(".navbar");
+    console.log(navbar.classList.toggle);
+    navbar.classList.remove("open");
+  };
 
- 
-  
   return (
-    <header id="Navbar" className= "">
-      <a href="#Hero" className="head-logo">
+    <header id="Navbar" className="">
+      <a href="#Hero" className="head-logo" onClick={closeNavbar}>
         <img src={logo} alt="Logo" className="nav-logo" />
       </a>
 
       <ul className="navbar">
         <li>
-          <a href="#About">About</a>
+          <a href="#About" onClick={closeNavbar}>About</a>
         </li>
         <li>
-          <a href="">Timeline</a>
+          <a  onClick={closeNavbar} >Timeline</a>
         </li>
         <li>
-          <a href="">Prizes</a>
+          <a  onClick={closeNavbar}>Prizes</a>
         </li>
         <li>
-          <a href="#Sponsors">Sponsors</a>
+          <a href="#Sponsors" onClick={closeNavbar} >Sponsors</a>
         </li>
         <li>
-          <a href="#Faq">FAQ</a>
+          <a href="#Faq" onClick={closeNavbar} >FAQ</a>
         </li>
         <li>
-          <a href="#Footer">Contact</a>
+          <a href="#Footer" onClick={closeNavbar}>
+            Contact
+          </a>
         </li>
       </ul>
 
