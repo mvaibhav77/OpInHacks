@@ -9,7 +9,7 @@ const Navbar = () => {
  
   
   return (
-    <header className= "active">
+    <header id="Navbar" className= "">
       <a href="#Hero" className="head-logo">
         <img src={logo} alt="Logo" className="nav-logo" />
       </a>

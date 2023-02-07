@@ -54,7 +54,7 @@
 
 html{
   scroll-behavior: smooth;
-  
+ 
   
 }
 
@@ -67,6 +67,7 @@ body{
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background-color: var(--dark-color);
   
 }
 body::-webkit-scrollbar {

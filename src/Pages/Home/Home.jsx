@@ -11,8 +11,14 @@ export const Home = () => {
   
   const handleScroll = () => {
     const homepage = document.getElementById("Homepage")
+    const navbar = document.getElementById("Navbar")
     
-    console.log(homepage.scroll);
+    if(homepage.scrollTop >= 450){
+      navbar.classList.add("active")
+    }else{
+      navbar.classList.remove("active")
+    }
+    
   }
   return (
     <div id="Homepage" className="homepage-container" onScroll={handleScroll}>
