@@ -9,29 +9,6 @@ import Line from "../../assets/Line.png";
 export const Sponsors = () => {
   return (
     <section className="prize">
-      {/* <p className="sponsors"> WHY SPONSOR US?</p>
-            <div className="sponsor-section">
-            <div className="promotion">
-            <img className="promotion-image" src={Vector4} alt="" />
-               <p className="promotion-line">PROMOTION</p>
-               <img className="line-1" src={Line} alt="" />
-               <p className="promotion-text">sponsors will receive comprehensive promotion through all of our social media channels and during off-site events</p>
-            </div>
-            <div className="talent-pool">
-                <img className="employment-image" src={employment1} alt="" />
-                <p className="employment-line">TALENT POOL</p>
-                <img className="line-2" src={Line} alt="" />
-                <p className="employment-text">Sponsoring OpinHacks provides a unique opportunity for companies to access a diverse pool of talented individuals for employment considerations.</p>
-            </div>
-            <div className="talk">
-                <img className="talk-image" src={talk1} alt="" />
-                <p className="talk-line">BRAND AWARENESS</p>
-                <img src={Line} alt="" className="line-3" />
-                <p className="talk-text">Being part of OpinHacks will give valuable exposure and help a brand reach a large, engaged audience.</p>
-            </div>
-
-            </div> */}
-
       <div className="container">
         <h1 className="sponsors"> WHY SPONSORS US ??</h1>
         <div className="row">
@@ -80,84 +57,5 @@ export const Sponsors = () => {
       <img className="boost-stairs-1" src={booststairs1} alt="boost-stairs-1" />
     </section>
 
-    //         <section className="sponsors">
-    //             <div className="row">
-    //         <h2 className="section-heading">Our Services</h2>
-    //       </div>
-    //       <div className="row">
-    //         <div className="column">
-    //           <div className="card">
-    //             <div className="icon-wrapper">
-    //               <i className="fas fa-hammer"></i>
-    //             </div>
-    //             <h3>Service Heading</h3>
-    //             <p>
-    //               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-    //               consequatur necessitatibus eaque.
-    //             </p>
-    //           </div>
-    //         </div>
-    //         <div className="column">
-    //           <div className="card">
-    //             <div className="icon-wrapper">
-    //               <i className="fas fa-brush"></i>
-    //             </div>
-    //             <h3>Service Heading</h3>
-    //             <p>
-    //               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-    //               consequatur necessitatibus eaque.
-    //             </p>
-    //           </div>
-    //         </div>
-    //         <div className="column">
-    //           <div className="card">
-    //             <div className="icon-wrapper">
-    //               <i className="fas fa-wrench"></i>
-    //             </div>
-    //             <h3>Service Heading</h3>
-    //             <p>
-    //               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-    //               consequatur necessitatibus eaque.
-    //             </p>
-    //           </div>
-    //         </div>
-    //         <div className="column">
-    //           <div className="card">
-    //             <div className="icon-wrapper">
-    //               <i className="fas fa-truck-pickup"></i>
-    //             </div>
-    //             <h3>Service Heading</h3>
-    //             <p>
-    //               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-    //               consequatur necessitatibus eaque.
-    //             </p>
-    //           </div>
-    //         </div>
-    //         <div className="column">
-    //           <div className="card">
-    //             <div className="icon-wrapper">
-    //               <i className="fas fa-broom"></i>
-    //             </div>
-    //             <h3>Service Heading</h3>
-    //             <p>
-    //               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-    //               consequatur necessitatibus eaque.
-    //             </p>
-    //           </div>
-    //         </div>
-    //         <div className="column">
-    //           <div className="card">
-    //             <div className="icon-wrapper">
-    //               <i className="fas fa-plug"></i>
-    //             </div>
-    //             <h3>Service Heading</h3>
-    //             <p>
-    //               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-    //               consequatur necessitatibus eaque.
-    //             </p>
-    //           </div>
-    //         </div>
-    //       </div>
-    //         </section>
   );
 };
