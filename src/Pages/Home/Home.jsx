@@ -8,9 +8,14 @@ import { Sponsors } from "../../components/Sponsors/Sponsors";
 import { Faq } from "../../components/Faq/Faq";
 import { Organizers } from "../../components/Organizers/Organizers";
 export const Home = () => {
-
+  
+  const handleScroll = () => {
+    const homepage = document.getElementById("Homepage")
+    
+    console.log(homepage.scroll.length);
+  }
   return (
-    <div id="Homepage" className="homepage-container">
+    <div id="Homepage" className="homepage-container" onScroll={handleScroll}>
       <Navbar />
       <Hero />
       <About />

@@ -4,7 +4,7 @@ import logo from "../../assets/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
-  
+   
 
  
   
