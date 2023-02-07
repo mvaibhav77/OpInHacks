@@ -54,23 +54,23 @@ ul {
   }
 }
 
-@media (max-width: 1090px) {
-  #menu-icon {
-    display: block;
-  }
-  .navbar {
-    position: absolute;
-    margin-right: 2rem;
-    top: -1000%;
-    right: 5%;
-    width: 27rem;
-    height: 40vh;
-    background-color: var(--dark-color);
-    color: var(--light-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
+@media (max-width:1090px) {
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        margin-right: 2rem;
+        top: -1000%;
+        right: 5%;
+        width: 27rem;
+        height: 40vh;
+        background-color: var(--dark-color);
+        color: var(--light-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 
   .navbar a {
     display: block;
@@ -83,47 +83,49 @@ ul {
   }
 }
 
-@media (max-width: 767.98px) {
-  .navbar {
-    position: absolute;
-    margin-right: 1rem;
-    top: -1000%;
-    right: 5%;
-    width: 22rem;
-    height: 40vh;
-    background-color: var(--dark-color);
-    color: var(--light-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 2rem 2rem;
-  }
-  .nav-logo {
-    width: 70%;
-    height: 70%;
-  }
-  .navbar a {
-    display: block;
-    margin: 0.5rem 0;
-    padding: 0 2rem;
-  }
-}
+@media (max-width: 767.98px) { 
+    .navbar{
+        position: absolute;
+        margin-right: 1rem;
+        top: -1000%;
+        right: 5%;
+        width: 22rem;
+        height: 40vh;
+        background-color: var(--dark-color);
+        color: var(--light-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 2rem 2rem; 
+    }
+    .nav-logo{
+        width: 70%;
+        height: 70%;
 
-@media (max-width: 320px) {
-  .navbar {
-    position: absolute;
-    margin-right: 1rem;
-    top: -1000%;
-    right: 5%;
-    width: 15rem;
-    height: 40vh;
-    background-color: var(--dark-color);
-    color: var(--light-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 2rem 2rem;
-  }
+    }
+    .navbar a{
+        display: block;
+        margin: 0.5rem 0;
+        padding: 0 2rem ;
+    }
+ }
+
+
+ @media (max-width: 320px) { 
+    .navbar{
+        position: absolute;
+        margin-right: 1rem;
+        top: -1000%;
+        right: 5%;
+        width: 15rem;
+        height: 40vh;
+        background-color: var(--dark-color);
+        color: var(--light-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 2rem 2rem; 
+    }
 
   .nav-logo {
     width: 50%;
