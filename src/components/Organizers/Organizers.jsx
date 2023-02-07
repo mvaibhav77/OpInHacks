@@ -4,8 +4,8 @@ import "./Organizers.css";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import GDSC from "../../assets/gdsc.png";
-import hackclub2 from "../../assets/hackclub2.png";
-import opinco from "../../assets/opinco.png";
+import hackclubnew from "../../assets/hackclubnew.png";
+import opinconew from "../../assets/opinconew.png";
 export const Organizers = () => {
   function gdsc_insta() {
     window.open("https://instagram.com/gdscbitd?igshid=YmMyMTA2M2Y=");
@@ -54,7 +54,7 @@ export const Organizers = () => {
         </div>
         <div className="card">
           
-            <img src={hackclub2} alt="HackClub"  className="img" />
+            <img src={hackclubnew} alt="HackClub"  className="img" />
         
           <div className="card-text">
             <div className="text">
@@ -73,7 +73,7 @@ export const Organizers = () => {
         </div>
         <div className="card">
           
-            <img src={opinco} alt=""  className="img" />
+            <img src={opinconew} alt=""  className="img" />
         
           <div className="card-text">
             <div className="text">
