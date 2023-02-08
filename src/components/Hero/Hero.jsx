@@ -65,7 +65,7 @@ export const Hero = () => {
           <div className="hacks-text">HACKS</div>
         </div>
         <div className="hero-subtitle">
-          22 - 23 April 2023 &nbsp; CHHATTISGARH
+          21 - 23 April 2023 &nbsp; CHHATTISGARH
         </div>
         <div className="social-links">
           <button className="discord-btn">
