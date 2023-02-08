@@ -76,7 +76,7 @@ body::-webkit-scrollbar {
 section{
   display: flex;
   
-  min-height: 80%;
+  min-height: 90%;
   /* scroll-snap-align: start; */
   
 }

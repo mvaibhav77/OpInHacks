@@ -24,7 +24,7 @@ const Navbar = () => {
           <a  onClick={closeNavbar} >Timeline</a>
         </li>
         <li>
-          <a  onClick={closeNavbar}>Prizes</a>
+          <a href="#Organisers" onClick={closeNavbar}>Organisers</a>
         </li>
         <li>
           <a href="#Sponsors" onClick={closeNavbar} >Sponsors</a>

@@ -16,7 +16,9 @@
 .faqs-container{
     
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+
+
     z-index: var(--z-tooltip);
     
     margin: 0 rem;

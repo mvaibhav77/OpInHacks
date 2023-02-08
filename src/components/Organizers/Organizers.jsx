@@ -28,7 +28,7 @@ export const Organizers = () => {
   }
   return (
     // <div className="entire">
-    <section id="Organizers" className="organizers-conatainer">
+    <section id="Organisers" className="organizers-conatainer">
       <h1 className="organize-text">ORGANISERS</h1>
       {/* <div className="organ-container"> */}
       

@@ -3,6 +3,7 @@
   background-color: #000000;
   overflow: hidden;
   display: flex;
+  padding-top: 1rem;
 }
 .boost-stairs-2 {
   position: absolute;
@@ -29,7 +30,7 @@
   display: flex;
   text-align: center;
   justify-content: center;
- 
+
   letter-spacing: 0.031rem;
   text-transform: uppercase;
   color: #ffffff;
@@ -133,17 +134,20 @@ border-radius: 7px;
   display: flex;
   justify-content: center;
   gap: 1rem;
- 
-  padding-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  
  
 
   
   
 }
 .buttons button{
-  width: 13rem;
+  /* width: 13rem; */
   color: var(--dark-color);
   font-family: var(--primary-font);
+  width: 12rem;
+
 
 }
 .sponsor-us{
@@ -191,6 +195,9 @@ border-radius: 7px;
  .buttons{
   padding-top: 2rem;
 
+ }
+ .buttons{
+  flex-direction: column;
  }
 }
 
