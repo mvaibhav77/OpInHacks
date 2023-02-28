@@ -11,25 +11,49 @@ import { FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { BsArrowDown } from "react-icons/bs";
 
 export const Hero = () => {
-  // const parallax = (e) => {
-  //   document.querySelectorALl(".elements").forEach(element => {
-  //     const speed = element.getAttributte("data-speed");
-  //     const x = (window.innerWidth - e.pageX*speed)/100
-  //     const y = (window.innerHeight - e.pageY*speed)/100
+  
+  document.addEventListener("mousemove", parallax)
+  function parallax (e)  {
+    document.querySelectorAll(".elements").forEach(element => {
+      const speed = element.getAttribute("data-speed");
+      const x = (window.innerWidth - e.pageX*speed)/200;
+      const y = (window.innerHeight - e.pageY*speed)/200;
+    
+      element.style.transform = "translate("+x+ "px,"+ y + "px)"
+    
+    })
+  }
+  
+  // $(document).ready(function(){
+  //   var elements = $(".elements");
+   
+  //   const layer = $("#Hero");
+  //   layer.mousemove(function(e){
+      
+      
+  //     elements.each(index => {
+        
+  //       var valueX = (e.pageX * -1/20);
+  //       var valueY = (e.pageY* -1/ 20);
+        
+        
+  //      console.log(this)
+  //     })
 
-  //     element.style.transform = `translateX(${x}px) translateY${y}px`
+  
 
   //   })
-  // }
+  // })
+ 
 
-  // document.addEventListener("mousemove", parallax);
+
 
  
   return (
     <section id="Hero" className="hero-section">
       <img src={stairs} data-speed="2" className="stair-el elements" alt="" />
       <img src={pillar} data-speed="-6" className="pillar-el elements" alt="" />
-      <img src={eye} data-speed="7" className="eye-el elements" alt="" />
+      <img src={eye} data-speed="0" className="eye-el elements" alt="" />
       <img src={laptop} data-speed="3" className="laptop-el elements" alt="" />
       <img src={cube} data-speed="-3" className="cube-el elements" alt="" />
       <img src={cubes} data-speed="-9" className="cubes-el elements" alt="" />
