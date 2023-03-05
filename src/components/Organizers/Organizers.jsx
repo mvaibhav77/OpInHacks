@@ -4,8 +4,8 @@ import "./Organizers.css";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import GDSC from "../../assets/gdsc.png";
-import hackclub2 from "../../assets/hackclub2.png";
-import opinco from "../../assets/opinco.png";
+import hackreboot from "../../assets/Hackreboot.png";
+import opinco from "../../assets/opincologo.png";
 export const Organizers = () => {
   function gdsc_insta() {
     window.open("https://instagram.com/gdscbitd?igshid=YmMyMTA2M2Y=");
@@ -14,11 +14,11 @@ export const Organizers = () => {
     window.open("https://twitter.com/gdscbitd?t=tRPkbvIxmQdZmlDb66-JvA&s=08");
   }
   function hack_insta() {
-    window.open("https://www.instagram.com/hackclubbitdurg/");
+    window.open("https://instagram.com/hackrebootbitd?igshid=YmMyMTA2M2Y=");
   }
 
   function hack_twitter() {
-    window.open("https://twitter.com/hackclubbitdurg?lang=en");
+    window.open("https://twitter.com/HackRebootBITD?t=tjJczxvMfF0go2-7xN4iJg&s=08");
   }
   function opinco_insta() {
     window.open("https://www.instagram.com/opincocommunity/");
@@ -40,7 +40,7 @@ export const Organizers = () => {
           <div className="card-text">
             <div className="text">
               <p className="organize-text-p">Organiser</p>
-              <p className="org">GDSC</p>
+              <p className="org">GDSC BITD</p>
             </div>
             <div className="socials-buttons">
               <button className="insta" onClick={gdsc_insta}>
@@ -54,12 +54,12 @@ export const Organizers = () => {
         </div>
         <div className="card">
           
-            <img src={hackclub2} alt="HackClub"  className="img" />
+            <img src={hackreboot} alt="HackClub"  className="img" />
         
           <div className="card-text">
             <div className="text">
               <p className="organize-text-p">Organiser</p>
-              <p className="org">HackClub</p>
+              <p className="org">HackReboot</p>
             </div>
             <div className="socials-buttons">
               <button className="insta" onClick={hack_insta}>
