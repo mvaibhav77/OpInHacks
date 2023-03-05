@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -14,14 +14,14 @@ const Navbar = () => {
     <header id="Navbar" className="">
       <a href="#Hero" className="head-logo" onClick={closeNavbar}>
         <img src={logo} alt="Logo" className="nav-logo" />
-      </a>
+      </a>  
 
       <ul className="navbar">
         <li>
           <a href="#About" onClick={closeNavbar}>About</a>
         </li>
         <li>
-          <a  onClick={closeNavbar} >Timeline</a>
+          <a href="#Hero" onClick={closeNavbar} >Timeline</a>
         </li>
         <li>
           <a href="#Organisers" onClick={closeNavbar}>Organisers</a>
