@@ -57,7 +57,7 @@
   color: var(--dark-color);
 }
 .social-links-bottom {
-  
+  z-index: var(--z-fixed);
   position: absolute;
   display: flex;
   gap: 0.5rem;
