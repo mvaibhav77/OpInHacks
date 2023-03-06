@@ -6,6 +6,14 @@ import { FaTwitter } from "react-icons/fa";
 import GDSC from "../../assets/gdsc.png";
 import hackreboot from "../../assets/Hackreboot.png";
 import opinco from "../../assets/opincologo.png";
+import hole2 from "../../assets/hole2.png";
+import track2 from "../../assets/track2.png"
+import column from "../../assets/column.png"
+import sidestairs2 from "../../assets/sidestairs2.png"
+import greenmonster from "../../assets/greenmonster.png"
+import staircubes from "../../assets/staircubes.png"
+import sidestairs from "../../assets/sidestairs.png"
+
 export const Organizers = () => {
   function gdsc_insta() {
     window.open("https://instagram.com/gdscbitd?igshid=YmMyMTA2M2Y=");
@@ -30,6 +38,13 @@ export const Organizers = () => {
     // <div className="entire">
     <section id="Organisers" className="organizers-conatainer">
       <h1 className="organize-text">ORGANISERS</h1>
+      <img src={hole2} alt="" className="img1 hole"/>
+      <img src={greenmonster} alt="" className="img1 greenmonster"/>
+      {/* <img src={track2} alt="" className="img1 track"/> */}
+      {/* <img src={column} alt="" className="img1 column"/> */}
+      <img src={sidestairs2} alt="" className="img1 sidestairs2"/>
+      <img src={staircubes} alt="" className="img1 staircubes"/>
+      <img src={sidestairs} alt="" className="img1 sidestairs"/>
       {/* <div className="organ-container"> */}
       
       <div className="card-section">

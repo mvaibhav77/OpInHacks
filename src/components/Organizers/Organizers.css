@@ -16,7 +16,7 @@
     width: 100%;
     background-color: var(--primary-color);
     padding-top: 2rem;
-   
+   position: relative;
 }
 
 /* .organ-container{   
@@ -31,7 +31,9 @@
     
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    
+    padding: 0rem 1rem 1rem 1rem;
+    z-index: 1;
 }
 
 .card{
@@ -91,6 +93,60 @@
     color: var(--dark-color);
 }
 
+/* assests */
+
+.img1{
+    position: absolute;
+    display: block;
+    z-index: 0;
+    
+
+}
+
+.hole{
+    bottom: -8rem;
+    right: 25rem;
+    display: block;
+}
+.hole2{
+    top: 0rem;
+    left: 3rem;
+}
+
+.track{ /* find another approach* - remove z-index 
+    from about page.about-section */
+    top:-3rem;
+    right: 20rem;
+    
+}
+
+.column{
+    top: 10rem;
+    left: 0rem;
+}
+
+.sidestairs2{
+    bottom: 2rem;
+    left: 1rem;
+}
+
+.greenmonster{
+    top: 1rem;
+    left: 15rem;
+}
+
+.staircubes{
+    width: 10%;
+    height: 10%;
+    top: 2rem;
+    right: 0; 
+}
+
+.sidestairs{
+    bottom: 5rem;
+    right: -.5rem;
+}
+
 @media screen and (max-width:1090px){
 
    .org{
@@ -108,7 +164,10 @@
     .twitter ,.insta{
         width: 40%;
     } */
-    
+    .img1{
+        display: none;
+    }
+
 }
 
 
