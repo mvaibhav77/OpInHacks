@@ -68,7 +68,8 @@
   background-color: var(--primary-color);
   color: white;
 }
-.discord-btn a, .register-btn a{
+.discord-btn , .register-btn {
+  width: 11rem;
   display: flex;
   align-items: center;
   justify-content: center;  

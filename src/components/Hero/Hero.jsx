@@ -95,18 +95,19 @@ export const Hero = () => {
           5 - 6 May 2023 &nbsp; CHHATTISGARH
         </div>
         <div className="social-links">
+        <a href="https://discord.gg/Gwztum9snV" target="_blank">
           <button className="discord-btn">
-            <a href="https://discord.gg/Gwztum9snV" target="_blank">
+            
               <FaDiscord fontSize="1.6rem"/>
               DISCORD
-            </a>
           </button>
-          <button className="register-btn">
+            </a> 
             <a href="https://lu.ma/opin-hacks" target="_blank">
+          <button className="register-btn">
             <HiOutlinePencilSquare fontSize="1.6rem"/>
               REGISTER
-            </a>
           </button>
+            </a>
         </div>
         <div className="down-arrow">
           <BsArrowDown fontSize="2.5rem" />
