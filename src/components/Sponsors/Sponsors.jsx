@@ -45,8 +45,8 @@ export const Sponsors = () => {
         </div>
         <div className="buttons">
         <button className="brochure">
-          {" "}
-          <a href="#"></a> BROCHURE
+          
+          <a href="https://drive.google.com/file/d/1s0yKYg3_YvsVhHsgNje601Oab49JB5lt/view?usp=sharing" target="_blank">BROCHURE</a> 
         </button>
         <button className="sponsor-us">
           {" "}
