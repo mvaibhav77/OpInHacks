@@ -17,6 +17,7 @@
     background-color: var(--primary-color);
     padding-top: 2rem;
    position: relative;
+   overflow: hidden;
 }
 
 /* .organ-container{   
