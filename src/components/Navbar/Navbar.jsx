@@ -20,9 +20,9 @@ const Navbar = () => {
         <li>
           <a href="#About" onClick={closeNavbar}>About</a>
         </li>
-        <li>
+        {/* <li>
           <a href="#Hero" onClick={closeNavbar} >Timeline</a>
-        </li>
+        </li> */}
         <li>
           <a href="#Organisers" onClick={closeNavbar}>Organisers</a>
         </li>

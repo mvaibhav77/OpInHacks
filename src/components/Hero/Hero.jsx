@@ -93,7 +93,7 @@ export const Hero = () => {
         </div>
         <div className="social-links">
           <button className="discord-btn">
-            <a href="https://discord.gg/fmRR96uz" target="_blank">
+            <a href="https://discord.gg/Gwztum9snV" target="_blank">
               DISCORD
             </a>
           </button>

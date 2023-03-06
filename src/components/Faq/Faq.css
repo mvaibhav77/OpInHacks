@@ -104,6 +104,15 @@ padding-top: 2rem;
 .faq-section .faq-tab input:checked ~ .faq-content{
     max-height: 100vh;
 }
+
+.faq-links{
+    color: blue;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+
 @media (max-width: 1090px) {
 
     .faq-section{
