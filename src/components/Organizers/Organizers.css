@@ -31,7 +31,8 @@
     
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    
+    padding: 0rem 1rem 1rem 1rem;
     z-index: 1;
 }
 
@@ -98,11 +99,12 @@
     position: absolute;
     display: block;
     z-index: 0;
+    
 
 }
 
 .hole{
-    bottom: -7rem;
+    bottom: -8rem;
     right: 25rem;
     display: block;
 }
@@ -125,7 +127,7 @@
 
 .sidestairs2{
     bottom: 2rem;
-    left: 2rem;
+    left: 1rem;
 }
 
 .greenmonster{
@@ -136,13 +138,13 @@
 .staircubes{
     width: 10%;
     height: 10%;
-    top: 10rem;
+    top: 2rem;
     right: 0; 
 }
 
 .sidestairs{
     bottom: 5rem;
-    right: 1rem;
+    right: -.5rem;
 }
 
 @media screen and (max-width:1090px){

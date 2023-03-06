@@ -40,8 +40,8 @@ export const Organizers = () => {
       <h1 className="organize-text">ORGANISERS</h1>
       <img src={hole2} alt="" className="img1 hole"/>
       <img src={greenmonster} alt="" className="img1 greenmonster"/>
-      <img src={track2} alt="" className="img1 track"/>
-      <img src={column} alt="" className="img1 column"/>
+      {/* <img src={track2} alt="" className="img1 track"/> */}
+      {/* <img src={column} alt="" className="img1 column"/> */}
       <img src={sidestairs2} alt="" className="img1 sidestairs2"/>
       <img src={staircubes} alt="" className="img1 staircubes"/>
       <img src={sidestairs} alt="" className="img1 sidestairs"/>
