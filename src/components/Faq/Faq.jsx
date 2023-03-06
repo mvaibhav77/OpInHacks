@@ -39,11 +39,19 @@ export const Faq = () => {
       question: "Where can you find teammates?",
       reply:
         "If you do not have a team and are looking for people with a specific tech stack, you can join our discord server to network with others and form your teams.",
-    },
+         links: "https://discord.gg/Gwztum9snV"  
+      },
     {
       question: "More specific themes and problem statement will be disclosed soon??",
       reply:
         "Whichever track you choose, you can ideate & build either a software or a hardware project!",
+        
+    },
+    {
+      question: "Have a question aside from these?",
+      reply:
+        "Reach out to us at : ",
+        links: "opinhacks@gmail.com",
     },
   ];
 

@@ -98,13 +98,13 @@ export const Hero = () => {
         <a href="https://discord.gg/Gwztum9snV" target="_blank">
           <button className="discord-btn">
             
-              <FaDiscord fontSize="1.6rem"/>
+              {/* <FaDiscord fontSize="1.6rem"/> */}
               DISCORD
           </button>
             </a> 
             <a href="https://lu.ma/opin-hacks" target="_blank">
           <button className="register-btn">
-            <HiOutlinePencilSquare fontSize="1.6rem"/>
+            {/* <HiOutlinePencilSquare fontSize="1.6rem"/> */}
               REGISTER
           </button>
             </a>
