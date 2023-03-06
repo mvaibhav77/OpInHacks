@@ -7,8 +7,11 @@ import pillar from "../../assets/intro-pillar.png";
 import cube from "../../assets/intro-cube.png";
 import cubes from "../../assets/intro-cubes.png";
 import laptop from "../../assets/laptop.png";
-import { FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaTwitter, FaInstagram, FaLinkedinIn, FaDiscord } from "react-icons/fa";
 import { BsArrowDown } from "react-icons/bs";
+import { HiOutlinePencilSquare } from "react-icons/hi2";
+
+
 
 export const Hero = () => {
   
@@ -92,17 +95,19 @@ export const Hero = () => {
           5 - 6 May 2023 &nbsp; CHHATTISGARH
         </div>
         <div className="social-links">
+        <a href="https://discord.gg/Gwztum9snV" target="_blank">
           <button className="discord-btn">
-            <a href="https://discord.gg/fmRR96uz" target="_blank">
+            
+              {/* <FaDiscord fontSize="1.6rem"/> */}
               DISCORD
-            </a>
           </button>
+            </a> 
+            <a href="https://lu.ma/opin-hacks" target="_blank">
           <button className="register-btn">
-            <a href="https://forms.gle/n5oUueJvNwwGip6E9" target="_blank">
-              {" "}
+            {/* <HiOutlinePencilSquare fontSize="1.6rem"/> */}
               REGISTER
-            </a>
           </button>
+            </a>
         </div>
         <div className="down-arrow">
           <BsArrowDown fontSize="2.5rem" />

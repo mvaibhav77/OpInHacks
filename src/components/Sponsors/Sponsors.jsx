@@ -44,10 +44,12 @@ export const Sponsors = () => {
           </div>
         </div>
         <div className="buttons">
+          <a href="https://drive.google.com/file/d/1s0yKYg3_YvsVhHsgNje601Oab49JB5lt/view?usp=sharing" target="_blank">
         <button className="brochure">
-          {" "}
-          <a href="#"></a> BROCHURE
+          
+            BROCHURE
         </button>
+          </a> 
         <button className="sponsor-us">
           {" "}
           <a href="#"></a> SPONSOR US

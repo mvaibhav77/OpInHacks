@@ -29,12 +29,37 @@ export const Faq = () => {
       reply:
         "A laptop and necessary charging equipment Any software or hardware tools needed for your project A valid government-issued ID for verification purposes A positive attitude towards collaboration",
     },
+    {
+      question: "Where will the event take place?",
+      reply:
+        `The venue of the event will be Bhilai Institute of Technology, Durg.`,
+      links: "https://maps.app.goo.gl/Xg6qmbtKg8DXxEgZ8",  
+    },
+    {
+      question: "Where can you find teammates?",
+      reply:
+        "If you do not have a team and are looking for people with a specific tech stack, you can join our discord server to network with others and form your teams.",
+         links: "https://discord.gg/Gwztum9snV"  
+      },
+    {
+      question: "More specific themes and problem statement will be disclosed soon??",
+      reply:
+        "Whichever track you choose, you can ideate & build either a software or a hardware project!",
+        
+    },
+    {
+      question: "Have a question aside from these?",
+      reply:
+        "Reach out to us at : ",
+        links: "opinhacks@gmail.com",
+    },
   ];
 
-  const faqTab = (question, reply, index) => {
+  const faqTab = (question, reply, links, index) => {
     return (
       <>
         <div className="faq-tab">
+          
           <input
             className="faq-input"
             type="checkbox"
@@ -50,7 +75,9 @@ export const Faq = () => {
           </label>
           <div className="faq-content">
             <h5>{reply}</h5>
+            {links ? <a href={links} target="_blank" className="faq-links">{links}</a>: " "}
           </div>
+          
         </div>
       </>
     );
@@ -108,7 +135,7 @@ export const Faq = () => {
         {faqTab(10)} */}
 
         {faqData.map((data, index) => {
-          return faqTab(data.question, data.reply, index);
+          return faqTab(data.question, data.reply, data.links, index);
         })}
       </div>
     </section>
