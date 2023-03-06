@@ -6,10 +6,13 @@ import { FaDiscord } from 'react-icons/fa';
 
 const Footernew = () => {
   function discordlink() {
-    window.open("https://discord.gg/fmRR96uz");
+    window.open("https://discord.gg/Gwztum9snV");
 }
 function registration() {
-  window.open("https://forms.gle/n5oUueJvNwwGip6E9");
+  window.open("https://lu.ma/opin-hacks");
+}
+function sponsor_us() {
+  window.open("https://forms.gle/xzP1vVgXWMBpSdHF9");
 }
   return (
     <footer id='Footer' class="padding_4x">
@@ -20,7 +23,7 @@ function registration() {
         <div className=''>
         <button className='btn register' onClick={registration}>REGISTER</button>
         <button className='btn discord' onClick={discordlink}><FaDiscord color='black' size="1rem"/></button>
-          <button className='btn sponsor' >SPONSORS</button>
+          <button className='btn sponsor' onClick={sponsor_us}>SPONSOR US</button>
         </div>
       </section>
       <section class="flex-content padding_1x">

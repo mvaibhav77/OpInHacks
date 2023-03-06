@@ -7,6 +7,9 @@ import employment1 from "../../assets/employment1.png";
 import talk1 from "../../assets/talk1.png";
 
 export const Sponsors = () => {
+  function sponsor_us() {
+    window.open("https://forms.gle/xzP1vVgXWMBpSdHF9");
+  }
   return (
 
 
@@ -19,7 +22,7 @@ export const Sponsors = () => {
             <img src={Vector4} className="fas fa-laptop-code" />
             <h2>PROMOTION</h2>
             <p>
-              sponsors will receive comprehensive promotion through all of our
+              Sponsors will receive comprehensive promotion through all of our
               social media channels and during off-site events
             </p>
           </div>
@@ -50,9 +53,9 @@ export const Sponsors = () => {
             BROCHURE
         </button>
           </a> 
-        <button className="sponsor-us">
-          {" "}
-          <a href="#"></a> SPONSOR US
+        <button className="sponsor-us" onClick={sponsor_us}>
+          {"  "}
+           SPONSOR US
         </button>
       </div>
       </div>
