@@ -92,7 +92,7 @@ export const Hero = () => {
           <div className="hacks-text">HACKS</div>
         </div>
         <div className="hero-subtitle">
-          5 - 6 May 2023 &nbsp; CHHATTISGARH
+          5 - 7 May 2023 &nbsp; CHHATTISGARH
         </div>
         <div className="social-links">
         <a href="https://discord.gg/Gwztum9snV" target="_blank">

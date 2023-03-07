@@ -9,7 +9,6 @@ header {
   justify-content: space-between;
   padding: 0.5rem 5%;
   font-family: var(--primary-font);
-
 }
 .active {
   background-color: var(--dark-color);
@@ -44,7 +43,7 @@ ul {
   display: none;
 }
 
-@media (max-width: 1280px) {
+/* @media (max-width: 1280px) {
   header {
     padding: 0.3rem 5%;
   }
@@ -53,26 +52,28 @@ ul {
     padding: 0.1rem 0;
     padding: 0 0.1rem;
   }
-}
+} */
 
-@media (max-width:1090px) {
-    #menu-icon{
-        display: block;
-    }
-    .navbar{
-        position: absolute;
-        margin-right: 0rem;
-        top: -12000%;
-        right: 0%;
-        width: 100%;
-        height: 40vh;
-        background-color: var(--dark-color);
-        color: var(--light-color);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+@media (max-width: 1090px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    margin-right: 0rem;
+    top: 100%;
+    right: 0%;
+    width: 100%;
+    height: 40vh;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(0% at 50% 0%);
+    transition: clip-path 0.4s ease-in-out;
+  }
 
   .navbar a {
     display: block;
@@ -81,11 +82,15 @@ ul {
   }
 
   .navbar.open {
-    top: 100%;
+    clip-path: circle(75%);
+  }
+  .nav-logo {
+    width: 70%;
+    height: 70%;
   }
 }
 
-@media (max-width: 767.98px) { 
+/* @media (max-width: 767.98px) { 
     .navbar{
         position: absolute;
         margin-right: 0rem;
@@ -141,4 +146,4 @@ ul {
     margin: 0.5rem 0;
     padding: 0 2rem;
   }
-}
+} */
