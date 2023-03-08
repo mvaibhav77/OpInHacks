@@ -1,3 +1,4 @@
+import $ from "jquery";
 import React from "react";
 import "../Hero/Hero.css";
 import spaceLines from "../../assets/space-lines.png";
@@ -7,51 +8,63 @@ import pillar from "../../assets/intro-pillar.png";
 import cube from "../../assets/intro-cube.png";
 import cubes from "../../assets/intro-cubes.png";
 import laptop from "../../assets/laptop.png";
-import { FaTwitter, FaInstagram, FaLinkedinIn, FaDiscord } from "react-icons/fa";
+import {
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+  FaDiscord,
+} from "react-icons/fa";
 import { BsArrowDown } from "react-icons/bs";
+import { IoMdArrowDropup } from "react-icons/io";
 import { HiOutlinePencilSquare } from "react-icons/hi2";
 
-
-
 export const Hero = () => {
-  
-  document.addEventListener("mousemove", parallax)
-  function parallax (e)  {
-    document.querySelectorAll(".elements").forEach(element => {
-      const speed = element.getAttribute("data-speed");
-      const x = (window.innerWidth - e.pageX*speed)/200;
-      const y = (window.innerHeight - e.pageY*speed)/200;
-    
-      element.style.transform = "translate("+x+ "px,"+ y + "px)"
-    
-    })
-  }
-  
-  // $(document).ready(function(){
-  //   var elements = $(".elements");
+  $(document).ready(function () {
    
-  //   const layer = $("#Hero");
-  //   layer.mousemove(function(e){
-      
-      
-  //     elements.each(index => {
-        
-  //       var valueX = (e.pageX * -1/20);
-  //       var valueY = (e.pageY* -1/ 20);
-        
-        
-  //      console.log(this)
-  //     })
+    var homepage = document.querySelector("#Homepage");
+    homepage.onload = scrolled;
+    homepage.onscroll = scrolled;
+
+    function scrolled() {
+
+      const scrolledTop = homepage.scrollTop;
+      const currentScrolled =  scrolledTop + homepage.clientHeight;
+      const totalScrolled = homepage.scrollHeight;
+
+      const percentageScrolled = Math.round(
+        (100 / totalScrolled) * currentScrolled
+      );
+      console.log(percentageScrolled);
+      $(".progress-bar").click(function(){
+        homepage.scrollTop = 0;
+      })
+
+      if(scrolledTop > 100){
+        $(".progress-bar").css({"display": "grid"});
+      }else{
+        $(".progress-bar").css({"display": "none"});
+      }
+
+      $(".progress-value").css({"background": `conic-gradient(var(--primary-color) ${percentageScrolled}%, transparent 0 100%)`})
+   
+       
+ 
+    }
+  });
 
   
 
-  //   })
-  // })
- 
+  document.addEventListener("mousemove", parallax);
+  function parallax(e) {
+    document.querySelectorAll(".elements").forEach((element) => {
+      const speed = element.getAttribute("data-speed");
+      const x = (window.innerWidth - e.pageX * speed) / 200;
+      const y = (window.innerHeight - e.pageY * speed) / 200;
 
+      element.style.transform = "translate(" + x + "px," + y + "px)";
+    });
+  }
 
-
- 
   return (
     <section id="Hero" className="hero-section">
       <img src={stairs} data-speed="2" className="stair-el elements" alt="" />
@@ -91,26 +104,27 @@ export const Hero = () => {
           <div className="opin-text">OPIN</div>
           <div className="hacks-text">HACKS</div>
         </div>
-        <div className="hero-subtitle">
-          5 - 7 May 2023 &nbsp; CHHATTISGARH
-        </div>
+        <div className="hero-subtitle">5 - 7 May 2023 &nbsp; CHHATTISGARH</div>
         <div className="social-links">
-        <a href="https://discord.gg/Gwztum9snV" target="_blank">
-          <button className="discord-btn">
-            
+          <a href="https://discord.gg/Gwztum9snV" target="_blank">
+            <button className="discord-btn">
               {/* <FaDiscord fontSize="1.6rem"/> */}
               DISCORD
-          </button>
-            </a> 
-            <a href="https://lu.ma/opin-hacks" target="_blank">
-          <button className="register-btn">
-            {/* <HiOutlinePencilSquare fontSize="1.6rem"/> */}
+            </button>
+          </a>
+          <a href="https://lu.ma/opin-hacks" target="_blank">
+            <button className="register-btn">
+              {/* <HiOutlinePencilSquare fontSize="1.6rem"/> */}
               REGISTER
-          </button>
-            </a>
+            </button>
+          </a>
         </div>
         <div className="down-arrow">
           <BsArrowDown fontSize="2.5rem" />
+        </div>
+        <div className="progress-bar">
+          <div className="progress-value"></div>
+          <div className="progress-status"><IoMdArrowDropup/></div>
         </div>
       </div>
     </section>
