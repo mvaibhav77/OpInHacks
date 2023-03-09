@@ -6,7 +6,7 @@ import { FaDiscord } from 'react-icons/fa';
 
 const Footernew = () => {
   function discordlink() {
-    window.open("https://discord.gg/Gwztum9snV");
+    window.open("https://discord.gg/KnthBxzApR");
 }
 function registration() {
   window.open("https://lu.ma/opin-hacks");

@@ -106,7 +106,7 @@ export const Hero = () => {
         </div>
         <div className="hero-subtitle">5 - 7 May 2023 &nbsp; CHHATTISGARH</div>
         <div className="social-links">
-          <a href="https://discord.gg/Gwztum9snV" target="_blank">
+          <a href="https://discord.gg/KnthBxzApR" target="_blank">
             <button className="discord-btn">
               {/* <FaDiscord fontSize="1.6rem"/> */}
               DISCORD
