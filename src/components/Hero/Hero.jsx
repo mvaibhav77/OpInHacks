@@ -119,9 +119,9 @@ export const Hero = () => {
             </button>
           </a>
         </div>
-        <div className="down-arrow">
+        {/* <div className="down-arrow">
           <BsArrowDown fontSize="2.5rem" />
-        </div>
+        </div> */}
         <div className="progress-bar">
           <div className="progress-value"></div>
           <div className="progress-status"><IoMdArrowDropup/></div>
