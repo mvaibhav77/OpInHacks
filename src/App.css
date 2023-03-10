@@ -3,7 +3,6 @@
   font-family: "Hanson";
   src: local("Hanson"), url("../public//fonts/Hanson-Bold.otf");
   font-weight: normal;
-  font-display: block;
 }
 @font-face {
   font-family: "Montserrat";
@@ -46,8 +45,6 @@
   --z-modal: 1000;
 
 }
-
-html.wf-loading
 
 *{
   margin: 0;
