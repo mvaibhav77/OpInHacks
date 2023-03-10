@@ -224,9 +224,14 @@
     margin-top: 0.6rem;
   }
   .social-links-bottom {
-    scale: 80%;
+    scale: 100%;
     gap: 1rem;
-    right: 1rem;
+    right: unset;
+    bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     z-index: 11;
   }
   .progress-bar{
