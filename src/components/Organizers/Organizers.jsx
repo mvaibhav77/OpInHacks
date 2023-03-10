@@ -38,7 +38,7 @@ export const Organizers = () => {
     // <div className="entire">
     <section id="Organisers" className="organizers-conatainer">
       <h1 className="organize-text">ORGANISERS</h1>
-      <img src={hole2} alt="" className="img1 hole"/>
+      {/* <img src={hole2} alt="" className="img1 hole"/> */}
       <img src={greenmonster} alt="" className="img1 greenmonster"/>
       {/* <img src={track2} alt="" className="img1 track"/> */}
       {/* <img src={column} alt="" className="img1 column"/> */}
