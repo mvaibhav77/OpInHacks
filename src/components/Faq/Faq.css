@@ -77,7 +77,7 @@ padding-top: 2rem;
     font-size: 1.8rem;
     border-radius: 1px;
     opacity: 30%;
-    transition: transform .6s;
+    transition: transform .3s;
     
 }
 .faq-tab:hover label::after{
@@ -98,10 +98,10 @@ padding-top: 2rem;
 .faq-content{
     max-height: 0;
     overflow: hidden; 
-    transition: .6s;  
+    transition: .3s ease-in-out;  
 }
 
-.faq-section .faq-tab input:checked ~ .faq-content{
+.faq-tab input:checked ~ .faq-content{
     max-height: 100vh;
 }
 
