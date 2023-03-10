@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { Squash as Hamburger } from 'hamburger-react'
 
 const Navbar = () => {
   const closeNavbar = () => {
@@ -41,11 +41,18 @@ const Navbar = () => {
 
       <div className="dropdown">
         <div className="bx bx-menu" id="menu-icon">
-          <GiHamburgerMenu
+          <Hamburger
             color="#00d54b"
-            onClick={() => {
-              let navbar = document.querySelector(".navbar");
+            onToggle={toggle=>{
+              if(toggle){
+                let navbar = document.querySelector(".navbar");
               navbar.classList.toggle("open");
+              }
+              else{
+                let navbar = document.querySelector(".navbar");
+                console.log(navbar.classList.toggle);
+                navbar.classList.remove("open");
+              }
             }}
           />
         </div>
