@@ -34,7 +34,7 @@ export const Hero = () => {
       const percentageScrolled = Math.round(
         (100 / totalScrolled) * currentScrolled
       );
-      console.log(percentageScrolled);
+      
       $(".progress-bar").click(function(){
         homepage.scrollTop = 0;
       })

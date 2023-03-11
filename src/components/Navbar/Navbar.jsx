@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
 import { Squash as Hamburger } from 'hamburger-react'
 
+
 const Navbar = () => {
+  const [isOpen, setOpen] = useState(false);
   const closeNavbar = () => {
     let navbar = document.querySelector(".navbar");
-    console.log(navbar.classList.toggle);
+   
     navbar.classList.remove("open");
+    setOpen(false);
   };
 
   return (
@@ -41,8 +44,9 @@ const Navbar = () => {
 
       <div className="dropdown">
         <div className="bx bx-menu" id="menu-icon">
-          <Hamburger
+          <Hamburger toggled={isOpen} toggle={setOpen}
             color="#00d54b"
+            size="25"
             onToggle={toggle=>{
               if(toggle){
                 let navbar = document.querySelector(".navbar");
@@ -50,7 +54,7 @@ const Navbar = () => {
               }
               else{
                 let navbar = document.querySelector(".navbar");
-                console.log(navbar.classList.toggle);
+               
                 navbar.classList.remove("open");
               }
             }}
