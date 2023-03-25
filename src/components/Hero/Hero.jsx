@@ -20,39 +20,34 @@ import { HiOutlinePencilSquare } from "react-icons/hi2";
 
 export const Hero = () => {
   $(document).ready(function () {
-   
     var homepage = document.querySelector("#Homepage");
     homepage.onload = scrolled;
     homepage.onscroll = scrolled;
 
     function scrolled() {
-
       const scrolledTop = homepage.scrollTop;
-      const currentScrolled =  scrolledTop + homepage.clientHeight;
+      const currentScrolled = scrolledTop + homepage.clientHeight;
       const totalScrolled = homepage.scrollHeight;
 
       const percentageScrolled = Math.round(
         (100 / totalScrolled) * currentScrolled
       );
-      
-      $(".progress-bar").click(function(){
-        homepage.scrollTop = 0;
-      })
 
-      if(scrolledTop > 100){
-        $(".progress-bar").css({"display": "grid"});
-      }else{
-        $(".progress-bar").css({"display": "none"});
+      $(".progress-bar").click(function () {
+        homepage.scrollTop = 0;
+      });
+
+      if (scrolledTop > 100) {
+        $(".progress-bar").css({ display: "grid" });
+      } else {
+        $(".progress-bar").css({ display: "none" });
       }
 
-      $(".progress-value").css({"background": `conic-gradient(var(--primary-color) ${percentageScrolled}%, transparent 0 100%)`})
-   
-       
- 
+      $(".progress-value").css({
+        background: `conic-gradient(var(--primary-color) ${percentageScrolled}%, transparent 0 100%)`,
+      });
     }
   });
-
-  
 
   document.addEventListener("mousemove", parallax);
   function parallax(e) {
@@ -104,7 +99,10 @@ export const Hero = () => {
           <div className="opin-text">OPIN</div>
           <div className="hacks-text">HACKS</div>
         </div>
-        <div className="hero-subtitle">5 - 7 May 2023 &nbsp; CHHATTISGARH</div>
+        <div className="hero-subtitle">
+          {/* 5 - 7 May 2023 &nbsp; */}
+          CHHATTISGARH
+        </div>
         <div className="social-links">
           <a href="https://discord.gg/KnthBxzApR" target="_blank">
             <button className="discord-btn">
@@ -124,7 +122,9 @@ export const Hero = () => {
         </div> */}
         <div className="progress-bar">
           <div className="progress-value"></div>
-          <div className="progress-status"><IoMdArrowDropup/></div>
+          <div className="progress-status">
+            <IoMdArrowDropup />
+          </div>
         </div>
       </div>
     </section>
