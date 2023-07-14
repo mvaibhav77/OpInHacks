@@ -49,16 +49,16 @@ export const Hero = () => {
     }
   });
 
-  document.addEventListener("mousemove", parallax);
-  function parallax(e) {
-    document.querySelectorAll(".elements").forEach((element) => {
-      const speed = element.getAttribute("data-speed");
-      const x = (window.innerWidth - e.pageX * speed) / 200;
-      const y = (window.innerHeight - e.pageY * speed) / 200;
+    document.addEventListener("mousemove", parallax);
+    function parallax(e) {
+      document.querySelectorAll(".elements").forEach((element) => {
+        const speed = element.getAttribute("data-speed");
+        const x = (window.innerWidth - e.pageX * speed) / 200;
+        const y = (window.innerHeight - e.pageY * speed) / 200;
 
-      element.style.transform = "translate(" + x + "px," + y + "px)";
-    });
-  }
+        element.style.transform = "translate(" + x + "px," + y + "px)";
+      });
+    }
 
   return (
     <section id="Hero" className="hero-section">
