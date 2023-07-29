@@ -14,7 +14,9 @@
   top: 5rem;
   scale: 130%;
 }
-
+.date-divider{
+  color: white;
+}
 .hero-container {
   position: absolute;
   width: 100%;

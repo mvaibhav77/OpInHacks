@@ -100,7 +100,7 @@ export const Hero = () => {
           <div className="hacks-text">HACKS</div>
         </div>
         <div className="hero-subtitle">
-          {/* 5 - 7 May 2023 &nbsp; */}
+          29 Sep - 3 Oct 2023 &nbsp;  <span className="date-divider">|</span> &nbsp;
           CHHATTISGARH
         </div>
         <div className="social-links">
