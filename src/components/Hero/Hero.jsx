@@ -42,7 +42,6 @@ export const Hero = () => {
       } else {
         $(".progress-bar").css({ display: "none" });
       }
-
       $(".progress-value").css({
         background: `conic-gradient(var(--primary-color) ${percentageScrolled}%, transparent 0 100%)`,
       });
@@ -62,6 +61,7 @@ export const Hero = () => {
 
   return (
     <section id="Hero" className="hero-section">
+      
       <img src={stairs} data-speed="2" className="stair-el elements" alt="" />
       <img src={pillar} data-speed="-6" className="pillar-el elements" alt="" />
       <img src={eye} data-speed="0" className="eye-el elements" alt="" />
