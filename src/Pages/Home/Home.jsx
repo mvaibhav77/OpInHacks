@@ -29,7 +29,7 @@ export const Home = () => {
         maxWidth: '100px',
         minWidth: '60px',
         position: 'fixed',
-        right: '50px',
+        right: '90px',
         top: '0',
         width: '10%',
         zIndex: 10000,
