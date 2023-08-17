@@ -8,25 +8,28 @@ function SponsorsList() {
     {
       name: "MLH",
       img: MLH,
+      href: "https://mlh.io/"
     },
     {
       name: "GitHub",
       img: GitHub,
+      href: "https://github.com/"
     },
     {
       name: "Postman",
       img: Postman,
+      href: "https://www.postman.com/"
     },
   ];
 
   return (
     <div id="sponsors-list" className="sponsors-container">
-      <h1 className="header">MEET OUR INCREDIBLE SPONSORS</h1>
+      <h1 className="sponserslist-title">MEET OUR INCREDIBLE SPONSORS</h1>
       <div className="s-row">
-        {sponsors.map((sponsor) => (
-          <button className="btn s-col" id={sponsor.name.toLowerCase()}>
-            <img src={sponsor.img} alt={sponsor.name} srcset="" />
-          </button>
+        {sponsors.map(({name, img , href}) => (
+          <a  target="blank" className="btn s-col" href={href} id={name.toLowerCase()}>
+            <img src={img} alt={name} srcset="" />
+          </a>
         ))}
         {/* <button className="btn s-col" id="mlh">
           <img src={MLH} alt="MLH" srcset="" />
