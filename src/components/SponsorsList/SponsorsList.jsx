@@ -15,11 +15,11 @@ function SponsorsList() {
       img: GitHub,
       href: "https://github.com/"
     },
-    // {
-    //   name: "Postman",
-    //   img: Postman,
-    //   href: "https://www.postman.com/"
-    // },
+    {
+      name: "Postman",
+      img: Postman,
+      href: "https://www.postman.com/"
+    },
   ];
 
   return (
