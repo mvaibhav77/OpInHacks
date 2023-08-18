@@ -1,24 +1,24 @@
 import "./SponsorsList.css";
 import MLH from "../../assets/mlh-logo-1.png";
-import GitHub from "../../assets/GitHub-logo.png";
-import Postman from "../../assets/pm-logo-1.png";
+import GitHub from "../../assets/github-logo.png";
+import Postman from "../../assets/pm-logo-1.svg";
 
 function SponsorsList() {
   const sponsors = [
     {
       name: "MLH",
       img: MLH,
-      href: "https://mlh.io/"
+      href: "https://mlh.io/",
     },
     {
       name: "GitHub",
       img: GitHub,
-      href: "https://github.com/"
+      href: "https://github.com/",
     },
     {
       name: "Postman",
       img: Postman,
-      href: "https://www.postman.com/"
+      href: "https://www.postman.com/",
     },
   ];
 
@@ -26,8 +26,13 @@ function SponsorsList() {
     <div id="sponsors-list" className="sponsors-container">
       <h1 className="sponserslist-title">MEET OUR INCREDIBLE SPONSORS</h1>
       <div className="s-row">
-        {sponsors.map(({name, img , href}) => (
-          <a  target="blank" className="btn s-col" href={href} id={name.toLowerCase()}>
+        {sponsors.map(({ name, img, href }) => (
+          <a
+            target="blank"
+            className="btn s-col"
+            href={href}
+            id={name.toLowerCase()}
+          >
             <img src={img} alt={name} srcset="" />
           </a>
         ))}
