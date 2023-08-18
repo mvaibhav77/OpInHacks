@@ -1,6 +1,6 @@
 import "./SponsorsList.css";
 import MLH from "../../assets/mlh-logo-1.png";
-import GitHub from "../../assets/github-logo.png";
+import GitHub from "../../assets/GitHub-logo.png";
 import Postman from "../../assets/pm-logo-1.svg";
 
 function SponsorsList() {
