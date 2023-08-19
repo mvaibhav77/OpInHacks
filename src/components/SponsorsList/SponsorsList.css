@@ -19,12 +19,10 @@
 .s-row {
   /* background-color: var(--primary-color); */
   display: grid;
-
   width: 80%;
-
   margin: 55px auto;
   grid-template-columns: 1fr 1fr 1fr;
-  
+
   /* border: 2px solid black; */
 }
 
@@ -39,17 +37,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 60px;
 }
-
-#github {
-  align-self: center;
+.s-row img{
+  width: 100%;
 }
 
 @media screen and (max-width: 1090px) {
-  .sponserslist-title  {
+  .sponserslist-title {
     font-size: 1.5rem;
-   
   }
 
   .s-row {
