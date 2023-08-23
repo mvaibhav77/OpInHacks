@@ -13,7 +13,8 @@ import sidestairs2 from "../../assets/sidestairs2.png"
 import greenmonster from "../../assets/greenmonster.png"
 import staircubes from "../../assets/staircubes.png"
 import sidestairs from "../../assets/sidestairs.png"
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 export const Organizers = () => {
   function gdsc_insta() {
     window.open("https://instagram.com/gdscbitd?igshid=YmMyMTA2M2Y=");
@@ -62,7 +63,7 @@ export const Organizers = () => {
                 <FaInstagram size="1.5rem"  />
               </button>
               <button className="twitter" onClick={gdsc_twitter}>
-                <FaTwitter size="1.5rem" />
+              <FontAwesomeIcon icon={faXTwitter} size="xl" className="" />
               </button>
             </div>
           </div>
@@ -81,7 +82,7 @@ export const Organizers = () => {
                 <FaInstagram size="1.5rem" />
               </button>
               <button className="twitter" onClick={hack_twitter}>
-                <FaTwitter size="1.5rem" />
+              <FontAwesomeIcon icon={faXTwitter} size="xl" className="" />
               </button>
             </div>
           </div>
@@ -100,7 +101,7 @@ export const Organizers = () => {
                 <FaInstagram size="1.5rem" />
               </button>
               <button className="twitter" onClick={opinco_twitter}>
-                <FaTwitter size="1.5rem" />
+              <FontAwesomeIcon icon={faXTwitter} size="xl" className="" />
               </button>
             </div>
           </div>

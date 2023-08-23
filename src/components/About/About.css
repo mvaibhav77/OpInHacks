@@ -38,10 +38,9 @@
    
     line-height: 2rem;
     padding-bottom: 2rem;
-    
     display: flex;
     letter-spacing: 0.031rem;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     color: #000000;
     text-align: center;
     padding-left: 4rem;

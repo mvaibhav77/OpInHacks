@@ -112,14 +112,14 @@ footer .flex:last-child .flex-content:last-child{
   font-size: 1rem;
   padding: 1rem;
   width: 60%;
-  margin-right: 7%;
+  margin-right: 4%;
 
 
 }
 
 .discord {
     color: var(--dark-color);
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     max-width: 100%;
   }
 

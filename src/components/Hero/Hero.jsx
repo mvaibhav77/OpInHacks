@@ -17,7 +17,8 @@ import {
 import { BsArrowDown } from "react-icons/bs";
 import { IoMdArrowDropup } from "react-icons/io";
 import { HiOutlinePencilSquare } from "react-icons/hi2";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 export const Hero = () => {
   $(document).ready(function () {
     var homepage = document.querySelector("#Homepage");
@@ -83,7 +84,7 @@ export const Hero = () => {
           target="_blank"
           className="twitter-icon"
         >
-          <FaTwitter fontSize="1.5rem" />
+          <FontAwesomeIcon icon={faXTwitter} size="xl" className="" />
         </a>
         <a
           href="https://www.instagram.com/opinhacks/"

@@ -6,6 +6,8 @@ import { FaDiscord } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiOutlineTwitter } from "react-icons/ai";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import BacktoFuture from "../../assets/BacktoFuture.png"
 
 const Footernew = () => {
@@ -41,7 +43,7 @@ const Footernew = () => {
           <a href="#Hero">Home</a>
           <a href="#About">About</a>
           <a href="#Organisers">Organisers</a>
-          <a href="#Sponsors">Sponsors</a>
+          <a href="#sponsors-list">Sponsors</a>
           <a href="#Faq">FAQ</a>
         </section>
         <section class="flex-content padding_1x">
@@ -66,7 +68,7 @@ const Footernew = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <AiOutlineTwitter size="2rem" className="socials-icon"/>
+            <FontAwesomeIcon icon={faXTwitter} size="2x" className="socials-icon" />
           </a>
           </div>
         </section>
