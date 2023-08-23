@@ -40,7 +40,7 @@ const Footernew = () => {
           <h3>Site</h3>
           <a href="#Hero">Home</a>
           <a href="#About">About</a>
-          <a href="#Organizers">Organisers</a>
+          <a href="#Organisers">Organisers</a>
           <a href="#Sponsors">Sponsors</a>
           <a href="#Faq">FAQ</a>
         </section>
