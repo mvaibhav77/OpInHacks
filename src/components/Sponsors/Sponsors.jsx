@@ -6,65 +6,84 @@ import Vector4 from "../../assets/Vector4.png";
 import employment1 from "../../assets/employment1.png";
 import talk1 from "../../assets/talk1.png";
 
+const sponsorPoints = [
+  {
+    id: 1,
+    header: "PROMOTION",
+    body: "Sponsors will receive comprehensive promotion through all of our social media channels and during off-site events",
+    imgSrc: Vector4,
+  },
+  {
+    id: 2,
+    header: "TALENT POOL",
+    body: "Sponsoring OpinHacks provides a unique opportunity for companies to access a diverse pool of talented individuals for employment considerations.",
+    imgSrc: employment1,
+  },
+  {
+    id: 3,
+    header: "BRAND AWARENESS",
+    body: "Being part of OpinHacks will give valuable exposure and help a brand reach a large, engaged audience.",
+    imgSrc: talk1,
+  },
+];
+
 export const Sponsors = () => {
   function sponsor_us() {
     window.open("https://forms.gle/xzP1vVgXWMBpSdHF9");
   }
   return (
-
-
-
-    <section id="Sponsors" className="prize">
-      <div className="container">
-        <h1 className="sponsors"> WHY SPONSORS US ??</h1>
-        <div className="row">
-          <div className="service">
-            <img src={Vector4} className="fas fa-laptop-code" />
-            <h2>PROMOTION</h2>
-            <p>
-              Sponsors will receive comprehensive promotion through all of our
-              social media channels and during off-site events
-            </p>
-          </div>
-
-          <div className="service">
-            <img src={employment1} className="fas fa-laptop-code" />
-            <h2>TALENT POOL</h2>
-            <p>
-              Sponsoring OpinHacks provides a unique opportunity for companies
-              to access a diverse pool of talented individuals for employment
-              considerations.
-            </p>
-          </div>
-
-          <div className="service">
-            <img src={talk1} className="fas fa-laptop-code" />
-            <h2>BRAND AWARENESS</h2>
-            <p>
-              Being part of OpinHacks will give valuable exposure and help a
-              brand reach a large, engaged audience.
-            </p>
-          </div>
+    <section
+      id="Sponsors"
+      className="prize relative bg-black overflow-hidden flex flex-col items-center pt-4"
+    >
+      <div className="relative w-100 h-100 p-8 pb-12">
+        <h1 className="sponsors font-Hanson font-bold pb-12 text-white text-2xl md:text-base text-center uppercase tracking-wider">
+          {" "}
+          WHY SPONSORS US ??
+        </h1>
+        <div className="grid grid-cols-3 md:grid-cols-1 gap-12 md:gap-16">
+          {sponsorPoints.map((point) => (
+            <div
+              key={point.id}
+              className="service text-center text-4xl pt-8 pb-20 px-4 md:py-0 md:px-4 bg-transparent rounded-md"
+            >
+              <img
+                src={point.imgSrc}
+                alt=""
+                className="fas fa-laptop-code mx-auto text-white mb-2.5"
+              />
+              <h2 className="text-xl md:text-base mb-2 text-white">
+                {point.header}
+              </h2>
+              <p className="text-white text-base/8 md:text-base mb-1">
+                {point.body}
+              </p>
+            </div>
+          ))}
         </div>
-        <div className="buttons">
-          <a href="https://drive.google.com/file/d/1P8JrTJdUtfHKhXhcJ6ont4aWjQ6Lpg5P/view?usp=drivesdk" target="_blank">
-            <button className="brochure">
-
+        <div className="buttons grid gap-4 justify-center content-center grid-cols-2 md:grid-cols-1 md:pt-8	">
+          <a
+            href="https://drive.google.com/file/d/1P8JrTJdUtfHKhXhcJ6ont4aWjQ6Lpg5P/view?usp=drivesdk"
+            target="_blank"
+            rel="noreferrer"
+            className="justify-self-end md:justify-self-center"
+          >
+            <button className="brochure text-dark font-primary w-48">
               BROCHURE
             </button>
           </a>
-          <button className="sponsor-us" onClick={sponsor_us}>
+          <button
+            className="sponsor-us justify-self-start md:justify-self-center text-dark font-primary bg-primary w-48"
+            onClick={sponsor_us}
+          >
             {"  "}
             SPONSOR US
           </button>
         </div>
       </div>
 
-
-
       <img className="boost-stairs-2" src={booststairs2} alt="boost-stairs-2" />
       <img className="boost-stairs-1" src={booststairs1} alt="boost-stairs-1" />
     </section>
-
   );
 };
