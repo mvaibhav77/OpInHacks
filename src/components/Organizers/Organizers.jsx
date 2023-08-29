@@ -79,16 +79,18 @@ export const Organizers = () => {
       <img src={sidestairs} alt="" className="img1 sidestairs" />
       {/* <div className="organ-container"> */}
 
-      <div className="card-section flex items-center justify-center p-4 pt-8 md:p-4 relative z-10">
+      <div className="card-section flex flex-wrap items-center justify-center p-4 pt-8 md:p-4 relative z-10">
         {organizers.map(({ id, name, img, insta, twitter }) => (
           <div className="card max-w-xs md:w-7/12	 m-8 shadow-lg" key={id}>
             <img src={img} alt="GDSC" className="img bg-white w-full" />
             <div className="card-text grid grid-rows grid-cols-2 items-center bg-black text-white p-4 md:p-2">
               <div className="text w-100 justify-self-start">
-                <p className="organize-text-p opacity-70 text-sm/2">
+                <p className="organize-text-p font-tertiary opacity-70 text-base/[1.2rem] md:text-xs">
                   Organiser
                 </p>
-                <p className="org text-xl/2 font-semibold">{name}</p>
+                <p className="org text-xl text-lg/[1.5rem] md:text-sm font-tertiary font-semibold">
+                  {name}
+                </p>
               </div>
               <div className="socials-buttons w-100 h-8 flex items-center justify-end">
                 <button

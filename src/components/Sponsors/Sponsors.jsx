@@ -41,27 +41,27 @@ export const Sponsors = () => {
           {" "}
           WHY SPONSORS US ??
         </h1>
-        <div className="grid grid-cols-3 md:grid-cols-1 gap-12 md:gap-16">
+        <div className="grid grid-cols-3 md:grid-cols-1 gap-12 md:gap-12">
           {sponsorPoints.map((point) => (
             <div
               key={point.id}
-              className="service text-center text-4xl pt-8 pb-20 px-4 md:py-0 md:px-4 bg-transparent rounded-md"
+              className="service  text-center text-4xl pt-8 pb-20 px-4 md:py-0 md:px-4 bg-transparent rounded-md"
             >
               <img
                 src={point.imgSrc}
                 alt=""
                 className="fas fa-laptop-code mx-auto text-white mb-2.5"
               />
-              <h2 className="text-xl md:text-base mb-2 text-white">
+              <h2 className="font-primary text-xl md:text-base mb-2 text-white">
                 {point.header}
               </h2>
-              <p className="text-white text-base/8 md:text-base mb-1">
+              <p className="font-tertiary text-white text-base md:text-base mb-1">
                 {point.body}
               </p>
             </div>
           ))}
         </div>
-        <div className="buttons grid gap-4 justify-center content-center grid-cols-2 md:grid-cols-1 md:pt-8	">
+        <div className="buttons grid gap-4 justify-center content-center grid-cols-2 md:grid-cols-1 md:pt-12	">
           <a
             href="https://drive.google.com/file/d/1P8JrTJdUtfHKhXhcJ6ont4aWjQ6Lpg5P/view?usp=drivesdk"
             target="_blank"

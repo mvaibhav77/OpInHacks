@@ -22,7 +22,7 @@ export const About = () => {
         <h1 className="about relative font-Hanson font-bold flex justify-center items-center text-center text-black uppercase tracking-wider pt-3 text-2xl">
           About Us
         </h1>
-        <p className="para font-secondary font-medium leading-8 pb-8 flex tracking-wider text-black text-center px-16 pt-6">
+        <p className="para text-xs font-secondary font-medium leading-8 pb-8 flex tracking-wider text-black text-center px-16 pt-6">
           Whether you're a seasoned developer or just starting out, OpInHacks is
           the perfect platform to challenge yourself, develop new skills, and
           network with like-minded individuals. OpInHacks will be a thrilling
