@@ -9,7 +9,7 @@ module.exports = {
         primary: ["var(--primary-font)"],
         secondary: ["var(--secondary-font)"],
         tertiary: ["var(--tertiary-font)"],
-        karrera: ["var(--karrera-font)"],
+        karrera: ["var(--kerrera-font)"],
         Satoshi: ["var(--Satoshi-font)"],
       },
       fontWeight: {
