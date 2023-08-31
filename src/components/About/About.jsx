@@ -50,12 +50,12 @@ export const About = () => {
           the journey of becoming a better developer.
         </p>
       </div> */}
-      <div className="flex gap-16 md:gap-8 md:flex-col font-Satoshi">
+      <div className="flex gap-16 md:gap-8 md:flex-col font-primary">
         {hackDetails.map((hackDetails) => {
           return (
             <div className="text-white ">
               <h1
-                className=" text-7xl md:text-4xl text-[#009133] text-center font-extrabold uppercase"
+                className=" text-7xl md:text-5xl text-[#009133] text-center font-extrabold uppercase"
                 style={{
                   textShadow: `
           1px 1px 1px #00d54b,
@@ -70,8 +70,7 @@ export const About = () => {
           1px 6px 1px #00d54b,
           1px 7px 1px #00d54b,
           1px 8px 1px #00d54b,
-          1px 9px 1px #00d54b,
-          1px 10px 1px #00d54b,
+
           1px 18px 6px rgba(0, 213, 75, 0.2), /* Adjusted opacity */
           1px 22px 10px rgba(0, 213, 75, 0.2), /* Adjusted opacity */
           1px 25px 35px rgba(0, 213, 75, 0.2), /* Adjusted opacity */
@@ -81,8 +80,28 @@ export const About = () => {
               >
                 {hackDetails.title}
               </h1>
-              <p className=" text-xl   text-center uppercase  ">
-                {/* {hackDetails.description} */}
+              <p
+                className=" text-2xl   text-center uppercase text-white font-extrabold tracking-wider font-Satoshi md:mt-1  "
+                style={{
+                //   textShadow: `
+                //   1px 1px 1px white,
+                //   1px 1px 1px white,
+                //   1px 1px 1px white,
+                //   1px 1px 1px white,
+                //   1px 1px 1px white,
+                //   1px 2px 1px white,
+                //   1px 3px 1px white,
+
+              
+    
+                //   1px 18px 6px rgba(255, 255, 255, 0.2), /* Adjusted opacity */
+                //   1px 22px 10px rgba(255, 255, 255, 0.2), /* Adjusted opacity */
+                //   1px 25px 35px rgba(255, 255, 255, 0.2), /* Adjusted opacity */
+                //   1px 30px 60px rgba(255, 255, 255, 0.2)  /* Adjusted opacity */
+                // `,
+                }}
+              >
+                {hackDetails.description}
               </p>
             </div>
           );

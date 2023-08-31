@@ -15,6 +15,8 @@ const Navbar = () => {
 
   return (
     <header id="Navbar" className="">
+
+
       <a href="#Hero" className="head-logo" onClick={closeNavbar}>
         <img src={logo} alt="Logo" className="nav-logo" />
       </a>  

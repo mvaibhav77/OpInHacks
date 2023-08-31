@@ -63,7 +63,12 @@ function Themes() {
               <img
                 src={img}
                 alt={name}
-                className="img max-h-[350px] p-0 ease-in duration-300 hover:scale-110 hover:shadow-ad hover:shadow-primary"
+                className="img max-h-[350px] p-0 ease-in duration-300 hover:scale-110  "
+                style={{
+                  WebkitFilter: 'drop-shadow(5px 5px 5px #222)',
+                  filter: 'drop-shadow(5px 5px 5px #222)',
+                }}
+                
                 onClick={() => {}}
               />
             </div>

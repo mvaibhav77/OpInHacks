@@ -30,18 +30,23 @@ export const Home = () => {
           minWidth: "60px",
           position: "fixed",
           right: "90px",
-          top: "0",
+          top: "19px",
           width: "10%",
           zIndex: 10000,
+          // border: "2px solid white",
+          WebkitFilter: "drop-shadow(0px 6px 0px white)",
         }}
-        href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
+        href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=gray"
         target="_blank"
         rel="noopener noreferrer"
       >
         <img
-          src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
+          src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-black.svg"
           alt="Major League Hacking 2024 Hackathon Season"
-          style={{ width: "100%" }}
+          style={{ width: "100%",
+          
+          
+        }}
         />
       </a>
 
