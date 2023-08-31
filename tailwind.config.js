@@ -25,6 +25,9 @@ module.exports = {
         fixed: "var(--z-fixed)",
         modal: "var(--z-modal)",
       },
+      boxShadow: {
+        ad: " 0 0 20px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
+      },
     },
   },
   plugins: [],

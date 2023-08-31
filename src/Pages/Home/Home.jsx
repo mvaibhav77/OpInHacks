@@ -8,6 +8,7 @@ import { Sponsors } from "../../components/Sponsors/Sponsors";
 import { Faq } from "../../components/Faq/Faq";
 import { Organizers } from "../../components/Organizers/Organizers";
 import SponsorsList from "../../components/SponsorsList/SponsorsList";
+import Themes from "../../components/Themes/Themes";
 export const Home = () => {
   const handleScroll = () => {
     const homepage = document.getElementById("Homepage");
@@ -47,6 +48,7 @@ export const Home = () => {
       <Navbar />
       <Hero />
       <About />
+      <Themes />
       <Organizers />
       <Sponsors />
       <SponsorsList />
