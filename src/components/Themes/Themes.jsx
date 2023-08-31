@@ -53,7 +53,7 @@ function Themes() {
 
   return (
     <>
-      <section className="container flex flex-col mx-auto my-8 max-w-[85%] relative">
+      <section id="themes" className="container flex flex-col mx-auto my-8 max-w-[85%] relative">
         <h1 className="font-karrera text-primary text-center tracking-widest  font-normal text-7xl md:text-3xl pb-10 md:py-6 ">
           THEMES
         </h1>
