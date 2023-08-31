@@ -11,8 +11,24 @@
   font-weight: normal;
 }
 @font-face {
+  font-family: "Karrera";
+  src: local("Karrera"),
+    url("../public//fonts/Karrera-Regular.otf");
+  font-weight: normal;
+}
+@font-face {
   font-family: "Urbanist";
   src: local("Urbanist"), url("../public//fonts/Urbanist-VariableFont_wght.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: local("Satoshi"), url("../public//fonts/Satoshi-Regular.otf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: local("Satoshi"), url("../public//fonts/Satoshi-Black.otf");
   font-weight: normal;
 }
 
@@ -23,6 +39,8 @@
   --primary-font: Hanson;
   --secondary-font: Montserrat;
   --tertiary-font: Urbanist;
+  --kerrera-font: Karrera;
+  --Satoshi-font: Satoshi;
 
   /* FONT WEIGHT */
   --font-normal: 400;

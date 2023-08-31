@@ -1,6 +1,6 @@
 import React from "react";
 import "../Faq/Faq.css";
-import spaceLines from "../../assets/space-lines.png";
+// import spaceLines from "../../assets/space-lines.png";
 // import { Faq } from "../../components/Faq/Faq.json";
 
 export const Faq = () => {
@@ -119,11 +119,11 @@ export const Faq = () => {
       id="Faq"
       className="faq-section relative flex flex-col items-center p-8 md:p-0 bg-primary overflow-hidden"
     >
-      <img
-        className="space-lines space-line-footer scale-125"
+      {/* <img
+        className="space-lines space-line-footer scale-125 "
         src={spaceLines}
         alt=""
-      />
+      /> */}
       <h1 className="text-2xl text-center pt-8">FAQ's</h1>
       <div className="faqs-container grid z-1 m-0 max-w-7xl p-8 gap-4 ">
         {/* <div className="faq-tab">
