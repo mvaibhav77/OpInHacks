@@ -9,6 +9,8 @@ module.exports = {
         primary: ["var(--primary-font)"],
         secondary: ["var(--secondary-font)"],
         tertiary: ["var(--tertiary-font)"],
+        karrera: ["var(--karrera-font)"],
+        Satoshi: ["var(--Satoshi-font)"],
       },
       fontWeight: {
         normal: "var(--font-normal)",
