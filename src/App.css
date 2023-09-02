@@ -12,8 +12,7 @@
 }
 @font-face {
   font-family: "Karrera";
-  src: local("Karrera"),
-    url("../public//fonts/Karrera-Regular.otf");
+  src: local("Karrera"), url("../public//fonts/Karrera-Regular.otf");
   font-weight: normal;
 }
 @font-face {
@@ -27,7 +26,7 @@
   font-weight: normal;
 }
 @font-face {
-  font-family: "Satoshi";
+  font-family: "Satoshi_Black";
   src: local("Satoshi"), url("../public//fonts/Satoshi-Black.otf");
   font-weight: normal;
 }
@@ -41,6 +40,7 @@
   --tertiary-font: Urbanist;
   --kerrera-font: Karrera;
   --Satoshi-font: Satoshi;
+  --Satoshi-black-font: Satoshi_Black;
 
   /* FONT WEIGHT */
   --font-normal: 400;

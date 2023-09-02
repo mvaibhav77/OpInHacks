@@ -11,6 +11,7 @@ module.exports = {
         tertiary: ["var(--tertiary-font)"],
         karrera: ["var(--kerrera-font)"],
         Satoshi: ["var(--Satoshi-font)"],
+        Satoshi_Black: ["var(--Satoshi-Black-font)"],
       },
       fontWeight: {
         normal: "var(--font-normal)",
