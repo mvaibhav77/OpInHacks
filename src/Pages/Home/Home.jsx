@@ -49,9 +49,9 @@ export const Home = () => {
       <Hero />
       <About />
       <Themes />
-      <Organizers />
-      <Sponsors />
+      {/* <Organizers /> */}
       <SponsorsList />
+      <Sponsors />
       <Faq />
       <Footernew />
     </div>
