@@ -57,7 +57,7 @@ export const Faq = () => {
   const faqTab = (question, reply, links, index) => {
     return (
       <>
-        <div className="faq-tab group relative bg-light font-secondary p-3 rounded-lg shadow-lg overflow-hidden flex flex-col justify-center">
+        <div className="faq-tab group relative bg-primary font-secondary p-3 rounded-lg shadow-lg overflow-hidden flex flex-col justify-center">
           <input
             className="faq-input peer/input appearance-none"
             type="checkbox"
@@ -82,7 +82,7 @@ export const Faq = () => {
             </h2>
           </label>
           <div className="faq-content max-h-0 overflow-hidden ease-in-out duration-300 peer-checked/input:max-h-screen">
-            <h5 className="text-[0.85rem] font-[900] pt-2 opacity-70 md:text-[0.5rem]">
+            <h5 className="text-[0.85rem] text-grey font-[900] pt-2 opacity-70 md:text-[0.5rem]">
               {reply}
             </h5>
             {links ? (
@@ -117,14 +117,14 @@ export const Faq = () => {
   return (
     <section
       id="Faq"
-      className="faq-section relative flex flex-col items-center p-8 md:p-0 bg-primary overflow-hidden"
+      className="faq-section relative flex flex-col items-center p-8 md:p-0 bg-dark overflow-hidden"
     >
       {/* <img
         className="space-lines space-line-footer scale-125 "
         src={spaceLines}
         alt=""
       /> */}
-      <h1 className="text-2xl text-center pt-8">FAQ's</h1>
+      <h1 className="text-2xl text-white text-center pt-8">FAQ's</h1>
       <div className="faqs-container grid z-1 m-0 max-w-7xl p-8 gap-4 ">
         {/* <div className="faq-tab">
           <input
