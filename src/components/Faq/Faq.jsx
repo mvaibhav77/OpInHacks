@@ -186,7 +186,7 @@ export const Faq = () => {
         {faqTab(9)}
         {faqTab(10)} */}
         <div className="flex flex-col  gap-3 md:items-center ">
-          <div className="text-light text-5xl font-Satoshi tracking-wide font-bold mb-5 w-full">
+          <div className="text-light text-5xl md:text-4xl font-Satoshi tracking-wide font-bold mb-5 w-full">
             Some of the frequently <br /> asked questions
           </div>
           <div className="w-[70%] md:w-[100%] max-h-[60vh] overflow-y-scroll custom-scrollbar grid gap-4 ">
