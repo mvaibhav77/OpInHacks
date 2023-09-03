@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Faq/Faq.css";
 import Faqbg from "../../assets/FAQbackground.png";
 import FaqAssest from "../../assets/Faqassest.png";
+
 // import spaceLines from "../../assets/space-lines.png";
 // import { Faq } from "../../components/Faq/Faq.json";
 
 export const Faq = () => {
-  
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleClick = (index) => {
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
+
   const faqData = [
     {
       question: "What is Hackathon?",
@@ -63,14 +69,23 @@ export const Faq = () => {
   ];
 
   const faqTab = (question, reply, links, index) => {
+    const isActive = index === activeIndex;
+    const activeClass = isActive ? "border border-primary" : "";
+
     return (
       <>
-        <div className="faq-tab group relative bg-[#0D1714] font-secondary p-3   text-light rounded-tl-2xl rounded-br-2xl shadow-lg  flex flex-col justify-center" >
+        <div
+          className={`faq-tab group relative bg-[#0D1714] font-secondary p-3 text-light rounded-lg shadow-lg flex flex-col justify-center ${activeClass}`}
+          
+        >
           <input
-            className="faq-input peer/input appearance-none "
+            className="faq-input peer/input appearance-none"
             type="checkbox"
             name="faq"
             id={`id${index}`}
+            onChange={() => {
+              handleClick(index);
+            }}
             // onChange={(e) => {
             //   setInputCheck(e.target);
             // }}
@@ -86,22 +101,24 @@ export const Faq = () => {
             peer-checked/input:after:rotate-[135deg]
             "
           >
-            <h2 className="font-bold text-base pr-2 md:text-[10px]/3 md:p-0">
+            <h2 className="font-normal font-secondary text-base text-light  pr-2 md:text-[10px]/3 md:p-0">
               {question}
             </h2>
           </label>
           <div className="faq-content max-h-0 overflow-hidden ease-in-out duration-200 peer-checked/input:max-h-screen">
-            <h5 className="text-[0.85rem] font-[900] pt-2 w-[80%] opacity-70 md:text-[0.5rem]">
+            <h5 className="text-[0.85rem] font-secondary font-normal pt-2 w-[80%] opacity-70 md:text-[0.5rem]">
               {reply}
             </h5>
             {links ? (
               <a
-                href={links}
+                href={links.includes("@gmail.com") ? `mailto:${links}` : links}
                 target="_blank"
                 rel="noreferrer"
                 className="faq-links text-[blue] pt-0 text-xs font-bold"
               >
-                {links}
+                {links.includes("@gmail.com")
+                  ? links
+                  : links.replace("mailto:", "")}
               </a>
             ) : (
               " "
@@ -169,14 +186,14 @@ export const Faq = () => {
         {faqTab(9)}
         {faqTab(10)} */}
         <div className="flex flex-col  gap-3 md:items-center ">
-          <div className="text-light text-3xl font-Satoshi font-normal mb-5 ">
+          <div className="text-light text-5xl font-Satoshi tracking-wide font-bold mb-5 w-full">
             Some of the frequently <br /> asked questions
           </div>
           <div className="w-[70%] md:w-[100%] max-h-[60vh] overflow-y-scroll custom-scrollbar grid gap-4 ">
             <div className="grid gap-4 mr-3">
-            {faqData.map((data, index) => {
-              return faqTab(data.question, data.reply, data.links, index);
-            })}
+              {faqData.map((data, index) => {
+                return faqTab(data.question, data.reply, data.links, index);
+              })}
             </div>
           </div>
         </div>
