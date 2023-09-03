@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Hanson";
   src: local("Hanson"), url("../public//fonts/Hanson-Bold.otf");
@@ -7,7 +6,13 @@
 }
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat"), url("../public//fonts/Montserrat-VariableFont_wght.ttf");
+  src: local("Montserrat"),
+    url("../public//fonts/Montserrat-VariableFont_wght.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Karrera";
+  src: local("Karrera"), url("../public//fonts/Karrera-Regular.otf");
   font-weight: normal;
 }
 @font-face {
@@ -15,17 +20,27 @@
   src: local("Urbanist"), url("../public//fonts/Urbanist-VariableFont_wght.ttf");
   font-weight: normal;
 }
-
-
+@font-face {
+  font-family: "Satoshi";
+  src: local("Satoshi"), url("../public//fonts/Satoshi-Regular.otf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Satoshi_Black";
+  src: local("Satoshi"), url("../public//fonts/Satoshi-Black.otf");
+  font-weight: normal;
+}
 
 /* variable css */
 
 :root {
-
   /* FONT */
   --primary-font: Hanson;
   --secondary-font: Montserrat;
-  --teritary-font:Urbanist;
+  --tertiary-font: Urbanist;
+  --kerrera-font: Karrera;
+  --Satoshi-font: Satoshi;
+  --Satoshi-black-font: Satoshi_Black;
 
   /* FONT WEIGHT */
   --font-normal: 400;
@@ -33,34 +48,31 @@
   --font-semi-bold: 600;
   --font-bold: 700;
   --font-extra-bold: 900;
-  
+
   /* COLORS */
   --primary-color: #00d54b;
-  --background-color: #F8F6F6;
+  --background-color: #f8f6f6;
   --dark-color: #000000;
-  --light-color: #FFFFFF;
+  --light-color: #ffffff;
 
   /* z-index */
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
-
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
 
-html{
+html {
   scroll-behavior: smooth;
- 
-  
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   font-family: var(--primary-font);
@@ -70,45 +82,38 @@ body{
   height: 100vh;
   overflow: hidden;
   background-color: var(--dark-color);
-  
 }
 body::-webkit-scrollbar {
   display: none;
 }
-section{
+section {
   display: flex;
-  
+
   min-height: 90%;
   /* scroll-snap-align: start; */
-  
 }
-button{
-
-  padding: .5rem 1rem;
+button {
+  padding: 0.5rem 1rem;
   border: none;
   font-size: 1rem;
-  border-radius: .5em;
+  border-radius: 0.5em;
   background-color: var(--light-color);
-  transition: transform .5s;
+  transition: transform 0.5s;
   cursor: pointer;
-  
-  
 }
 button:hover {
   transform: scale(1.1);
 }
 
-a{
+a {
   color: var(--dark-color);
 }
-p{
-  font-size: 1rem ;
+p {
+  font-size: 1rem;
 }
 
-@media screen and (max-width:1090px){
-
-  section{
+@media screen and (max-width: 1090px) {
+  section {
     min-height: 70%;
   }
-   
 }

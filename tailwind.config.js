@@ -9,6 +9,9 @@ module.exports = {
         primary: ["var(--primary-font)"],
         secondary: ["var(--secondary-font)"],
         tertiary: ["var(--tertiary-font)"],
+        karrera: ["var(--kerrera-font)"],
+        Satoshi: ["var(--Satoshi-font)"],
+        Satoshi_Black: ["var(--Satoshi-Black-font)"],
       },
       fontWeight: {
         normal: "var(--font-normal)",
@@ -24,6 +27,9 @@ module.exports = {
         tooltip: "var(--z-tooltip)",
         fixed: "var(--z-fixed)",
         modal: "var(--z-modal)",
+      },
+      boxShadow: {
+        ad: " 0 0 20px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
       },
     },
   },

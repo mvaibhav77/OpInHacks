@@ -2,6 +2,7 @@
     
     /* scroll-snap-type: y mandatory; */
     overflow-y: scroll;
+    overflow-x: hidden;
     display: block;
     height: 100%;
     width: 100%;

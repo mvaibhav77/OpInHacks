@@ -1,24 +1,22 @@
+/* .organize-text {
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  padding-top: 1rem;
+  font-size: 2.3rem;
+} */
 
-.organize-text{
-    /* width: 100%; */
-    justify-content: center;
-    position: relative;
-    padding-top: 1rem;
-    /* font-size: 2.3rem; */
-}
-
-
-.organizers-conatainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    margin: auto;
-    width: 100%;
-    background-color: var(--primary-color);
-    padding-top: 2rem;
-   position: relative;
-   overflow: hidden;
-}
+/* .organizers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  background-color: var(--primary-color);
+  padding-top: 2rem;
+  position: relative;
+  overflow: hidden;
+} */
 
 /* .organ-container{   
     
@@ -27,137 +25,132 @@
     align-items: center;    
 } */
 
-.card-section{
-    display: flex;
-    
-    align-items: center;
-    justify-content: center;
-    
-    padding: 0rem 1rem 1rem 1rem;
-    z-index: 1;
-}
+/* .card-section {
+  display: flex;
 
-.card{
-    max-width: 25%;
-    margin: 2rem;
-    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.2);
-}
+  align-items: center;
+  justify-content: center;
 
-.card-text{
-    color: white;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    padding: 1rem 1rem;
-}
-.text{
-    width: 100%;
-}
-.socials-buttons{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    
-}
-.img{
-    background-color: white;
-   width: 100%;
-}
-.insta{
-    margin-right: 10px;
-}
-.twitter ,.insta{
-    width: 20%;
-}
-.organize-text-p{
-    opacity: 70%;
-}
-.org{
-    font-size: 1.3rem;
-    font-weight: 800;
-}
-.socials-buttons{
-    height: 2rem;
-   
-}
-.socials-buttons button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    height: 100%;
-    
-}
+  padding: 0rem 1rem 1rem 1rem;
+  z-index: 1;
+} */
 
-.socials-buttons button svg{
-    position: absolute;
-    color: var(--dark-color);
+/* .card {
+  max-width: 25%;
+  margin: 2rem;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.2);
+} */
+
+/* .card-text {
+  color: white;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+} */
+/* .text {
+  width: 100%;
+} */
+/* .socials-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+} */
+/* .img {
+  background-color: white;
+  width: 100%;
+} */
+/* .insta {
+  margin-right: 10px;
+} */
+/* .twitter,
+.insta {
+  width: 20%;
+} */
+/* .organize-text-p {
+  opacity: 70%;
 }
+.org {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+.socials-buttons {
+  height: 2rem;
+} */
+/* .socials-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+} */
+
+/* .socials-buttons button svg {
+  position: absolute;
+  color: var(--dark-color);
+} */
 
 /* assests */
 
-.img1{
-    position: absolute;
-    display: block;
-    z-index: 0;
-    
-
+.img1 {
+  position: absolute;
+  display: block;
+  z-index: 0;
 }
 
-.hole{
-    bottom: 2rem;
-    right: 25rem;
-    display: block;
+.hole {
+  bottom: 2rem;
+  right: 25rem;
+  display: block;
 }
-.hole2{
-    top: 0rem;
-    left: 3rem;
+.hole2 {
+  top: 0rem;
+  left: 3rem;
 }
 
-.track{ /* find another approach* - remove z-index 
+.track {
+  /* find another approach* - remove z-index 
     from about page.about-section */
-    top:-3rem;
-    right: 20rem;
-    
+  top: -3rem;
+  right: 20rem;
 }
 
-.column{
-    top: 10rem;
-    left: 0rem;
+.column {
+  top: 10rem;
+  left: 0rem;
 }
 
-.sidestairs2{
-    bottom: 2rem;
-    left: 1rem;
+.sidestairs2 {
+  bottom: 2rem;
+  left: 1rem;
 }
 
-.greenmonster{
-    top: 1rem;
-    left: 15rem;
+.greenmonster {
+  top: 1rem;
+  left: 15rem;
 }
 
-.staircubes{
-    width: 10%;
-    height: 10%;
-    top: 2rem;
-    right: 0; 
+.staircubes {
+  width: 10%;
+  height: 10%;
+  top: 2rem;
+  right: 0;
 }
 
-.sidestairs{
-    bottom: 5rem;
-    right: -.5rem;
+.sidestairs {
+  bottom: 5rem;
+  right: -0.5rem;
 }
 
-@media screen and (max-width:1090px){
+@media screen and (max-width: 1090px) {
+  /* .org {
+    font-size: 0.8rem;
+  }
+  .organize-text-p {
+    font-size: 0.5rem;
+  } */
 
-   .org{
-    font-size: .8rem;
-   }
-   .organize-text-p{
-    font-size: .5rem;
-   }
-    
-    /* .organ-container{
+  /* .organ-container{
         width: 80%;
         position: absolute;
         top: 30%;
@@ -165,33 +158,27 @@
     .twitter ,.insta{
         width: 40%;
     } */
-    .img1{
-        display: none;
-    }
-
+  .img1 {
+    display: none;
+  }
 }
 
+@media screen and (max-width: 680px) {
+  /* .card-section {
+    flex-direction: column;
+  } */
+  /* .card-section .card {
+    max-width: 50%;
+  } */
 
-@media screen and (max-width:680px) {
-    .card-section{
-        flex-direction: column;
-
-    }
-    .card-section .card{
-        max-width: 50%;
-    }
-
-    .card-text{
-        align-items: center;
-        padding: .5rem;
-        
-    }   
-    .socials-buttons{
-        display: flex;
-        justify-content: flex-end;
-    }
-    
-    
+  /* .card-text {
+    align-items: center;
+    padding: 0.5rem;
+  } */
+  /* .socials-buttons {
+    display: flex;
+    justify-content: flex-end;
+  } */
 }
 
 /* @media screen and (max-width:920px){

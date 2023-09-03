@@ -1,6 +1,6 @@
 import "./SponsorsList.css";
-import MLH from "../../assets/mlh-logo-1.png";
-import GitHub from "../../assets/GitHub-logo.png";
+import MLH from "../../assets/mlh-logo-white.png";
+import GitHub from "../../assets/github-logo-white.png";
 import Postman from "../../assets/pm-logo-1.svg";
 
 function SponsorsList() {
@@ -23,28 +23,25 @@ function SponsorsList() {
   ];
 
   return (
-    <div id="sponsors-list" className="sponsors-container">
-      <h1 className="sponserslist-title">MEET OUR INCREDIBLE SPONSORS</h1>
-      <div className="s-row">
+    <div
+      id="sponsors-list"
+      className="sponsors-container mb-8 w-100 bg-dark m-auto grid grid-cols justify-center items-center"
+    >
+      <h1 className="sponserslist-title text-white text-center text-3xl md:text-2xl pt-14 font-primary">
+        MEET OUR INCREDIBLE SPONSORS
+      </h1>
+      <div className="s-row grid grid-cols-3 md:grid-cols-1 w-4/5 mx-auto my-[4rem] md:my-[2.5rem]">
         {sponsors.map(({ name, img, href }) => (
           <a
             target="blank"
-            className="btn s-col"
+            className="s-col border-2 border-primary flex items-center justify-center p-[60px]"
             href={href}
             id={name.toLowerCase()}
           >
-            <img src={img} alt={name} srcset="" />
+            <img src={img} className="w-full" alt={name} srcset="" />
+            {/* img width has anomaly because of the css file Footer/Footer.css. It will be fixed after footer section is modified with tailwindCSS.*/}
           </a>
         ))}
-        {/* <button className="btn s-col" id="mlh">
-          <img src={MLH} alt="MLH" srcset="" />
-        </button>
-        <button className="s-col" id="github">
-          <img src={GitHub} alt="GitHub" srcset="" />
-        </button>
-        <button className="s-col" id="postman">
-          <img src={Postman} alt="Postman" srcset="" />
-        </button> */}
       </div>
     </div>
   );
