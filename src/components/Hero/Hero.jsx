@@ -62,8 +62,8 @@ export const Hero = () => {
 
   return (
     <section id="Hero" className="hero-section">
-      {/* <img src={stairs} data-speed="2" className="stair-el elements" alt="" /> */}
-      <img src={pillar} data-speed="-6" className="pillar-el elements" alt="" />
+      <img src={stairs} data-speed="1" className="stair-el elements" alt="" />
+      <img src={pillar} data-speed="-11" className="pillar-el elements" alt="" />
       <img src={eye} data-speed="2" className="eye-el elements" alt="" />
       <img src={laptop} data-speed="3" className="laptop-el elements" alt="" />
       <img src={cube} data-speed="-3" className="cube-el elements" alt="" />

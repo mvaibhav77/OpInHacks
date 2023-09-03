@@ -53,8 +53,11 @@ function Themes() {
 
   return (
     <>
-      <section id="themes" className="container flex flex-col mx-auto my-8 max-w-[85%] relative">
-        <h1 className="font-karrera text-primary text-center tracking-widest  font-normal text-7xl md:text-3xl pb-10 md:py-6 ">
+      <section
+        id="themes"
+        className="container flex flex-col mx-auto my-8 max-w-[85%] relative"
+      >
+        <h1 className="font-karrera text-primary text-center tracking-widest font-normal text-5xl md:text-3xl pb-10 md:py-6 ">
           THEMES
         </h1>
         <div className="grid grid-cols-4 py-6 md:grid-cols-2 gap-x-16 gap-y-12 md:gap-6 mx-auto">
@@ -63,7 +66,12 @@ function Themes() {
               <img
                 src={img}
                 alt={name}
-                className="img max-h-[350px] p-0 ease-in duration-300 hover:scale-110 hover:shadow-ad hover:shadow-primary"
+                className="img max-h-[350px] p-0 ease-in duration-300 hover:scale-110  "
+                style={{
+                  WebkitFilter: 'drop-shadow(5px 5px 5px #222)',
+                  filter: 'drop-shadow(5px 5px 5px #222)',
+                }}
+                
                 onClick={() => {}}
               />
             </div>

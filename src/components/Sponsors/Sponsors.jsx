@@ -37,7 +37,7 @@ export const Sponsors = () => {
       className="prize relative bg-black overflow-hidden flex flex-col items-center pt-4"
     >
       <div className="relative w-100 h-100 p-8 pb-12">
-        <h1 className="sponsors font-Hanson font-bold pb-12 text-white text-2xl md:text-base text-center uppercase tracking-wider">
+        <h1 className="sponsors font-Hanson font-bold pb-12 text-white text-2xl md:text-lg text-center uppercase tracking-wider">
           {" "}
           WHY SPONSORS US ??
         </h1>
