@@ -9,6 +9,7 @@ import { Faq } from "../../components/Faq/Faq";
 import { Organizers } from "../../components/Organizers/Organizers";
 import SponsorsList from "../../components/SponsorsList/SponsorsList";
 import Themes from "../../components/Themes/Themes";
+import JoinUs from "../../components/JoinUs/JoinUs";
 export const Home = () => {
   const handleScroll = () => {
     const homepage = document.getElementById("Homepage");
@@ -56,8 +57,9 @@ export const Home = () => {
       <Themes />
       {/* <Organizers /> */}
       <SponsorsList />
-      <Sponsors />
+      <Sponsors />  
       <Faq />
+      <JoinUs />
       <Footernew />
     </div>
   );
