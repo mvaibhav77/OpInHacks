@@ -65,9 +65,9 @@ const Footernew = () => {
           </a>
           <a
             className="font-tertiary text-light my-2 mx-0 opacity-70"
-            href="#Organisers"
+            href="#Themes"
           >
-            Organisers
+            Themes
           </a>
           <a
             className="font-tertiary text-light my-2 mx-0 opacity-70"
@@ -80,6 +80,12 @@ const Footernew = () => {
             href="#Faq"
           >
             FAQ
+          </a>
+          <a
+            className="font-tertiary text-light my-2 mx-0 opacity-70"
+            href="#join"
+          >
+            Join Us
           </a>
         </section>
         <section className="flex-content relative flex flex-col p-4">
@@ -135,7 +141,7 @@ const Footernew = () => {
       <div className="flex">
         <section className="flex-content relative flex p-4 pb-0 w-full">
           <p className="disclaimer mx-auto flex justify-center items-center gap-1.5 font-tertiary">
-          Made with <span className="heart text-lg  font-bold"> 3 AM coffee!  &#9749;</span> 
+          Made with <span className="heart text-lg font-Satoshi  font-semibold"> 3 AM coffee!  &#9749;</span> 
           </p>
         </section>
       </div>

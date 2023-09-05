@@ -17,6 +17,8 @@ import {
 import { BsArrowDown } from "react-icons/bs";
 import { IoMdArrowDropup } from "react-icons/io";
 import { HiOutlinePencilSquare } from "react-icons/hi2";
+import { BsCalendarCheckFill } from "react-icons/bs";
+import { FaMapMarkedAlt } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 export const Hero = () => {
@@ -99,9 +101,9 @@ export const Hero = () => {
           <div className="opin-text">OPIN</div>
           <div className="hacks-text">HAC<span className=" -tracking-[.1em] ">KS</span></div>
         </div>
-        <div className="hero-subtitle">
-          29 Sep 2023<span className="date-divider">|</span>
-          &nbsp; CHHATTISGARH
+        <div className="hero-subtitle flex items-center justify-center">
+        <BsCalendarCheckFill size={25} className="mr-2 md:mr-1"/> 29 Sep 2023<span className="date-divider">|</span>
+          &nbsp; <FaMapMarkedAlt className="mr-2 md:mr-1"/> CHHATTISGARH
         </div>
         <div className="social-links">
           <a href="https://discord.gg/KnthBxzApR" target="_blank">
