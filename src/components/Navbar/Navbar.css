@@ -95,8 +95,7 @@ ul {
     clip-path: circle(75%);
   }
   .nav-logo {
-    width: 70%;
-    height: 70%;
+    width: 120px;
   }
 }
 

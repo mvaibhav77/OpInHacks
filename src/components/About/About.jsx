@@ -29,20 +29,20 @@ export const About = () => {
     {
       id: 0,
       logo: Product,
-      title: "Amazing Products",
-      description: "Build amazing products",
+      title: "CG’s Tech Revolution",
+      description: "The very first MLH 36-hour hackathon of State",
     },
     {
       id: 1,
       logo: Community,
-      title: "Community Support",
-      description: "Have the best Community Support",
+      title: "Hack the Present, Change the Future",
+      description: "Theme: A battle through time!",
     },
     {
       id: 2,
       logo: Product,
-      title: "Discussion Room",
-      description: "Discuss your problems with everyone",
+      title: "Pre-Hack sessions & Mentorship",
+      description: "Upskill through pre-hack sessions, workshops to polish your project",
     },
   ];
 
@@ -142,24 +142,23 @@ export const About = () => {
       <div className="main-about w-[90%] grid grid-cols-2 md:gap-12 md:grid-cols-1 items-center">
         <div className="about-body mx-auto">
           <p className="question mb-4 text-4xl text-white font-Satoshi">
-            What is OpinHacks??
+          OpinHacks - What’s the deal?
           </p>
           <p className="answer text-base  font-secondary text-white opacity-60">
-            Its a Hackathon. A Hackathon like none other. We allow killing other
-            participant to win. We encourage drug usage and also promote
-            individual drug suppliers to expand their business
+          Opinhacks is the brainchild of tech-savvy students on a mission. 
+Our aim? To create a weekend of coding, creativity, and chaotic brilliance. Think of us as a stage for hackers from all corners to pioneer groundbreaking tech solutions and push limits, or, you know, discover them :)
           </p>
           <div className="stats flex flex-col gap-12 mt-12 justify-content-center">
             <div className="item flex flex-col md:items-center">
-              <p className="font-Satoshi-Black text-primary text-7xl">342+</p>
+              <p className="font-Satoshi-Black text-primary text-7xl">60+</p>
               <p className="text-white font-secondary opacity-70">
-                People Registered
+              teams READY
               </p>
             </div>
             <div className="item flex flex-col md:items-center">
-              <p className="font-Satoshi-Black text-primary text-7xl">8</p>
+              <p className="font-Satoshi-Black text-primary text-7xl">3NITY</p>
               <p className="text-white font-secondary opacity-60">
-                Amazing Themes
+              Organising Tech Communities
               </p>
             </div>
           </div>
@@ -172,7 +171,7 @@ export const About = () => {
           >
             {aboutInfo.map(({ id, title, description, logo }) => (
               <div
-                className="item flex flex-row gap-12 md:gap-6 items-center"
+                className="item flex flex-row gap-6 items-center"
                 key={id}
               >
                 <img src={logo} alt={title} className="h-auto w-16" />

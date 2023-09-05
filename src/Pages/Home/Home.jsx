@@ -9,6 +9,8 @@ import { Faq } from "../../components/Faq/Faq";
 import { Organizers } from "../../components/Organizers/Organizers";
 import SponsorsList from "../../components/SponsorsList/SponsorsList";
 import Themes from "../../components/Themes/Themes";
+import mlhBadge from "../../assets/mlh-badge.png";
+
 export const Home = () => {
   const handleScroll = () => {
     const homepage = document.getElementById("Homepage");
@@ -27,25 +29,22 @@ export const Home = () => {
         style={{
           display: "block",
           maxWidth: "100px",
-          minWidth: "60px",
+          minWidth: "80px",
           position: "fixed",
           right: "100px",
-          top: "19px",
+          top: "7px",
           width: "8%",
           zIndex: 10000,
-          // border: "2px solid white",
-          WebkitFilter: "drop-shadow(0px 6px 0px white)",
         }}
         href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
         target="_blank"
         rel="noopener noreferrer"
       >
         <img
-          src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
+          src={mlhBadge}
           alt="Major League Hacking 2024 Hackathon Season"
           style={{ width: "100%",
-          
-          
+  
         }}
         />
       </a>

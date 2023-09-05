@@ -35,7 +35,7 @@
 .hero-title {
   text-align: center;
   line-height: 10rem;
-  font-size: 13rem;
+  font-size: 12rem;
 
 }
 .opin-text {
@@ -113,7 +113,7 @@
 }
 .laptop-el {
   height: 50%;
-  left: 10%;
+  left: 8%;
   bottom: -10%;
   height: 45%;
 }
@@ -131,9 +131,7 @@
 
 
 .down-arrow {
-  
   width: 100%;
- 
  display: flex;
  align-items: center;
  justify-content: center;

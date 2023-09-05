@@ -82,8 +82,8 @@ export const Sponsors = () => {
         </div>
       </div>
 
-      <img className="boost-stairs-2" src={booststairs2} alt="boost-stairs-2" />
-      <img className="boost-stairs-1" src={booststairs1} alt="boost-stairs-1" />
+      {/* <img className="boost-stairs-2" src={booststairs2} alt="boost-stairs-2" /> */}
+      {/* <img className="boost-stairs-1" src={booststairs1} alt="boost-stairs-1" /> */}
     </section>
   );
 };

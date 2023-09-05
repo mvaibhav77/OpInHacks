@@ -18,7 +18,7 @@ const Navbar = () => {
 
 
       <a href="#Hero" className="head-logo" onClick={closeNavbar}>
-        <img src={logo} alt="Logo" className="nav-logo" />
+        <img src={logo} alt="Logo" width={150} className="nav-logo" />
       </a>  
 
       <ul className="navbar">
