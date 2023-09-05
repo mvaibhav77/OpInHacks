@@ -17,7 +17,7 @@ export const Faq = () => {
     {
       question: "What is Hackathon?",
       reply:
-        "Hackathons are a place where coders torture themselves by being sleep deprived, overdosing on caffine and waiting for some other team to be announced as the winner.",
+        "A hackathon is a creative, time-bound gathering where individuals collaborate to rapidly innovate, typically within a technology-focused context, fostering solutions and ideas.",
     },
     {
       question: "Who can participate?? ",
