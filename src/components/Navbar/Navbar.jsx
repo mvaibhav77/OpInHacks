@@ -38,6 +38,9 @@ const Navbar = () => {
           <a href="#Faq" onClick={closeNavbar} >FAQ</a>
         </li>
         <li>
+          <a href="#join" onClick={closeNavbar} >Join Us</a>
+        </li>
+        <li>
           <a href="#Footer" onClick={closeNavbar}>
             Contact
           </a>

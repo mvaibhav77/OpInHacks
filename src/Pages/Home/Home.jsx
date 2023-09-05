@@ -11,6 +11,7 @@ import SponsorsList from "../../components/SponsorsList/SponsorsList";
 import Themes from "../../components/Themes/Themes";
 import mlhBadge from "../../assets/mlh-badge.png";
 
+import JoinUs from "../../components/JoinUs/JoinUs";
 export const Home = () => {
   const handleScroll = () => {
     const homepage = document.getElementById("Homepage");
@@ -55,8 +56,9 @@ export const Home = () => {
       <Themes />
       {/* <Organizers /> */}
       <SponsorsList />
-      <Sponsors />
+      <Sponsors />  
       <Faq />
+      <JoinUs />
       <Footernew />
     </div>
   );

@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Faq/Faq.css";
+import Faqbg from "../../assets/FAQbackground.png";
+import FaqAssest from "../../assets/Faqassest.png";
+
 // import spaceLines from "../../assets/space-lines.png";
 // import { Faq } from "../../components/Faq/Faq.json";
 
 export const Faq = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleClick = (index) => {
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
+
   const faqData = [
+    {
+      question: "What is Hackathon?",
+      reply:
+        "Hackathons are a place where coders torture themselves by being sleep deprived, overdosing on caffine and waiting for some other team to be announced as the winner.",
+    },
     {
       question: "Who can participate?? ",
       reply:
@@ -55,14 +69,23 @@ export const Faq = () => {
   ];
 
   const faqTab = (question, reply, links, index) => {
+    const isActive = index === activeIndex;
+    const activeClass = isActive ? "border border-primary" : "";
+
     return (
       <>
-        <div className="faq-tab group relative bg-primary font-secondary p-3 rounded-lg shadow-lg overflow-hidden flex flex-col justify-center">
+        <div
+          className={`faq-tab group relative bg-[#0D1714] font-secondary p-3 text-light rounded-lg shadow-lg flex flex-col justify-center ${activeClass}`}
+          
+        >
           <input
             className="faq-input peer/input appearance-none"
             type="checkbox"
             name="faq"
             id={`id${index}`}
+            onChange={() => {
+              handleClick(index);
+            }}
             // onChange={(e) => {
             //   setInputCheck(e.target);
             // }}
@@ -70,29 +93,32 @@ export const Faq = () => {
           />
           <label
             htmlFor={`id${index}`}
-            className="cursore-pointer inline-flex flex-row flex-nowrap items-center justify-between transition-opacity duration-300 
-            after:content-['+'] after:h-6 after:w-6 after:text-grey after:flex after:items-center after:justify-center after:text-3xl after:rounded-sm after:opacity-30
+            className="cursor-pointer inline-flex flex-row flex-nowrap items-center justify-between transition-opacity duration-300 
+            after:content-['+'] after:h-6 after:w-6 after:text-grey after:flex after:items-center after:justify-center after:text-3xl after:opacity-30
             after:transition-transform
-            after:duration-300
+            after:duration-200
             group-hover:after:opacity-100
-            peer-checked/input:after:rotate-[135deg]"
+            peer-checked/input:after:rotate-[135deg]
+            "
           >
-            <h2 className="font-bold text-base pr-2 md:text-[10px]/3 md:p-0">
+            <h2 className="font-normal font-secondary text-base text-light  pr-2 md:text-[10px]/3 md:p-0">
               {question}
             </h2>
           </label>
-          <div className="faq-content max-h-0 overflow-hidden ease-in-out duration-300 peer-checked/input:max-h-screen">
-            <h5 className="text-[0.85rem] text-grey font-[900] pt-2 opacity-70 md:text-[0.5rem]">
+          <div className="faq-content max-h-0 overflow-hidden ease-in-out duration-200 peer-checked/input:max-h-screen">
+            <h5 className="text-[0.85rem] font-secondary font-normal pt-2 w-[80%] opacity-70 md:text-[0.5rem]">
               {reply}
             </h5>
             {links ? (
               <a
-                href={links}
+                href={links.includes("@gmail.com") ? `mailto:${links}` : links}
                 target="_blank"
                 rel="noreferrer"
                 className="faq-links text-[blue] pt-0 text-xs font-bold"
               >
-                {links}
+                {links.includes("@gmail.com")
+                  ? links
+                  : links.replace("mailto:", "")}
               </a>
             ) : (
               " "
@@ -117,15 +143,16 @@ export const Faq = () => {
   return (
     <section
       id="Faq"
-      className="faq-section relative flex flex-col items-center p-8 md:p-0 bg-dark overflow-hidden"
+      className="faq-section relative flex flex-col items-center  p-8 md:p-0  overflow-hidden"
     >
       {/* <img
         className="space-lines space-line-footer scale-125 "
         src={spaceLines}
         alt=""
       /> */}
-      <h1 className="text-2xl text-white text-center pt-8">FAQ's</h1>
-      <div className="faqs-container grid z-1 m-0 max-w-7xl p-8 gap-4 ">
+      {/* <h1 className="text-2xl text-center pt-8 text-white">FAQ's</h1> */}
+      <img src={Faqbg} alt="" className=" absolute z-[-1]" />
+      <div className="faqs-container  flex flex-row flex-1  z-1 m-0 max-w-7xl p-8 ">
         {/* <div className="faq-tab">
           <input
             className="faq-input"
@@ -158,10 +185,21 @@ export const Faq = () => {
         {faqTab(8)}
         {faqTab(9)}
         {faqTab(10)} */}
-
-        {faqData.map((data, index) => {
-          return faqTab(data.question, data.reply, data.links, index);
-        })}
+        <div className="flex flex-col  gap-3 md:items-center ">
+          <div className="text-light text-5xl md:text-4xl font-Satoshi tracking-wide font-bold mb-5 w-full">
+            Some of the frequently <br /> asked questions
+          </div>
+          <div className="w-[70%] md:w-[100%] max-h-[60vh] overflow-y-scroll custom-scrollbar grid gap-4 ">
+            <div className="grid gap-4 mr-3">
+              {faqData.map((data, index) => {
+                return faqTab(data.question, data.reply, data.links, index);
+              })}
+            </div>
+          </div>
+        </div>
+        <div className="md:hidden h-fit">
+          <img src={FaqAssest} alt="" />
+        </div>
       </div>
     </section>
   );

@@ -135,7 +135,7 @@ const Footernew = () => {
       <div className="flex">
         <section className="flex-content relative flex p-4 pb-0 w-full">
           <p className="disclaimer mx-auto flex justify-center items-center gap-1.5 font-tertiary">
-            Made with <span className="heart text-lg text-[red]">&#10084;</span>
+          Made with <span className="heart text-lg  font-bold"> 3 AM coffee!  &#9749;</span> 
           </p>
         </section>
       </div>

@@ -94,7 +94,7 @@ section {
 }
 button {
   padding: 0.5rem 1rem;
-  border: none;
+  /* border: none; */
   font-size: 1rem;
   border-radius: 0.5em;
   background-color: var(--light-color);
@@ -111,6 +111,35 @@ a {
 p {
   font-size: 1rem;
 }
+
+.custom-scrollbar {
+  /* Set a fixed height for the container */
+  
+  height: 350px; /* Adjust as needed */
+  
+  overflow-y: scroll;
+  scrollbar-width: thin; /* For Firefox */
+  /* scrollbar-color: #333 #999; Color of the scrollbar track and thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  /* For Webkit (Chrome, Safari, newer versions of Edge) */
+  width: 4px; /* Adjust the width of the scrollbar */
+  
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  /* Style the scrollbar thumb */
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  /* Style the scrollbar track */
+  background-color: gray;
+}
+
+
 
 @media screen and (max-width: 1090px) {
   section {
