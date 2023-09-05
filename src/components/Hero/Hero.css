@@ -208,8 +208,11 @@
 /* Media queries for small screens  */
 
 @media (max-width: 1090px) {
+  .hero-container{
+    padding-top: 5rem;
+  }
   .hero-section{
-    min-height: 70%;
+    min-height: 80%;
   }
   .elements {
     display: none;
