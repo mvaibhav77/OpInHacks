@@ -29,7 +29,7 @@ const Navbar = () => {
           <a href="#Hero" onClick={closeNavbar} >Timeline</a>
         </li> */}
         <li>
-          <a href="#Organisers" onClick={closeNavbar}>Organisers</a>
+          <a href="#Themes" onClick={closeNavbar}>Themes</a>
         </li>
         <li>
           <a href="#Sponsors" onClick={closeNavbar} >Sponsors</a>

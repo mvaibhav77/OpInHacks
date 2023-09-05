@@ -12,7 +12,7 @@ import Pillarlarge from "../../assets/pillar-large.png";
 export const About = () => {
   const hackDetails = [
     {
-      title: "200+",
+      title: "300+",
       description: "Attendees",
     },
     {
