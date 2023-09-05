@@ -209,7 +209,7 @@
 
 @media (max-width: 1090px) {
   .hero-section{
-    min-height: 80%;
+    min-height: 70%;
   }
   .elements {
     display: none;
