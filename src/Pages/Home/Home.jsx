@@ -35,7 +35,7 @@ export const Home = () => {
           right: "100px",
           top: "7px",
           width: "8%",
-          zIndex: 10000,
+          zIndex: 901,
         }}
         href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
         target="_blank"
@@ -44,9 +44,7 @@ export const Home = () => {
         <img
           src={mlhBadge}
           alt="Major League Hacking 2024 Hackathon Season"
-          style={{ width: "100%",
-  
-        }}
+          style={{ width: "100%" }}
         />
       </a>
 
@@ -56,7 +54,7 @@ export const Home = () => {
       <Themes />
       {/* <Organizers /> */}
       <SponsorsList />
-      <Sponsors />  
+      <Sponsors />
       <Faq />
       <JoinUs />
       <Footernew />
