@@ -235,15 +235,17 @@
     margin-top: 0.6rem;
   }
   .social-links-bottom {
+    position: relative;
     scale: 100%;
     gap: 1rem;
-    right: unset;
-    bottom: 5rem;
+    top: 0;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     z-index: 11;
+    padding-top: 1rem;
   }
   .progress-bar{
     position: fixed;

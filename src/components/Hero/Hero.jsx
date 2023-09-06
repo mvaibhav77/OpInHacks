@@ -58,52 +58,37 @@ export const Hero = () => {
       const x = (window.innerWidth - e.pageX * speed) / 200;
       const y = (window.innerHeight - e.pageY * speed) / 200;
       const scale = 1.2 + (speed * 0.1) / 3;
-      element.style.transform = "translate(" + x + "px," + y + "px) scale(" + scale + ")";
+      element.style.transform =
+        "translate(" + x + "px," + y + "px) scale(" + scale + ")";
     });
   }
 
   return (
     <section id="Hero" className="hero-section">
       <img src={stairs} data-speed="1" className="stair-el elements" alt="" />
-      <img src={pillar} data-speed="-11" className="pillar-el elements" alt="" />
+      <img
+        src={pillar}
+        data-speed="-11"
+        className="pillar-el elements"
+        alt=""
+      />
       <img src={eye} data-speed="2" className="eye-el elements" alt="" />
       <img src={laptop} data-speed="3" className="laptop-el elements" alt="" />
       <img src={cube} data-speed="-3" className="cube-el elements" alt="" />
       <img src={cubes} data-speed="-9" className="cubes-el elements" alt="" />
       <img className="space-lines" data-speed="-2" src={spaceLines} />
 
-      <div className="social-links-bottom">
-        <a
-          href="https://www.linkedin.com/company/opinhacks/"
-          target="_blank"
-          className="in-icon"
-        >
-          <FaLinkedinIn fontSize="1.6rem" />
-        </a>
-        <a
-          href="https://twitter.com/opinhacks"
-          target="_blank"
-          className="twitter-icon"
-        >
-          <FontAwesomeIcon icon={faXTwitter} size="xl" className="" />
-        </a>
-        <a
-          href="https://www.instagram.com/opinhacks/"
-          target="_blank"
-          className="instagram-icon"
-        >
-          <FaInstagram fontSize="1.5rem" />
-        </a>
-      </div>
-
       <div className="hero-container">
         <div className="hero-title">
           <div className="opin-text">OPIN</div>
-          <div className="hacks-text">HAC<span className=" -tracking-[.1em] ">KS</span></div>
+          <div className="hacks-text">
+            HAC<span className=" -tracking-[.1em] ">KS</span>
+          </div>
         </div>
         <div className="hero-subtitle flex items-center justify-center">
-        <BsCalendarCheckFill size={25} className="mr-2 md:mr-1"/> 29 Sep 2023<span className="date-divider">|</span>
-          &nbsp; <FaMapMarkedAlt className="mr-2 md:mr-1"/> CHHATTISGARH
+          <BsCalendarCheckFill size={20} className="mr-2 md:mr-1" /> 29 Sep 2023
+          <span className="date-divider">|</span>
+          &nbsp; <FaMapMarkedAlt size={20} className="mr-2 md:mr-1" /> CHHATTISGARH
         </div>
         <div className="social-links">
           <a href="https://discord.gg/KnthBxzApR" target="_blank">
@@ -117,6 +102,29 @@ export const Hero = () => {
               {/* <HiOutlinePencilSquare fontSize="1.6rem"/> */}
               REGISTER
             </button>
+          </a>
+        </div>
+        <div className="social-links-bottom">
+          <a
+            href="https://www.linkedin.com/company/opinhacks/"
+            target="_blank"
+            className="in-icon"
+          >
+            <FaLinkedinIn fontSize="1.6rem" />
+          </a>
+          <a
+            href="https://twitter.com/opinhacks"
+            target="_blank"
+            className="twitter-icon"
+          >
+            <FontAwesomeIcon icon={faXTwitter} size="xl" className="" />
+          </a>
+          <a
+            href="https://www.instagram.com/opinhacks/"
+            target="_blank"
+            className="instagram-icon"
+          >
+            <FaInstagram fontSize="1.5rem" />
           </a>
         </div>
         {/* <div className="down-arrow">
